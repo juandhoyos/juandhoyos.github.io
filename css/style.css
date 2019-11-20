@@ -1,0 +1,738 @@
+body{
+  overflow: hidden;
+	height: 1668px;
+	width: 2338px;
+}
+
+#fotowelcome{
+ 	width: 100%;
+ 	height: 100%;
+}
+
+.titulo{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.comenzar{
+  position: absolute;
+  top: 55%;
+  left: 45%;
+}
+
+#go{
+	width: 170px;
+	height: 170px;
+  background-color: #4edeee;
+}
+
+.fondo{
+  background-color: #f7f7f7;
+  position: absolute;
+  width: 80%;
+  height: 75%;
+	left: 10%;
+	right: 10%;
+  top: 12.5%;
+	bottom: 12.5%;
+  z-index: 1;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+  border-bottom-left-radius: 45px;
+}
+
+.contenedor{
+  position: absolute;
+  width: 65%;
+	height: 45%;
+  left: 20%;
+	top: 30%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 70px;
+  background-color: #cacccc;
+	border-top-left-radius: 45px;
+	border-top-right-radius: 45px;
+	border-bottom-right-radius: 45px;
+	border-bottom-left-radius: 45px;
+}
+
+.presentacion{
+	font-family: 'Roboto', sans-serif;
+	text-align: left;
+	font-size: 47.5px;
+	font-style: italic;
+	width: 100%;
+	margin-top: 5.5%;
+	right: 2.5%;
+}
+
+.presentador{
+	top: 15%;
+}
+
+.btn.btn-primary{
+	position: absolute;
+	z-index: 6;
+	background-color:  #4edeee;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+  box-shadow: 2px -1px 27px -10px rgba(0,0,0.75);
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#hacertrivia{
+  width: 300px;
+  height: 115px;
+	left: 70%;
+	top: 45%;
+}
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 90px;
+  text-align: center;
+}
+
+
+.titulo_trivia{
+  	font-family: 'Roboto', sans-serif;
+ 	color: black;
+ 	font-size: 130px;
+  	text-align: center;
+	font-weight: bold;
+	width: 50%;
+	margin-top: 10%;
+	margin-left: 25%;
+}
+
+h3{
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	font-size: 120px;
+	margin-top: 6%;
+	margin-left: 5%;
+	text-align: left;
+	font-weight: bold;
+}
+
+h4{
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	font-size: 80px;
+	margin-left: 5%;
+	text-align: left;
+	font-weight: lighter;
+}
+
+#Ir-a-carreras{
+	width: 350px;
+	height: 120px;
+	margin-left: 80%;
+	position: absolute;
+	z-index: 10;
+}
+
+.btn.btn-success{
+	position: absolute;
+	z-index: 10;
+	width: 35%;
+	height: 15%;
+	margin-top: 35%;
+	left: 4.5%;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+  box-shadow: 2px -1px 27px -10px rgba(0,0,0.75);
+	font-size: 55px;
+	font-weight: lighter;
+}
+
+.btn.btn-danger{
+	position: absolute;
+	z-index: 10;
+	margin-top: 45%;
+	width: 35%;
+	height: 15%;
+  left: 4.5%;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+  box-shadow: 2px -1px 27px -10px rgba(0,0,0.75);
+	font-size: 55px;
+	font-weight: lighter;
+}
+
+.trivia-sup{
+/* background-color: gray; */
+  z-index: 5;
+  width: 100%;
+	left: 10%;
+}
+
+#T{
+	text-align: center;
+	z-index: 1;
+}
+
+.btn.btn-info{
+	position: absolute;
+	z-index: 7;
+	margin-left: 75%;
+	margin-top: 53%;
+	width: 10%;
+	height: 70px;
+	background-color:  #4edeee;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	font-size: 30px;
+}
+
+.btncarrera{
+  margin-top: 5%;
+}
+
+#resultados{
+  left: 80%;
+  margin-top: 60%;
+}
+
+.iconostrivia{
+	left: 65%;
+}
+
+/* la barrita pedorra <3 */
+.wrap{
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 4.5%;
+  z-index: 10;
+  width: 100%;
+}
+
+.line{
+  width: 500px;
+  height: 10px;
+  background: #d8dfe5;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.step{
+  width: 0px;
+  height: 10px;
+  background: #4edeee;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.flag{
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+	line-height: 76px;
+  border-radius: 50%;
+  /* text-align: center; */
+  position: absolute;
+  top: -8px;
+  background: #4edeee;
+  z-index: 10;
+}
+
+.next{
+  margin-top: 1500px;
+}
+
+.btn{
+	margin: 130px 20px;
+}
+
+/*---------- menu carreras--------- */
+
+h2{
+
+}
+
+.menu_carreras{
+	margin-top: 100vh;
+}
+
+.menu_carreras_1{
+	margin-top: 40vh;
+}
+
+
+.carreras_principal2{
+	margin-bottom: 30vh;
+}
+
+.btn{
+	margin: 130px 20px;
+}
+
+.menu_lista{
+	margin-left: 10%;
+	margin-top: 5%;
+}
+.menu_lista nav ul{
+	list-style: none;
+}
+.menu_lista li{
+	margin-top: 30px;
+	margin-right: 2%;
+	float: left;
+	list-style:none;
+}
+.menu_lista li a{
+	text-decoration: none;
+}
+
+#li_selected{
+	margin-top: 0;
+}
+
+.btnmenu{
+	padding: 30px;
+	padding-left: 42px;
+	padding-right: 42px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	background: #F7F7F7;
+	-webkit-box-shadow: 2px -9px 27px -11px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px -9px 27px -11px rgba(0,0,0,0.75);
+	box-shadow: 2px -9px 27px -11px rgba(0,0,0,0.75);
+}
+
+.btnmenu_selected{
+	padding: 30px;
+	padding-top: 60px;
+	padding-left: 42px;
+	padding-right: 42px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	background:	#E2E2E2;
+	-webkit-box-shadow: 2px -9px 27px -11px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px -9px 27px -11px rgba(0,0,0,0.75);
+	box-shadow: 2px -9px 27px -11px rgba(0,0,0,0.75);
+}
+
+.fondo_carreras1{
+	background:	#E2E2E2;
+	margin-left: 5%;
+	margin-bottom: 4%;
+	width: 92%;
+	padding-bottom: 25%;
+	padding-left: 42px;
+	padding-right: 42px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	-webkit-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+}
+
+.fondo_carreras_n{
+	background-image: url(../images/nutrifondo.png);
+/*	background-size: 1500px;
+	background-size: 1400px 900px;*/
+	margin-left: 5%;
+	margin-bottom: 4%;
+	width: 92%;
+	padding-bottom: 35%;
+	padding-left: 42px;
+	padding-right: 42px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	-webkit-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+}
+
+.fondo_carreras_m{
+	background-image: url(../images/medfondo.png);
+/*	background-size: 1500px;
+	background-size: 1400px 900px;*/
+	margin-left: 5%;
+	margin-bottom: 4%;
+	width: 92%;
+	padding-bottom: 35%;
+	padding-left: 42px;
+	padding-right: 42px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	-webkit-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+}
+.fondo_carreras_e{
+	background-image: url(../images/enferfondo.png);
+/*	background-size: 1500px;
+	background-size: 1400px 900px;*/
+	margin-left: 5%;
+	margin-bottom: 4%;
+	width: 92%;
+	padding-bottom: 35%;
+	padding-left: 42px;
+	padding-right: 42px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	-webkit-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+}
+.fondo_carreras_o{
+	background-image: url(../images/obsfondo.png);
+/*	background-size: 1500px;
+	background-size: 1400px 900px;*/
+	margin-left: 5%;
+	margin-bottom: 4%;
+	width: 92%;
+	padding-bottom: 35%;
+	padding-left: 42px;
+	padding-right: 42px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	-webkit-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+}
+.fondo_carreras_t{
+	background-image: url(../images/tpcfondo.png);
+/*	background-size: 1500px;
+	background-size: 1400px 900px;*/
+	margin-left: 5%;
+	margin-bottom: 10vh;
+	width: 92%;
+	padding-bottom: 35%;
+	padding-left: 42px;
+	padding-right: 42px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	-webkit-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+}
+
+.titulo_icono{
+	font-family: 'Roboto', sans-serif;
+	text-align: left;
+	font-size: 4em;
+	font-weight: bold;
+	margin-top: 2%;
+}
+.titulo_icono2{
+	font-family: 'Roboto', sans-serif;
+	margin-top: 2%;
+	text-align: center;
+	font-size: 4em;
+	font-weight: bold;
+}
+
+.menu_lista2 li{
+	margin-top: 5%;
+	margin-right: 3%;
+	float: left;
+	list-style:none;
+	margin-left: 4%;
+}
+.menu_lista2 li a{
+	text-decoration: none;
+}
+
+.titulo_carreras{
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 90px;
+  text-align: center;
+}
+/*-------------POPUPS------------------*/
+
+
+.btn-planestudio-n{
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	background: red;
+}
+
+.btn-teoricas-n{
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	background: red;
+	margin-top: 10%;
+}
+
+.btn-duracion-n{
+	margin-left: 40%;
+	border-radius: 40%;
+	height: 50px;
+	width: 50px;
+	background: red;
+}
+
+
+.btn-planestudio-m{
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	background: red;
+}
+
+.btn-teoricas-m{
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	background: red;
+	margin-top: 10%;
+}
+
+.btn-duracion-m{
+	margin-left: 40%;
+	border-radius: 40%;
+	height: 50px;
+	width: 50px;
+	background: red;
+}
+
+.btn-planestudio-e{
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	background: red;
+}
+
+.btn-teoricas-e{
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	background: red;
+	margin-top: 10%;
+}
+
+.btn-duracion-e{
+	margin-left: 40%;
+	border-radius: 40%;
+	height: 50px;
+	width: 50px;
+	background: red;
+}
+
+
+.btn-planestudio-o{
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	background: red;
+}
+
+.btn-teoricas-o{
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	background: red;
+	margin-top: 10%;
+}
+
+.btn-duracion-o{
+	margin-left: 40%;
+	border-radius: 40%;
+	height: 50px;
+	width: 50px;
+	background: red;
+}
+
+.btn-planestudio-t{
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	background: red;
+}
+
+.btn-teoricas-t{
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	background: red;
+	margin-top: 10%;
+}
+
+.btn-duracion-t{
+	margin-left: 40%;
+	border-radius: 40%;
+	height: 50px;
+	width: 50px;
+	background: red;
+}
+
+.flecha_der{
+	position: absolute;
+	z-index: 7;
+    width: 15%;
+    margin-top: -17%;
+    margin-left: 75%;
+}
+
+.flecha_der img{
+	width: 100%;
+}
+
+.flecha_iz{
+	position: absolute;
+	z-index: 7;
+    width: 15%;
+    margin-top: -17%;
+    margin-left: 10%;
+}
+
+.flecha_iz img{
+	width: 100%;
+}
+
+.boton_cerrar{
+	width: 4%;
+}
+
+.boton_cerrar img{
+    width: 2.5%;
+    position: absolute;
+    z-index: 10;
+    right: 1%;
+    top: 10%;
+}
+
+
+
+.planestudios_nutricion, .teoricas_nutricion, .duracion_nutricion{
+	background: #F7F7F7;
+	position: absolute;
+	z-index: 4;
+	border-radius: 50px;
+	-webkit-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	right: 0;
+	top: 0;
+    margin-right: -3em;
+    width: 40%;
+    height: 117em;	
+}
+
+.planestudios_medicina, .teoricas_medicina, .duracion_medicina{
+	background: #F7F7F7;
+	position: absolute;
+	z-index: 4;
+	border-radius: 50px;
+	-webkit-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	right: 0;
+	top: 0;
+    margin-right: -3em;
+    width: 40%;
+    height: 117em;		
+}
+
+
+ .planestudios_enfermeria, .teoricas_enfermeria, .duracion_enfermeria{
+ 	background: #F7F7F7;
+	position: absolute;
+	z-index: 4;
+	border-radius: 50px;
+	-webkit-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	right: 0;
+	top: 0;
+    margin-right: -3em;
+    width: 40%;
+    height: 117em;		
+ }
+
+ .planestudios_obstetricia, .teoricas_obstetricia, .duracion_obstetricia{
+ 	background: #F7F7F7;
+	position: absolute;
+	z-index: 4;
+	border-radius: 50px;
+	-webkit-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	right: 0;
+	top: 0;
+    margin-right: -3em;
+    width: 40%;
+    height: 117em;		
+ }
+
+  .planestudios_tpc, .teoricas_tpc, .duracion_tpc{
+ 	background: #F7F7F7;
+	position: absolute;
+	z-index: 4;
+	border-radius: 50px;
+	-webkit-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	box-shadow: 1px 16px 37px -7px rgba(0,0,0,0.75);
+	right: 0;
+	top: 0;
+    margin-right: -3em;
+    width: 40%;
+    height: 117em;	
+ }
+
+.popups{
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	font-size: 35px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.duracion_icon {
+	width: 20%;
+	margin-left: 40%;
+}
+
+.duracion_icon img {
+	width: 100%;
+}
+
+.planes_icon {
+	width: 40%;
+	margin-left: 30%;
+}
+
+.planes_icon img {
+	width: 100%;
+}
+
