@@ -7,10 +7,13 @@ $(document).ready(function(){
   $(".rta1").hide();  $(".rta2").hide();  $(".rta3").hide();  $(".rta4").hide();  $(".rta5").hide(); $(".rta6").hide();  $(".rta7").hide(); $(".rta8").hide();  $(".rta9").hide(); $(".rta10").hide();
 
   //arranca seccion trivia
-  $("#go").click(function(event){
-    $("#w").hide();  $("#T").show();
+  $("#go").click(function(e){
+    $("#w").slideUp();   $("#T").slideUp();   $("#T").show();
+    e.preventDefault();
   });
-  // arranca la 1ra pregunta
+  // escondo rta y explicaciones
+  $("#rta1").hide(); $("#exp1").hide();   $("#rta2").hide(); $("#exp2").hide();   $("#rta3").hide(); $("#exp3").hide();   $("#rta4").hide(); $("#exp4").hide();  $("#rta5").hide(); $("#exp5").hide();  $("#rta6").hide(); $("#exp6").hide();  $("#rta7").hide(); $("#exp7").hide();  $("#rta8").hide(); $("#exp8").hide(); $("#rta9").hide(); $("#exp9").hide();   $("#rta10").hide(); $("#exp10").hide();  $("#rta11").hide(); $("#exp11").hide();  $("#rta12").hide(); $("#exp12").hide();   $("#rta13").hide(); $("#exp13").hide();   $("#rta14").hide(); $("#exp14").hide();  $("#rta15").hide(); $("#exp15").hide();  $("#rta16").hide(); $("#exp16").hide();  $("#rta17").hide(); $("#exp17").hide();  $("#rta18").hide(); $("#exp18").hide();  $("#rta19").hide(); $("#exp19").hide();  $("#rta20").hide(); $("#exp20").hide();
+   // arranca la 1ra pregunta
   $("#hacertrivia").click(function(event){
     sumo();
   });
@@ -21,92 +24,163 @@ $(document).ready(function(){
   // veo resultados
   $("#resultados").click(function(){
     $(".trivia10").hide();
+     $(".wrap").hide();
     $(".resultado").show();
   });
 
+// deslizado a otra seccion (trivia/carreras)
+$(".sec").on('click', function(event) {
 
-  // sumo coincidencias
+  if (this.hash !== "") {
+    event.preventDefault();
+    var hash = this.hash;
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+
+      //numero de velocidad
+    }, 400, function(){
+
+      window.location.hash = hash;
+    });
+  }
+});
+
+  // sumo coincidencias   y ademas veo las rtas
   $("#boton1").click(function(){
     verdad1();
     $("#boton1").button('toggle');
-
+    $("#preg1").hide(); $("#img1").hide();
+    $("#rta1").show(); $("#exp1").show();
+    $("#boton1").hide();   $("#boton2").hide();
   });
   $("#boton3").click(function(){
     verdad2();
     $("#boton3").button('toggle');
-
+      $("#boton3").hide();   $("#boton4").hide();
+    $("#preg2").hide(); $("#img2").hide();
+    $("#rta2").show(); $("#exp2").show();
+    atr();
   });
   $("#boton5").click(function(){
     verdad3();
     $("#boton5").button('toggle');
-
+    $("#boton5").hide();   $("#boton6").hide();
+    $("#preg3").hide(); $("#img3").hide();
+    $("#rta3").show(); $("#exp3").show();
+    atr();
   });
   $("#boton7").click(function(){
     verdad4();
+    $("#boton7").hide();   $("#boton8").hide();
     $("#boton7").button('toggle');
-
+    $("#preg4").hide(); $("#img4").hide();
+    $("#rta4").show(); $("#exp4").show();
   });
   $("#boton9").click(function(){
     verdad5();
     $("#boton9").button('toggle');
+      $("#boton9").hide();   $("#boton10").hide();
+    $("#preg5").hide(); $("#img5").hide();
+    $("#rta5").show(); $("#exp5").show();
 
   });
   $("#boton11").click(function(){
     verdad6();
     $("#boton11").button('toggle');
-
+    $("#boton11").hide();   $("#boton12").hide();
+    $("#preg6").hide(); $("#img6").hide();
+    $("#rta6").show(); $("#exp6").show();
+    atr();
   });
   $("#boton13").click(function(){
     verdad7();
     $("#boton13").button('toggle');
-
+      $("#boton13").hide();   $("#boton14").hide();
+    $("#preg7").hide(); $("#img7").hide();
+    $("#rta7").show(); $("#exp7").show();
   });
   $("#boton15").click(function(){
     verdad8();
     $("#boton15").button('toggle');
-
+      $("#boton15").hide();   $("#boton16").hide();
+    $("#preg8").hide(); $("#img8").hide();
+    $("#rta8").show(); $("#exp8").show();
   });
   $("#boton17").click(function(){
     verdad9();
     $("#boton17").button('toggle');
-
+      $("#boton17").hide();   $("#boton18").hide();
+    $("#preg9").hide(); $("#img9").hide();
+    $("#rta9").show(); $("#exp9").show();
+     atr();
   });
   $("#boton19").click(function(){
     verdad10();
     $("#boton19").button('toggle');
-
+      $("#boton19").hide();   $("#boton20").hide();
+    $("#preg10").hide(); $("#img10").hide();
+    $("#rta10").show(); $("#exp10").show();
+    atr();
   });
 
   $("#boton2").click(function(){
     mito1();
+    $("#preg1").hide(); $("#img1").hide();
+      $("#boton1").hide();   $("#boton2").hide();
+    $("#rta1").show(); $("#exp1").show();
+    atr();
   });
   $("#boton4").click(function(){
     mito2();
+      $("#boton3").hide();   $("#boton4").hide();
+    $("#preg2").hide(); $("#img2").hide();
+    $("#rta2").show(); $("#exp2").show();
   });
   $("#boton6").click(function(){
     mito3();
+  $("#boton5").hide();   $("#boton6").hide();
+    $("#preg3").hide(); $("#img3").hide();
+    $("#rta3").show(); $("#exp3").show();
   });
   $("#boton8").click(function(){
     mito4();
+      $("#boton7").hide();   $("#boton8").hide();
+    $("#preg4").hide(); $("#img4").hide();
+    $("#rta4").show(); $("#exp4").show();
+    atr();
   });
   $("#boton10").click(function(){
     mito5();
+    $("#boton9").hide();   $("#boton10").hide();
+    $("#preg5").hide(); $("#img5").hide();
+    $("#rta5").show(); $("#exp5").show();
+    atr();
   });
   $("#boton12").click(function(){
     mito6();
-  });
+      $("#boton11").hide();   $("#boton12").hide();
+    $("#preg6").hide(); $("#img6").hide();
+    $("#rta6").show(); $("#exp6").show();  });
   $("#boton14").click(function(){
     mito7();
-  });
+      $("#boton13").hide();   $("#boton14").hide();
+    $("#preg7").hide(); $("#img7").hide();
+    $("#rta7").show(); $("#exp7").show();  atr(); });
   $("#boton16").click(function(){
     mito8();
-  });
+    $("#preg8").hide(); $("#img8").hide();
+      $("#boton15").hide();   $("#boton16").hide();
+    $("#rta8").show(); $("#exp8").show();  atr(); });
   $("#boton18").click(function(){
     mito9();
-  });
+      $("#boton17").hide();   $("#boton18").hide();
+    $("#preg9").hide(); $("#img9").hide();
+    $("#rta9").show(); $("#exp9").show();  });
   $("#boton20").click(function(){
     mito10();
-  });
+      $("#boton19").hide();   $("#boton20").hide();
+    $("#preg10").hide(); $("#img10").hide();
+    $("#rta10").show(); $("#exp10").show();  });
 
  //____________________CARRERAS______________________//
 
