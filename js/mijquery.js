@@ -45,6 +45,7 @@ $(".sec").on('click', function(event) {
   }
 });
 
+
   // sumo coincidencias   y ademas veo las rtas
   $("#boton1").click(function(){
     verdad1();
@@ -679,3 +680,14 @@ function mito10(){
      });
     };
 });
+
+var at=0; var hola = true;
+a=document.getElementById('aciertos');
+a.innerHTML=at;
+
+function atr(){
+  if(hola == true) {
+    at = at + 10 ;
+  }
+  a.innerHTML= at;
+}
