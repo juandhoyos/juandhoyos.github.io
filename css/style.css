@@ -251,7 +251,7 @@ h4{
 	position: absolute;
 	z-index: 7;
 	margin-left: 68%;
-	margin-top: 55%;
+	margin-top: 580px;
 	width: 180px;
 	height: 57px;
 	font-size: 22px;
@@ -317,13 +317,13 @@ h4{
 
 .flag{
   display: inline-block;
-  width: 33px;
-  height: 33px;
+  width: 22px;
+  height: 22px;
 line-height: 76px;
   border-radius: 50%;
   /* text-align: center; */
   position: absolute;
-  top: -8px;
+  top: -4px;
   background: #4edeee;
   z-index: 10;
 }
@@ -432,7 +432,7 @@ h2{
 	margin-left: 4%;
     margin-bottom: 4%;
     width: 91%;
-    padding-bottom: 40%;
+    padding-bottom: 47%;
     padding-left: 42px;
     padding-right: 42px;
 	border-top-left-radius: 20px;
@@ -451,7 +451,7 @@ h2{
 	margin-left: 4%;
     margin-bottom: 4%;
     width: 91%;
-    padding-bottom: 40%;
+    padding-bottom: 47%;
     padding-left: 42px;
     padding-right: 42px;
 	border-top-left-radius: 20px;
@@ -469,7 +469,7 @@ h2{
 	margin-left: 4%;
     margin-bottom: 4%;
     width: 91%;
-    padding-bottom: 40%;
+    padding-bottom: 47%;
     padding-left: 42px;
     padding-right: 42px;
 	border-top-left-radius: 20px;
@@ -487,7 +487,7 @@ h2{
 	margin-left: 4%;
     margin-bottom: 4%;
     width: 91%;
-    padding-bottom: 40%;
+    padding-bottom: 47%;
     padding-left: 42px;
     padding-right: 42px;
 	border-top-left-radius: 20px;
@@ -505,7 +505,7 @@ h2{
 	margin-left: 4%;
     margin-bottom: 4%;
     width: 91%;
-    padding-bottom: 40%;
+    padding-bottom: 47%;
     padding-left: 42px;
     padding-right: 42px;
 	border-top-left-radius: 20px;
@@ -553,18 +553,25 @@ h2{
 
 
 .btn-planestudio-n{
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	background: #007bff;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background: #007bff;
+    left: 85px;
+    top: 125px;
+    position: absolute;
+    z-index: 14;
 }
 
 .btn-teoricas-n{
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	background: #007bff;
-	margin-top: 10%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: #007bff;
+    left: 85px;
+    top: 300px;
+    position: absolute;
+    z-index: 14;
 }
 
 .btn-duracion-n{
@@ -577,18 +584,25 @@ h2{
 
 
 .btn-planestudio-m{
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	background: #007bff;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background: #007bff;
+    left: 85px;
+    top: 125px;
+    position: absolute;
+    z-index: 14;
 }
 
 .btn-teoricas-m{
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	background: #007bff;
-	margin-top: 10%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: #007bff;
+    left: 80px;
+    top: 310px;
+    position: absolute;
+    z-index: 14;
 }
 
 .btn-duracion-m{
@@ -600,18 +614,25 @@ h2{
 }
 
 .btn-planestudio-e{
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	background: #007bff;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background: #007bff;
+    left: 80px;
+    top: 290px;
+    position: absolute;
+    z-index: 14;
 }
 
 .btn-teoricas-e{
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	background: #007bff;
-	margin-top: 10%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: #007bff;
+    left: 85px;
+    top: 300px;
+    position: absolute;
+    z-index: 14;
 }
 
 .btn-duracion-e{
@@ -624,18 +645,25 @@ h2{
 
 
 .btn-planestudio-o{
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	background: #007bff;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background: #007bff;
+    left: 85px;
+    top: 125px;
+    position: absolute;
+    z-index: 14;
 }
 
 .btn-teoricas-o{
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	background: #007bff;
-	margin-top: 10%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: #007bff;
+    left: 85px;
+    top: 300px;
+    position: absolute;
+    z-index: 14;
 }
 
 .btn-duracion-o{
@@ -647,18 +675,25 @@ h2{
 }
 
 .btn-planestudio-t{
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	background: #007bff;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background: #007bff;
+    left: 85px;
+    top: 125px;
+    position: absolute;
+    z-index: 14;
 }
 
 .btn-teoricas-t{
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	background: #007bff;
-	margin-top: 10%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: #007bff;
+    left: 85px;
+    top: 300px;
+    position: absolute;
+    z-index: 14;
 }
 
 .btn-duracion-t{
@@ -675,6 +710,7 @@ h2{
     width: 15%;
     top: 65px;
     margin-left: 75%;
+/*  ESTA BUENO   -webkit-appearance: button;*/
 }
 
 .flecha_der img{
@@ -719,7 +755,7 @@ h2{
 	top: 0;
     margin-right: -3em;
     width: 40%;
-    height: 57.3em;	
+    height: 555px;	
 }
 
 .planestudios_medicina, .teoricas_medicina, .duracion_medicina{
@@ -734,7 +770,7 @@ h2{
 	top: 0;
     margin-right: -3em;
     width: 40%;
-    height: 57.3em;		
+    height: 555px;		
 }
 
 
@@ -750,7 +786,7 @@ h2{
 	top: 0;
     margin-right: -3em;
     width: 40%;
-    height: 57.3em;		
+    height: 555px;		
  }
 
  .planestudios_obstetricia, .teoricas_obstetricia, .duracion_obstetricia{
@@ -765,7 +801,7 @@ h2{
 	top: 0;
     margin-right: -3em;
     width: 40%;
-    height: 57.3em;		
+    height: 555px;		
  }
 
   .planestudios_tpc, .teoricas_tpc, .duracion_tpc{
@@ -780,7 +816,7 @@ h2{
 	top: 0;
     margin-right: -3em;
     width: 40%;
-    height: 57.3em;	
+    height: 555px;	
  }
 
 .popups{
@@ -817,4 +853,26 @@ h2{
 
 .teo_icon img{
 	width: 100%;
+}
+
+.volver_trivia{
+	position: absolute;
+	z-index: 6;
+	left: 90px;
+	top: 100vh;
+}
+
+.btn_volver{
+	background-color: #4edeee;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 2px -1px 27px -10px rgba(0,0,0.75);
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    -webkit-appearance: button;
+    text-decoration: none;
+    color: white;
 }
