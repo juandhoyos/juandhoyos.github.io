@@ -30,7 +30,7 @@
 					$(`<div class='wrap'>
 					        <div class="line"></div>
 					        <p class="step"></p>
-					         <button class='next btn btn-info' name='next'>Next</button>
+					         <button class='next btn btn-info' name='next'>Siguiente</button>
 
 					    </div> `).appendTo(document.body);
 

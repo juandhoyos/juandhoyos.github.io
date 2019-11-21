@@ -180,7 +180,7 @@ $(".sec").on('click', function(event) {
     mito10();
       $("#boton19").hide();   $("#boton20").hide();
     $("#preg10").hide(); $("#img10").hide();
-    $("#rta10").show(); $("#exp10").show(); });
+    $("#rta10").show(); $("#exp10").show();  });
 
  //____________________CARRERAS______________________//
 
