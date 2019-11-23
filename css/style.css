@@ -272,8 +272,8 @@ h4{
 }
 
 #resultados{
-  left: 50%;
-  margin-top: 35%;
+  left: 80px;
+  top: 160px;
   width: 180px;
   height: 57px;
 }
@@ -289,7 +289,7 @@ h4{
 /* la barrita pedorra <3 */
 .wrap{
   position: absolute;
-  margin-left: 5%;
+  margin-left: 7%;
   margin-top: 4.5%;
   z-index: 10;
   width: 100%;
@@ -297,16 +297,16 @@ h4{
 
 .line{
   width: 250px;
-  height: 10px;
+  height: 9px;
   background: #d8dfe5;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 2px;
 }
 
 .step{
   width: 0px;
-  height: 10px;
+  height: 9px;
   background: #4edeee;
   position: absolute;
   left: 0;
@@ -575,11 +575,14 @@ h2{
 }
 
 .btn-duracion-n{
-	margin-left: 40%;
 	border-radius: 50%;
 	height: 50px;
 	width: 50px;
 	background: #007bff;
+    right: 404px;
+    top: 76px;
+    position: absolute;
+    z-index: 14;
 }
 
 
@@ -606,11 +609,14 @@ h2{
 }
 
 .btn-duracion-m{
-	margin-left: 40%;
 	border-radius: 50%;
 	height: 50px;
 	width: 50px;
 	background: #007bff;
+    right: 404px;
+    top: 76px;
+    position: absolute;
+    z-index: 14;
 }
 
 .btn-planestudio-e{
@@ -618,8 +624,8 @@ h2{
     height: 60px;
     width: 60px;
     background: #007bff;
-    left: 80px;
-    top: 290px;
+    left: 85px;
+    top: 125px;
     position: absolute;
     z-index: 14;
 }
@@ -636,11 +642,14 @@ h2{
 }
 
 .btn-duracion-e{
-	margin-left: 40%;
 	border-radius: 50%;
 	height: 50px;
 	width: 50px;
 	background: #007bff;
+    right: 404px;
+    top: 76px;
+    position: absolute;
+    z-index: 14;
 }
 
 
@@ -667,11 +676,14 @@ h2{
 }
 
 .btn-duracion-o{
-	margin-left: 40%;
 	border-radius: 50%;
 	height: 50px;
 	width: 50px;
 	background: #007bff;
+    right: 404px;
+    top: 76px;
+    position: absolute;
+    z-index: 14;
 }
 
 .btn-planestudio-t{
@@ -697,11 +709,14 @@ h2{
 }
 
 .btn-duracion-t{
-	margin-left: 40%;
 	border-radius: 50%;
 	height: 50px;
 	width: 50px;
 	background: #007bff;
+    right: 404px;
+    top: 76px;
+    position: absolute;
+    z-index: 14;
 }
 
 .flecha_der{

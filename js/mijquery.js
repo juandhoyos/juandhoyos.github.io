@@ -11,6 +11,16 @@ $(document).ready(function(){
     $("#w").slideUp();   $("#T").slideUp();   $("#T").show();
     e.preventDefault();
   });
+  //arranca seccion trivia tocando el fondo
+  $("#fotowelcome").click(function(e){
+    $("#w").slideUp();   $("#T").slideUp();   $("#T").show();
+    e.preventDefault();
+  });  
+  //arranca seccion trivia con titulo
+  $("#h").click(function(e){
+    $("#w").slideUp();   $("#T").slideUp();   $("#T").show();
+    e.preventDefault();
+  });  
   // escondo rta y explicaciones
   $("#rta1").hide(); $("#exp1").hide();   $("#rta2").hide(); $("#exp2").hide();   $("#rta3").hide(); $("#exp3").hide();   $("#rta4").hide(); $("#exp4").hide();  $("#rta5").hide(); $("#exp5").hide();  $("#rta6").hide(); $("#exp6").hide();  $("#rta7").hide(); $("#exp7").hide();  $("#rta8").hide(); $("#exp8").hide(); $("#rta9").hide(); $("#exp9").hide();   $("#rta10").hide(); $("#exp10").hide();  $("#rta11").hide(); $("#exp11").hide();  $("#rta12").hide(); $("#exp12").hide();   $("#rta13").hide(); $("#exp13").hide();   $("#rta14").hide(); $("#exp14").hide();  $("#rta15").hide(); $("#exp15").hide();  $("#rta16").hide(); $("#exp16").hide();  $("#rta17").hide(); $("#exp17").hide();  $("#rta18").hide(); $("#exp18").hide();  $("#rta19").hide(); $("#exp19").hide();  $("#rta20").hide(); $("#exp20").hide();
    // arranca la 1ra pregunta
