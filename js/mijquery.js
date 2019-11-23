@@ -674,22 +674,24 @@ function mito10(){
 
  // desactivar el zoom
 
-(function($) {
-    $.fn.nodoubletapzoom = function() {
-     $(this).bind('touchstart', function preventZoom(e) {
-     var t2 = e.timeStamp
-      , t1 = $(this).data('lastTouch') || t2
-      , dt = t2 - t1
-      , fingers = e.originalEvent.touches.length;
-     $(this).data('lastTouch', t2);
-     if (!dt || dt > 500 || fingers > 1) return; // not double-tap
+// (function($) {
+//     $.fn.nodoubletapzoom = function() {
+//      $(this).bind('touchstart', function preventZoom(e) {
+//      var t2 = e.timeStamp
+//       , t1 = $(this).data('lastTouch') || t2
+//       , dt = t2 - t1
+//       , fingers = e.originalEvent.touches.length;
+//      $(this).data('lastTouch', t2);
+//      if (!dt || dt > 500 || fingers > 1) return; // not double-tap
 
-     e.preventDefault(); // double tap - prevent the zoom
-     // also synthesize click events we just swallowed up
-     $(this).trigger('click').trigger('click');
-     });
-    };
-});
+//      e.preventDefault(); // double tap - prevent the zoom
+//      // also synthesize click events we just swallowed up
+//      $(this).trigger('click').trigger('click');
+//      });
+//     };
+// });
+
+
 
 var at=0; var hola = true;
 a=document.getElementById('aciertos');
