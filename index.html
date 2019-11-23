@@ -9,6 +9,8 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/screenfull.js"></script>
   <script type="text/javascript" src="js/jQuery.min.js"></script>
   <script src="js/progress.plugin.js"></script>
 
@@ -19,29 +21,77 @@
   <div class="row trivia-sup">
 
       <!-- <h2 id="coincidencias">cuenta</h2> -->
-      <script>
-        $.progress({
-          step : 10,
-          line_w : 650,
+    <script>
+      $.progress({
+      step : 10,
+      line_w : 650,
+       });
 
-        });
+      //double tap zoom turn off
+
+      var lastTouchEnd = 0;
+      document.addEventListener('touchend', function (event) {
+      var now = (new Date()).getTime();
+      if (now - lastTouchEnd <= 300) {
+      event.preventDefault();
+      }
+      lastTouchEnd = now;
+      }, false);
 
 
-        var lastTouchEnd = 0;
-        document.addEventListener('touchend', function (event) {
-        var now = (new Date()).getTime();
-        if (now - lastTouchEnd <= 300) {
-        event.preventDefault();
+      //scrennfull
+
+    $(function () {
+      $('#supported').text('Supported/allowed: ' + !!screenfull.isEnabled);
+
+      if (!screenfull.isEnabled) {
+        return false;
+      } else {
+        screenfull.request();
+      }
+      $('#request2').click(function (e) {
+        screenfull.request();
+        $(".container").hide();
+      });
+
+      $('#demo-img').click(function () {
+        screenfull.toggle(this);
+      });
+
+      function fullscreenchange() {
+        var elem = screenfull.element;
+
+        $('#status').text('Is fullscreen: ' + screenfull.isFullscreen);
+
+        if (elem) {
+          $('#element').text('Element: ' + elem.localName + (elem.id ? '#' + elem.id : ''));
         }
-        lastTouchEnd = now;
-        }, false);
-      </script>
 
+        if (!screenfull.isFullscreen) {
+          $('#external-iframe').remove();
+          document.body.style.overflow = 'auto';
+        }
+      }
+
+      screenfull.on('change', fullscreenchange);
+
+      // Set the initial values
+      fullscreenchange();
+    });
+
+
+  </script>
+    
   </div>
 
   <!-- - INICIO - -->
   <section class="row welcome" id="w">
     <div class="col-md-12">
+    <section id="container" class="container">
+      <section>
+        <button id="request2">Request document</button>
+      </section>
+    </section>
      <img src="images/fondo.png" id="fotowelcome" alt="entrada facultad ciencias medicas">
       <div class="titulo">
         <h1 id="h"> TE INVITAMOS A CONOCER <br> LA FACULTAD DE CIENCIAS MÉDICAS </h1>
