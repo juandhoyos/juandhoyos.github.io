@@ -39,60 +39,57 @@
       }, false);
 
 
-      //scrennfull
+      //scrennfull para que ande, sacarle el important a los de abajo que impiden scrollear
 
-    $(function () {
-      $('#supported').text('Supported/allowed: ' + !!screenfull.isEnabled);
+      document.getElementsByTagName("html")[0].style.overflow = "hidden";
+      document.getElementsByTagName("html")[0].style.overflow = "auto";
 
-      if (!screenfull.isEnabled) {
-        return false;
-      } else {
-        screenfull.request();
-      }
-      $('#request2').click(function (e) {
-        screenfull.request();
-        $(".container").hide();
-      });
+    // $(function () {
+    //   $('#supported').text('Supported/allowed: ' + !!screenfull.isEnabled);
 
-      $('#demo-img').click(function () {
-        screenfull.toggle(this);
-      });
+    //   if (!screenfull.isEnabled) {
+    //     return false;
+    //   } else {
+    //     screenfull.request();
+    //   }
+    //   $('#request2').click(function (e) {
+    //     screenfull.request();
+    //     $(".container").hide();
+    //   });
 
-      function fullscreenchange() {
-        var elem = screenfull.element;
+    //   function fullscreenchange() {
+    //     var elem = screenfull.element;
 
-        $('#status').text('Is fullscreen: ' + screenfull.isFullscreen);
+    //     $('#status').text('Is fullscreen: ' + screenfull.isFullscreen);
 
-        if (elem) {
-          $('#element').text('Element: ' + elem.localName + (elem.id ? '#' + elem.id : ''));
-        }
+    //     if (elem) {
+    //       $('#element').text('Element: ' + elem.localName + (elem.id ? '#' + elem.id : ''));
+    //     }
 
-        if (!screenfull.isFullscreen) {
-          $('#external-iframe').remove();
-          document.body.style.overflow = 'auto';
-        }
-      }
+    //     if (!screenfull.isFullscreen) {
+    //       $('#external-iframe').remove();
+    //       document.body.style.overflow = 'auto';
+    //     }
+    //   }
 
-      screenfull.on('change', fullscreenchange);
+    //   screenfull.on('change', fullscreenchange);
 
-      // Set the initial values
-      fullscreenchange();
-    });
+    //   // Set the initial values
+    //   fullscreenchange();
+    // });
 
-
-  </script>
+    </script>
     
   </div>
 
   <!-- - INICIO - -->
+  
   <section class="row welcome" id="w">
     <div class="col-md-12">
-    <section id="container" class="container">
-      <section>
-        <button id="request2">Request document</button>
-      </section>
-    </section>
-     <img src="images/fondo.png" id="fotowelcome" alt="entrada facultad ciencias medicas">
+<!--     <div id="container" class="container">
+        <button id="request2">Pantalla completa</button>
+    </div>
+ -->     <img src="images/fondo.png" id="fotowelcome" alt="entrada facultad ciencias medicas">
       <div class="titulo">
         <h1 id="h"> TE INVITAMOS A CONOCER <br> LA FACULTAD DE CIENCIAS MÉDICAS </h1>
       </div>
