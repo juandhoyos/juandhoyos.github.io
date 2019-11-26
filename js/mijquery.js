@@ -11,7 +11,8 @@ $(document).ready(function(){
     $("#w").slideUp();   $("#T").slideUp();   $("#T").show();
     e.preventDefault();
   });
-    //arranca seccion trivia tocando el fondo
+
+      //arranca seccion trivia tocando el fondo
   $("#fotowelcome").click(function(e){
     $("#w").slideUp();   $("#T").slideUp();   $("#T").show();
     e.preventDefault();
@@ -236,6 +237,7 @@ $("#boton13").click(function(){
     $("#p10m").show();
     });
 
+ //____________________CARRERAS______________________//
 
 
  //____________________CARRERAS______________________//
@@ -562,6 +564,11 @@ $("#boton13").click(function(){
     $("#der-t-d").hide(); $("#der-t-p").hide(); $("#der-t-t").hide();
     $("#iz-t-d").hide(); $("#iz-t-p").hide(); $("#iz-t-t").hide();
   });
+
+
+
+
+
 
   //  ____________fin de jQuery___________________
 });
