@@ -276,18 +276,151 @@ h4{
 }
 
 #resultados{
-  left: 80px;
-  top: 160px;
   width: 180px;
   height: 57px;
+  margin-top: 37%;
+  margin-left: 45%;
+}
+.titulo_trivia2{
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  width: 50%;
+  margin-top: 7%;
+  margin-left: 25%;
+}
+.ver{
+  z-index: 1000;
+  position: fixed;
+  font-size: 50px;
+}
+.res{
+  z-index: 10;
+  height: 425px;
+  width: 39.4%;
+  padding-left: 0;
+  margin-left: 51%;
+  background-color: #e2e1e1;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+  border-bottom-left-radius: 45px;
 }
 
-#coincidencias, #aciertos{ 
-	font-size: 35px; z-index: 5;
-}
+  .comparo{
+  position: absolute;
+  background-color: #e2e1e1;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+  border-bottom-left-radius: 45px;
+  z-index: 10;
+  height: 70%;
+  width: 40%;
+  margin-left: 10%;
+  margin-top: 13%;
+  padding: 20px;
+  }
+  .pr h3{
+    font-size: 20px;
+    /* text-align: center; */
+  }
+  .comparo p{
+    font-size: 20px;
+    padding: 2.5px;
+  }
+  .bnml{
+  width: 25px;
+  position: absolute;
+  margin-left: 17%;
+  }
+  .bnml10{
+  width: 25px;
+  position: absolute;
+  margin-left: 14.5%;
+  }
+  .con1{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 200px;
+  }
+  .con2{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 245px;
+  }
+  .con3{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 290px;
+  }
+  .con4{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 335px;
+  }
+  .con5{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 380px;
+  }
+  .con6{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 425px;
+  }
+  .con7{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 470px;
+  }
+  .con8{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 515px;
+  }
+  .con9{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 560px;
+  }
+  .con10{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 605px;
+  }
+  #aciertos{
+    color: #28a745;
+    position: absolute;
+    font-size: 65px;
+    margin-left: 64%;
+    margin-top: 20%;
+    z-index: 10;
+    }
 
+  #ref{
+    z-index: 15;
+    margin-left: 152%;
+    margin-top: 55%;
+    position: absolute;
+    font-size: 50px;}
+    #obtuviste{
+    z-index: 15;
+    margin-left: 143%;
+    margin-top: 29%;
+    position: absolute;
+    font-size: 70px;
+  }
+
+
+
+.explicaciontrivia{position: absolute;}
 .iconostrivia{
-	left: 65%;
+left: 65%;
+position: absolute;
+margin-top: 19%;
 }
 
 /* la barrita pedorra <3 */

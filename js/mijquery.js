@@ -11,13 +11,8 @@ $(document).ready(function(){
     $("#w").slideUp();   $("#T").slideUp();   $("#T").show();
     e.preventDefault();
   });
-  //arranca seccion trivia tocando el fondo
+    //arranca seccion trivia tocando el fondo
   $("#fotowelcome").click(function(e){
-    $("#w").slideUp();   $("#T").slideUp();   $("#T").show();
-    e.preventDefault();
-  });  
-  //arranca seccion trivia con titulo
-  $("#h").click(function(e){
     $("#w").slideUp();   $("#T").slideUp();   $("#T").show();
     e.preventDefault();
   });  
@@ -37,7 +32,12 @@ $(document).ready(function(){
      $(".wrap").hide();
     $(".resultado").show();
   });
-
+ // oculto por defecto las cruces y ticks en Resultados
+ $("#cor1").hide();  $("#cor2").hide();  $("#cor3").hide();  $("#cor4").hide();  $("#cor5").hide();  $("#cor6").hide();  $("#cor7").hide();  $("#cor8").hide();  $("#cor9").hide();  $("#cor10").hide();
+ $("#inc1").hide();  $("#inc2").hide();  $("#inc3").hide();  $("#inc4").hide();  $("#inc5").hide();  $("#inc6").hide();  $("#inc7").hide();  $("#inc8").hide();  $("#inc9").hide();  $("#inc10").hide();
+ // oculto por defecto las coincidencias en la pantalla de Resultados
+ $("#p1m").hide(); $("#p2m").hide(); $("#p3m").hide(); $("#p4m").hide(); $("#p5m").hide(); $("#p6m").hide(); $("#p7m").hide(); $("#p8m").hide(); $("#p9m").hide(); $("#p10m").hide();
+ $("#p1v").hide(); $("#p2v").hide(); $("#p3v").hide(); $("#p4v").hide(); $("#p5v").hide(); $("#p6v").hide(); $("#p7v").hide(); $("#p8v").hide(); $("#p9v").hide(); $("#p10v").hide();
 // deslizado a otra seccion (trivia/carreras)
 $(".sec").on('click', function(event) {
 
@@ -55,7 +55,6 @@ $(".sec").on('click', function(event) {
   }
 });
 
-
   // sumo coincidencias   y ademas veo las rtas
   $("#boton1").click(function(){
     verdad1();
@@ -63,6 +62,8 @@ $(".sec").on('click', function(event) {
     $("#preg1").hide(); $("#img1").hide();
     $("#rta1").show(); $("#exp1").show();
     $("#boton1").hide();   $("#boton2").hide();
+    $("#inc1").show();
+    $("#p1v").show();
   });
   $("#boton3").click(function(){
     verdad2();
@@ -71,6 +72,8 @@ $(".sec").on('click', function(event) {
     $("#preg2").hide(); $("#img2").hide();
     $("#rta2").show(); $("#exp2").show();
     atr();
+    $("#cor2").show();
+    $("#p2v").show();
   });
   $("#boton5").click(function(){
     verdad3();
@@ -79,6 +82,8 @@ $(".sec").on('click', function(event) {
     $("#preg3").hide(); $("#img3").hide();
     $("#rta3").show(); $("#exp3").show();
     atr();
+    $("#cor3").show();
+    $("#p3v").show();
   });
   $("#boton7").click(function(){
     verdad4();
@@ -86,6 +91,8 @@ $(".sec").on('click', function(event) {
     $("#boton7").button('toggle');
     $("#preg4").hide(); $("#img4").hide();
     $("#rta4").show(); $("#exp4").show();
+    $("#inc4").show();
+    $("#p4v").show();
   });
   $("#boton9").click(function(){
     verdad5();
@@ -93,7 +100,8 @@ $(".sec").on('click', function(event) {
       $("#boton9").hide();   $("#boton10").hide();
     $("#preg5").hide(); $("#img5").hide();
     $("#rta5").show(); $("#exp5").show();
-
+    $("#inc5").show();
+$("#p5v").show();
   });
   $("#boton11").click(function(){
     verdad6();
@@ -102,63 +110,81 @@ $(".sec").on('click', function(event) {
     $("#preg6").hide(); $("#img6").hide();
     $("#rta6").show(); $("#exp6").show();
     atr();
+    $("#cor6").show();
+    $("#p6v").show();
   });
-  $("#boton13").click(function(){
+$("#boton13").click(function(){
     verdad7();
     $("#boton13").button('toggle');
-      $("#boton13").hide();   $("#boton14").hide();
+    $("#boton13").hide();   $("#boton14").hide();
     $("#preg7").hide(); $("#img7").hide();
     $("#rta7").show(); $("#exp7").show();
+    $("#inc7").show();
+    $("#p7v").show();
   });
-  $("#boton15").click(function(){
+    $("#boton15").click(function(){
     verdad8();
     $("#boton15").button('toggle');
-      $("#boton15").hide();   $("#boton16").hide();
+    $("#boton15").hide();   $("#boton16").hide();
     $("#preg8").hide(); $("#img8").hide();
     $("#rta8").show(); $("#exp8").show();
+    $("#inc8").show();
+    $("#p8v").show();
   });
   $("#boton17").click(function(){
     verdad9();
     $("#boton17").button('toggle');
-      $("#boton17").hide();   $("#boton18").hide();
+    $("#boton17").hide();   $("#boton18").hide();
     $("#preg9").hide(); $("#img9").hide();
     $("#rta9").show(); $("#exp9").show();
-     atr();
+    atr();
+    $("#cor9").show();
+    $("#p9v").show();
   });
   $("#boton19").click(function(){
     verdad10();
     $("#boton19").button('toggle');
-      $("#boton19").hide();   $("#boton20").hide();
+    $("#boton19").hide();   $("#boton20").hide();
     $("#preg10").hide(); $("#img10").hide();
     $("#rta10").show(); $("#exp10").show();
     atr();
+    $("#cor10").show();
+    $("#p10v").show();
   });
-
+//botones de mito
   $("#boton2").click(function(){
     mito1();
     $("#preg1").hide(); $("#img1").hide();
-      $("#boton1").hide();   $("#boton2").hide();
+    $("#boton1").hide();   $("#boton2").hide();
     $("#rta1").show(); $("#exp1").show();
     atr();
+    $("#cor1").show();
+    $("#p1m").show();
   });
   $("#boton4").click(function(){
     mito2();
-      $("#boton3").hide();   $("#boton4").hide();
+    $("#boton3").hide();   $("#boton4").hide();
     $("#preg2").hide(); $("#img2").hide();
     $("#rta2").show(); $("#exp2").show();
+    $("#inc2").show();
+    $("#p2m").show();
   });
   $("#boton6").click(function(){
     mito3();
-  $("#boton5").hide();   $("#boton6").hide();
+    $("#boton5").hide();   $("#boton6").hide();
     $("#preg3").hide(); $("#img3").hide();
     $("#rta3").show(); $("#exp3").show();
+    $("#inc3").show();
+    $("#p3m").show();
   });
   $("#boton8").click(function(){
     mito4();
-      $("#boton7").hide();   $("#boton8").hide();
+    $("#boton7").hide();   $("#boton8").hide();
     $("#preg4").hide(); $("#img4").hide();
     $("#rta4").show(); $("#exp4").show();
     atr();
+    $("#cor4").show();
+      $("#p4m").show();
   });
   $("#boton10").click(function(){
     mito5();
@@ -166,32 +192,50 @@ $(".sec").on('click', function(event) {
     $("#preg5").hide(); $("#img5").hide();
     $("#rta5").show(); $("#exp5").show();
     atr();
+    $("#cor5").show();
+    $("#p5m").show();
   });
   $("#boton12").click(function(){
     mito6();
-      $("#boton11").hide();   $("#boton12").hide();
+    $("#boton11").hide();   $("#boton12").hide();
     $("#preg6").hide(); $("#img6").hide();
-    $("#rta6").show(); $("#exp6").show();  });
+    $("#rta6").show(); $("#exp6").show();
+    $("#inc6").show();
+    $("#p6m").show();
+   });
   $("#boton14").click(function(){
     mito7();
-      $("#boton13").hide();   $("#boton14").hide();
+    $("#boton13").hide();   $("#boton14").hide();
     $("#preg7").hide(); $("#img7").hide();
-    $("#rta7").show(); $("#exp7").show();  atr(); });
+    $("#rta7").show(); $("#exp7").show();  atr();
+    $("#cor7").show();
+    $("#p7m").show();
+   });
   $("#boton16").click(function(){
     mito8();
     $("#preg8").hide(); $("#img8").hide();
-      $("#boton15").hide();   $("#boton16").hide();
-    $("#rta8").show(); $("#exp8").show();  atr(); });
+    $("#boton15").hide();   $("#boton16").hide();
+    $("#rta8").show(); $("#exp8").show();  atr();
+    $("#cor8").show();
+    $("#p8m").show();
+   });
   $("#boton18").click(function(){
     mito9();
-      $("#boton17").hide();   $("#boton18").hide();
+    $("#boton17").hide();   $("#boton18").hide();
     $("#preg9").hide(); $("#img9").hide();
-    $("#rta9").show(); $("#exp9").show();  });
+    $("#rta9").show(); $("#exp9").show();
+    $("#inc9").show();
+    $("#p9m").show();
+   });
   $("#boton20").click(function(){
     mito10();
-      $("#boton19").hide();   $("#boton20").hide();
+    $("#boton19").hide();   $("#boton20").hide();
     $("#preg10").hide(); $("#img10").hide();
-    $("#rta10").show(); $("#exp10").show();  });
+    $("#rta10").show(); $("#exp10").show();
+    $("#inc10").show();
+    $("#p10m").show();
+    });
+
 
  //____________________CARRERAS______________________//
 
