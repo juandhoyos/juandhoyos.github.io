@@ -571,7 +571,7 @@ var pag = 0;
 function sumo() {
   pag = pag + 1;
 
-  if(pag == 1){ $("#T").hide(); $(".trivia1").show(); $(".trivia-sup").show(); $(".wrap").show();}
+  if(pag == 1){ $("#T").fadeOut(); $(".trivia1").fadeIn(); $(".trivia-sup").fadeIn(); $(".wrap").fadeIn();}
   else if (pag == 2){ $("#T").hide();  $(".trivia1").hide();  $(".trivia2").show();}
   else if (pag == 3){ $(".trivia1").hide();  $(".trivia2").hide();  $(".trivia3").show();}
   else if (pag == 4){ $(".trivia1").hide();  $(".trivia2").hide();  $(".trivia3").hide();  $(".trivia4").show();}
@@ -580,171 +580,190 @@ function sumo() {
   else if (pag == 7){ $(".trivia1").hide();  $(".trivia2").hide();  $(".trivia3").hide();  $(".trivia4").hide();  $(".trivia5").hide();  $(".trivia6").hide();  $(".trivia7").show();}
   else if (pag == 8){ $(".trivia1").hide();  $(".trivia2").hide();  $(".trivia3").hide();  $(".trivia4").hide();  $(".trivia5").hide();  $(".trivia6").hide();  $(".trivia7").hide();  $(".trivia8").show();}
   else if (pag == 9){ $(".trivia1").hide();  $(".trivia2").hide();  $(".trivia3").hide();  $(".trivia4").hide(); $(".trivia5").hide();  $(".trivia6").hide();  $(".trivia7").hide();  $(".trivia8").hide(); $(".trivia9").show();}
-  else if (pag == 10){ $(".trivia1").hide();  $(".trivia2").hide();  $(".trivia3").hide();  $(".trivia4").hide();  $(".trivia5").hide(); $(".trivia6").hide();  $(".trivia7").hide(); $(".trivia8").hide();  $(".trivia9").hide(); $(".trivia10").show(); $(".next").hide();  }
+  else if (pag == 10){ $(".trivia1").hide(); $(".trivia2").hide();  $(".trivia3").hide();  $(".trivia4").hide();  $(".trivia5").hide(); $(".trivia6").hide();  $(".trivia7").hide(); $(".trivia8").hide();  $(".trivia9").hide(); $(".trivia10").show(); $(".next").hide();  }
 
 }
 
 
 // contador de las coincidencias en la trivia
 
-var cont=0;
+var m1=0; var m2=0; var m3=0;  var m4=0; var m5=0;  var m6=0; var m7=0; var m8=0; var m9=0; var m10=0;
+var v1=0; var v2=0; var v3=0;  var v4=0; var v5=0;  var v6=0; var v7=0; var v8=0; var v9=0; var v10=0;
 var ver1 = true; var ver2 = true; var ver3 = true; var ver4 = true; var ver5 = true; var ver6 = true; var ver7 = true;  var ver8 = true; var ver9 = true; var ver10 = true; var ver11 = true; var ver12 = true;var ver13 = true;var ver14 = true;var ver15 = true;var ver16 = true; var ver17 = true;var ver18 = true;var ver19 = true; var ver20 = true;
 var mit1 = true; var mit2 = true; var mit3 = true; var mit4 = true; var mit5 = true; var mit6 = true; var mit7 = true;  var mit8 = true; var mit9 = true; var mit10 = true; var mit11 = true; var mit12 = true;var mit13 = true;var mit14 = true;var mit15 = true;var mit16 = true; var mit17 = true;var mit18 = true;var mit19 = true; var mit20 = true;
-c=document.getElementById('coincidencias');
-c.innerHTML = cont;
+e1=document.getElementById('p1m');
+e1.innerHTML = m1;
+e2=document.getElementById('p2m');
+e2.innerHTML = m2;
+e3=document.getElementById('p3m');
+e3.innerHTML = m3;
+e4=document.getElementById('p4m');
+e4.innerHTML = m4;
+e5=document.getElementById('p5m');
+e5.innerHTML = m5;
+e6=document.getElementById('p6m');
+e6.innerHTML = m6;
+e7=document.getElementById('p7m');
+e7.innerHTML = m7;
+e8=document.getElementById('p8m');
+e8.innerHTML = m8;
+e9=document.getElementById('p9m');
+e9.innerHTML = m9;
+e10=document.getElementById('p10m');
+e10.innerHTML = m10;
+
+c1=document.getElementById('p1v');
+c1.innerHTML = v1;
+c2=document.getElementById('p2v');
+c2.innerHTML = v2;
+c3=document.getElementById('p3v');
+c3.innerHTML = v3;
+c4=document.getElementById('p4v');
+c4.innerHTML = v4;
+c5=document.getElementById('p5v');
+c5.innerHTML = v5;
+c6=document.getElementById('p6v');
+c6.innerHTML = v6;
+c7=document.getElementById('p7v');
+c7.innerHTML = v7;
+c8=document.getElementById('p8v');
+c8.innerHTML = v8;
+c9=document.getElementById('p9v');
+c9.innerHTML = v9;
+c10=document.getElementById('p10v');
+c10.innerHTML = v10;
 
 function verdad1(){
   if(ver1 == true){
-    cont = cont + 1;
+    v1 = v1 + 1;
   }
-  c.innerHTML = cont;
+  c1.innerHTML = v1 + 'personas';
 }
 function verdad2(){
   if(ver2 == true){
-    cont = cont + 1;
+    v2 = v2 + 1;
   }
-  c.innerHTML = cont;
+  c2.innerHTML = v2;
 }
 function verdad3(){
   if(ver3 == true){
-    cont = cont + 1;
+    v3 = v3 + 1;
   }
-  c.innerHTML = cont;
+  c3.innerHTML = v3;
 }
 function verdad4(){
   if(ver4 == true){
-    cont = cont + 1;
+    v4 = v4 + 1;
   }
-  c.innerHTML = cont;
+  c4.innerHTML = v4;
 }
 function verdad5(){
   if(ver5 == true){
-    cont = cont + 1;
+    v5 = v5 + 1;
   }
-  c.innerHTML = cont;
+  c5.innerHTML = v5;
 }
 function verdad6(){
   if(ver6 == true){
-    cont = cont + 1;
+    v6 = v6 + 1;
   }
-  c.innerHTML = cont;
+  c6.innerHTML = v6;
 }
 function verdad7(){
   if(ver7 == true){
-    cont = cont + 1;
+    v7 = v7 + 1;
   }
-  c.innerHTML = cont;
+  c7.innerHTML = v7;
 }
 function verdad8(){
   if(ver8 == true){
-    cont = cont + 1;
+    v8 = v8 + 1;
   }
-  c.innerHTML = cont;
+  c8.innerHTML = v8;
 }
 function verdad9(){
   if(ver9 == true){
-    cont = cont + 1;
+    v9 = v9 + 1;
   }
-  c.innerHTML = cont;
+  c9.innerHTML = v9;
 }
 function verdad10(){
   if(ver10 == true){
-    cont = cont + 1;
+    v10 = v10 + 1;
   }
-  c.innerHTML = cont;
+  c10.innerHTML = v10;
 }
 
 function mito1(){
   if(mit1 == true){
-    cont = cont + 1;
+    m1 = m1 + 1;
   }
-  c.innerHTML = cont;
+  e1.innerHTML = m1;
 }
 function mito2(){
   if(mit2 == true){
-    cont = cont + 1;
+    m2 = m2 + 1;
   }
-  c.innerHTML = cont;
+  e2.innerHTML = m2;
 }
 function mito3(){
   if(mit3 == true){
-    cont = cont + 1;
+    m3 = m3 + 1;
   }
-  c.innerHTML = cont;
+  e3.innerHTML = m3;
 }
 function mito4(){
   if(mit4 == true){
-    cont = cont + 1;
+    m4 = m4 + 1;
   }
-  c.innerHTML = cont;
+  e4.innerHTML = m4;
 }
 function mito5(){
   if(mit5 == true){
-    cont = cont + 1;
+    m5 = m5 + 1;
   }
-  c.innerHTML = cont;
+  e5.innerHTML = m5;
 }
 function mito6(){
   if(mit6 == true){
-    cont = cont + 1;
+    m6 = m6 + 1;
   }
-  c.innerHTML = cont;
+  e6.innerHTML = m6;
 }
 function mito7(){
   if(mit7 == true){
-    cont = cont + 1;
+    m7 = m7 + 1;
   }
-  c.innerHTML = cont;
+  e7.innerHTML = m7;
 }
 function mito8(){
   if(mit8 == true){
-    cont = cont + 1;
+    m8 = m8 + 1;
   }
-  c.innerHTML = cont;
+  e8.innerHTML = m8;
 }
 function mito9(){
   if(mit9 == true){
-    cont = cont + 1;
+    m9 = m9 + 1;
   }
-  c.innerHTML = cont;
+  e9.innerHTML = m9;
 }
 function mito10(){
   if(mit10 == true){
-    cont = cont + 1;
+    m10 = m10 + 1;
   }
-  c.innerHTML = cont;
+  e10.innerHTML = m10;
 }
 
-
-
- // desactivar el zoom
-
-// (function($) {
-//     $.fn.nodoubletapzoom = function() {
-//      $(this).bind('touchstart', function preventZoom(e) {
-//      var t2 = e.timeStamp
-//       , t1 = $(this).data('lastTouch') || t2
-//       , dt = t2 - t1
-//       , fingers = e.originalEvent.touches.length;
-//      $(this).data('lastTouch', t2);
-//      if (!dt || dt > 500 || fingers > 1) return; // not double-tap
-
-//      e.preventDefault(); // double tap - prevent the zoom
-//      // also synthesize click events we just swallowed up
-//      $(this).trigger('click').trigger('click');
-//      });
-//     };
-// });
-
-
+// porcentaje de aciertos
 
 var at=0; var hola = true;
 a=document.getElementById('aciertos');
-a.innerHTML=at;
+a.innerHTML=at + '%';
 
 function atr(){
   if(hola == true) {
     at = at + 10 ;
   }
-  a.innerHTML= at;
+  a.innerHTML= at + '%';
 }
