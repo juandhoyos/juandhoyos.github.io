@@ -284,12 +284,13 @@ h4{
 .titulo_trivia2{
   font-family: 'Roboto', sans-serif;
   color: black;
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   font-weight: bold;
   width: 50%;
   margin-top: 7%;
   margin-left: 25%;
+  z-index: 10;
 }
 .ver{
   z-index: 1000;
@@ -298,17 +299,26 @@ h4{
 }
 .res{
   z-index: 10;
-  height: 425px;
-  width: 39.4%;
-  padding-left: 0;
-  margin-left: 51%;
+      height: 425px;
+      width: 39.4%;
+      padding-left: 0;
+      margin-top: 13%;
+      margin-left: 3%;
+      margin-left: 3%;
+      position: absolute;
+      margin-left: 53%;
   background-color: #e2e1e1;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
   border-bottom-right-radius: 45px;
   border-bottom-left-radius: 45px;
 }
-
+.foto{
+    position: absolute;
+    z-index: 10;
+    width: 30px;
+    margin-left: 450px;
+    }
   .comparo{
   position: absolute;
   background-color: #e2e1e1;
@@ -888,7 +898,7 @@ h4{
     margin-left: 400px;
     margin-top: 605px;
   }
-  #aciertos{
+   #aciertos{
     color: #28a745;
     position: absolute;
     font-size: 65px;
