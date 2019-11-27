@@ -445,6 +445,13 @@ $("#Ir-a-carreras2").click(function(){
      $("#der-e-d").hide(); $("#der-e-p").hide(); $("#der-e-t").hide();
      $("#iz-e-d").hide(); $("#iz-e-p").hide(); $("#iz-e-t").hide();
 
+      $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").hide();
+      $(".enfer-ter-a").hide(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide();     
+      $(".tpc-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").hide();
+      $(".tpc-ter-a").hide();
+
+
+
        // ________plan de estudios__________
 
       $("#btn_plan_e").click(function(event){
@@ -459,7 +466,21 @@ $("#Ir-a-carreras2").click(function(){
         $(".btn-planestudio-e").hide(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".planestudios_enfermeria").hide(); $("#der-e-p").hide(); $("#iz-e-p").hide();$(".teoricas_enfermeria").show(); $("#der-e-t").show(); $("#iz-e-t").show();
       }); 
 
+      $("#dura_m").click(function(event){
+        $(".medi-ter-p").show(); $(".medi-ter-a").show(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide(); $(".tpc-ter-p").hide(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").hide();
+      }); 
 
+      $("#dura_e").click(function(event){
+        $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").show(); $(".enfer-ter-a").show(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide(); $(".tpc-ter-p").hide(); $(".tpc-ter-a").hide();
+      }); 
+
+      $("#dura_o").click(function(event){
+        $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".obs-ter-p").show(); $(".obs-ter-a").show(); $(".tpc-ter-p").hide(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").hide();
+      }); 
+
+      $("#dura_t").click(function(event){
+        $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide(); $(".tpc-ter-p").show(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").show();
+      }); 
 
       // ________teoricas y practicas__________
 
@@ -515,6 +536,8 @@ $("#Ir-a-carreras2").click(function(){
       $("#der-o-p").click(function(event){
        $(".btn-planestudio-o").hide(); $(".btn-teoricas-o").hide(); $(".btn-duracion-o").hide();   $(".planestudios_obstetricia").hide(); $("#der-o-p").hide(); $("#iz-o-p").hide();$(".teoricas_obstetricia").show(); $("#der-o-t").show(); $("#iz-o-t").show();
       }); 
+
+
 
 
 
