@@ -184,7 +184,7 @@ h4{
 }
 
 
-.btn.btn-success{
+.btn.btn-ver{
   position: absolute;
   z-index: 10;
   width: 35%;
@@ -198,9 +198,11 @@ h4{
   box-shadow: 2px -1px 27px -10px rgba(0,0,0.75);
   font-size: 28px;
   font-weight: lighter;
+  background-color: #1359cd;
+  color: white;
 }
 
-.btn.btn-danger{
+.btn.btn-mit{
   position: absolute;
   z-index: 10;
   margin-top: 47%;
@@ -216,6 +218,44 @@ h4{
   box-shadow: 2px -1px 27px -10px rgba(0,0,0.75);
   font-size: 28px;
   font-weight: lighter;
+  background-color: #1359cd;
+  color: white;
+}
+.verdad{
+  position: absolute;
+  width: 25px;
+  top: 198%;
+  right: 95%;
+}
+.mito{
+  position: absolute;
+  width: 25px;
+  top: 250%;
+  right: 95%;
+}
+.verdad3l{
+  position: absolute;
+  width: 25px;
+  top: 170%;
+  right: 95%;
+}
+.mito3l{
+  position: absolute;
+  width: 25px;
+  top: 210%;
+  right: 95%;
+}
+.verdad4l{
+  position: absolute;
+  width: 25px;
+  top: 127%;
+  right: 95%;
+}
+.mito4l{
+  position: absolute;
+  width: 25px;
+  top: 157%;
+  right: 95%;
 }
 
 .trivia-sup{
@@ -257,7 +297,7 @@ h4{
 #resultados{
   width: 180px;
   height: 57px;
-  margin-top: 37%;
+  margin-top: 150%;
   margin-left: 45%;
 }
 .titulo_trivia2{
