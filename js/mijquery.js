@@ -676,7 +676,7 @@ function verdad1(){
   if(ver1 == true){
     v1 = v1 + 1;
   }
-  c1.innerHTML = v1 + 'personas';
+  c1.innerHTML = v1;
 }
 function verdad2(){
   if(ver2 == true){
