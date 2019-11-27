@@ -50,8 +50,7 @@
 						$(this).next().prop("disabled",false);
 						_this.index += 1;
 						if(_this.index >= setting.step - 1){
-							_this.index = setting.step - 1;
-							$(this).prop("disabled",true);
+							_this.index = setting.step - 10;
 						}
 						$(this).parent().find(".step").stop().animate({
 							width : _this.index * _this.index_w,
