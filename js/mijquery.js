@@ -65,6 +65,9 @@ $(".sec").on('click', function(event) {
   }
 });
 
+  $("#Reiniciar").click(function(){
+  morir();
+});
       // sumo coincidencias   y ademas veo las rtas
   $("#boton1").click(function(){
     verdad1();
@@ -864,4 +867,43 @@ function atr(){
   }
 
   a.innerHTML= at + '%';
+}
+
+// Reinicio todo a la mierda
+
+function morir(){
+//reinicio de trivia
+   // voy al inicio
+   pag = 0;
+   $("#w").show();
+   // habilito botones again
+   $("#boton1").attr('disabled',false); $("#boton2").attr('disabled',false); $("#boton3").attr('disabled',false); $("#boton4").attr('disabled',false); $("#boton5").attr('disabled',false); $("#boton6").attr('disabled',false); $("#boton7").attr('disabled',false); $("#boton8").attr('disabled',false); $("#boton9").attr('disabled',false); $("#boton10").attr('disabled',false);
+   $("#boton11").attr('disabled',false); $("#boton12").attr('disabled',false); $("#boton13").attr('disabled',false); $("#boton14").attr('disabled',false); $("#boton15").attr('disabled',false); $("#boton16").attr('disabled',false); $("#boton17").attr('disabled',false); $("#boton18").attr('disabled',false); $("#boton19").attr('disabled',false); $("#boton20").attr('disabled',false);
+   $(".next").show();
+   // aparece lo que oculte en la experiencia
+   $("#preg1").show(); $("#img1").show(); $("#preg2").show(); $("#img2").show(); $("#preg3").show(); $("#img3").show();  $("#preg4").show(); $("#img4").show();  $("#preg5").show(); $("#img5").show();  $("#preg6").show(); $("#img6").show();  $("#preg7").show(); $("#img7").show();  $("#preg8").show(); $("#img8").show();  $("#preg9").show(); $("#img9").show();  $("#preg10").show(); $("#img10").show(); 
+   // aco lo fixed y todo basicamente
+   $(".trivia-sup").hide(); $(".wrap").hide(); $(".resultado").hide();$("#T").hide();
+   // no se ve ninguna pregunta
+   $(".trivia1").hide();  $(".trivia2").hide();  $(".trivia3").hide();  $(".trivia4").hide();  $(".trivia5").hide(); $(".trivia6").hide();  $(".trivia7").hide(); $(".trivia8").hide();  $(".trivia9").hide(); $(".trivia10").hide();
+   $(".rta1").hide();  $(".rta2").hide();  $(".rta3").hide();  $(".rta4").hide();  $(".rta5").hide(); $(".rta6").hide();  $(".rta7").hide(); $(".rta8").hide();  $(".rta9").hide(); $(".rta10").hide();
+  // escondo rta y explicaciones
+   $("#rta1").hide(); $("#exp1").hide();   $("#rta2").hide(); $("#exp2").hide();   $("#rta3").hide(); $("#exp3").hide();   $("#rta4").hide(); $("#exp4").hide();  $("#rta5").hide(); $("#exp5").hide();  $("#rta6").hide(); $("#exp6").hide();  $("#rta7").hide(); $("#exp7").hide();  $("#rta8").hide(); $("#exp8").hide(); $("#rta9").hide(); $("#exp9").hide();   $("#rta10").hide(); $("#exp10").hide();  $("#rta11").hide(); $("#exp11").hide();  $("#rta12").hide(); $("#exp12").hide();   $("#rta13").hide(); $("#exp13").hide();   $("#rta14").hide(); $("#exp14").hide();  $("#rta15").hide(); $("#exp15").hide();  $("#rta16").hide(); $("#exp16").hide();  $("#rta17").hide(); $("#exp17").hide();  $("#rta18").hide(); $("#exp18").hide();  $("#rta19").hide(); $("#exp19").hide();  $("#rta20").hide(); $("#exp20").hide();
+   // oculto por defecto las cruces y ticks en Resultados
+   $("#cor1").hide();  $("#cor2").hide();  $("#cor3").hide();  $("#cor4").hide();  $("#cor5").hide();  $("#cor6").hide();  $("#cor7").hide();  $("#cor8").hide();  $("#cor9").hide();  $("#cor10").hide();
+   $("#inc1").hide();  $("#inc2").hide();  $("#inc3").hide();  $("#inc4").hide();  $("#inc5").hide();  $("#inc6").hide();  $("#inc7").hide();  $("#inc8").hide();  $("#inc9").hide();  $("#inc10").hide();
+   // oculto por defecto las coincidencias en la pantalla de Resultados
+   $("#p1m").hide(); $("#p2m").hide(); $("#p3m").hide(); $("#p4m").hide(); $("#p5m").hide(); $("#p6m").hide(); $("#p7m").hide(); $("#p8m").hide(); $("#p9m").hide(); $("#p10m").hide();
+   $("#p1v").hide(); $("#p2v").hide(); $("#p3v").hide(); $("#p4v").hide(); $("#p5v").hide(); $("#p6v").hide(); $("#p7v").hide(); $("#p8v").hide(); $("#p9v").hide(); $("#p10v").hide();
+    //oculto team
+   $("#foto1").hide(); $("#foto2").hide(); $("#foto3").hide(); $("#foto4").hide(); $("#foto5").hide(); $("#foto6").hide(); $("#foto7").hide(); $("#foto8").hide(); $("#foto9").hide(); $("#foto10").hide();
+   //oculto todos los graficos
+   $("#0").show(); $("#10").hide(); $("#20").hide(); $("#30").hide(); $("#40").hide(); $("#50").hide(); $("#60").hide(); $("#70").hide(); $("#80").hide(); $("#90").hide(); $("#100").hide();
+   //oculto los bien/mal
+   $(".verdad").hide(); $(".verdad3l").hide(); $(".verdad4l").hide(); $(".mito").hide(); $(".mito3l").hide(); $(".mito4l").hide();
+
+
+
+//reinicio de carreras
+
 }
