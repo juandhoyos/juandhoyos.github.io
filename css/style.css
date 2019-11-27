@@ -1482,7 +1482,7 @@ h2{
 	position: absolute;
 	z-index: 15;
 	width: 5%;
-	top: 21px;
+	top: 20px;
  	left: 20px;
 }
 
@@ -1491,8 +1491,11 @@ h2{
 }
 
 .planes_icon {
+	position: absolute;
+	z-index: 15;
 	width: 10%;
- 	margin-left: 3%;
+	top: 40px;
+ 	left: 15px;
 }
 
 .planes_icon img {
@@ -1500,8 +1503,11 @@ h2{
 }
 
 .teo_icon {
+	position: absolute;
+	z-index: 15;
 	width: 5%;
-	margin-left: 3%;
+	top: 20px;
+ 	left: 20px;
 }
 
 .teo_icon img{
