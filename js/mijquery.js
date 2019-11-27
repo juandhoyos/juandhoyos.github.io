@@ -236,7 +236,16 @@ $("#boton13").click(function(){
     $("#inc10").show();
     $("#p10m").show();
     });
+//cuando voy a carreras saco a los tipitos
+  $("#Ir-a-carreras").click(function(){
 
+  $(".ver").hide();
+});
+$("#Ir-a-carreras2").click(function(){
+
+  $(".ver").hide();
+});
+  
  //____________________CARRERAS______________________//
 
 
