@@ -4,8 +4,10 @@ $(document).ready(function(){
  //escondo boton trivia
   $("#Ir-a-trivia").hide();
   $("#Ir-a-trivia").click(function(){
+   $(".ver").show();
   $("#Ir-a-trivia").hide();
   $("#resultados").show();
+    
   });
   // no se ve ninguna pregunta
   $(".trivia1").hide();  $(".trivia2").hide();  $(".trivia3").hide();  $(".trivia4").hide();  $(".trivia5").hide(); $(".trivia6").hide();  $(".trivia7").hide(); $(".trivia8").hide();  $(".trivia9").hide(); $(".trivia10").hide();
