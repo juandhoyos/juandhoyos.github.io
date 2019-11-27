@@ -39,7 +39,12 @@ $(document).ready(function(){
  // oculto por defecto las coincidencias en la pantalla de Resultados
  $("#p1m").hide(); $("#p2m").hide(); $("#p3m").hide(); $("#p4m").hide(); $("#p5m").hide(); $("#p6m").hide(); $("#p7m").hide(); $("#p8m").hide(); $("#p9m").hide(); $("#p10m").hide();
  $("#p1v").hide(); $("#p2v").hide(); $("#p3v").hide(); $("#p4v").hide(); $("#p5v").hide(); $("#p6v").hide(); $("#p7v").hide(); $("#p8v").hide(); $("#p9v").hide(); $("#p10v").hide();
-// deslizado a otra seccion (trivia/carreras)
+  //oculto team
+$("#foto1").hide(); $("#foto2").hide(); $("#foto3").hide(); $("#foto4").hide(); $("#foto5").hide(); $("#foto6").hide(); $("#foto7").hide(); $("#foto8").hide(); $("#foto9").hide(); $("#foto10").hide();
+//oculto todos los graficos
+$("#0").show(); $("#10").hide(); $("#20").hide(); $("#30").hide(); $("#40").hide(); $("#50").hide(); $("#60").hide(); $("#70").hide(); $("#80").hide(); $("#90").hide(); $("#100").hide();
+
+  // deslizado a otra seccion (trivia/carreras)
 $(".sec").on('click', function(event) {
 
   if (this.hash !== "") {
@@ -56,7 +61,7 @@ $(".sec").on('click', function(event) {
   }
 });
 
-  // sumo coincidencias   y ademas veo las rtas
+    // sumo coincidencias   y ademas veo las rtas
   $("#boton1").click(function(){
     verdad1();
     $("#boton1").button('toggle');
@@ -65,6 +70,7 @@ $(".sec").on('click', function(event) {
     $("#boton1").hide();   $("#boton2").hide();
     $("#inc1").show();
     $("#p1v").show();
+    $("#foto1").show();
   });
   $("#boton3").click(function(){
     verdad2();
@@ -75,6 +81,7 @@ $(".sec").on('click', function(event) {
     atr();
     $("#cor2").show();
     $("#p2v").show();
+    $("#foto2").show();
   });
   $("#boton5").click(function(){
     verdad3();
@@ -85,6 +92,7 @@ $(".sec").on('click', function(event) {
     atr();
     $("#cor3").show();
     $("#p3v").show();
+    $("#foto3").show();
   });
   $("#boton7").click(function(){
     verdad4();
@@ -94,6 +102,7 @@ $(".sec").on('click', function(event) {
     $("#rta4").show(); $("#exp4").show();
     $("#inc4").show();
     $("#p4v").show();
+    $("#foto4").show();
   });
   $("#boton9").click(function(){
     verdad5();
@@ -103,6 +112,7 @@ $(".sec").on('click', function(event) {
     $("#rta5").show(); $("#exp5").show();
     $("#inc5").show();
 $("#p5v").show();
+$("#foto5").show();
   });
   $("#boton11").click(function(){
     verdad6();
@@ -113,6 +123,7 @@ $("#p5v").show();
     atr();
     $("#cor6").show();
     $("#p6v").show();
+    $("#foto6").show();
   });
 $("#boton13").click(function(){
     verdad7();
@@ -122,6 +133,7 @@ $("#boton13").click(function(){
     $("#rta7").show(); $("#exp7").show();
     $("#inc7").show();
     $("#p7v").show();
+    $("#foto7").show();
   });
     $("#boton15").click(function(){
     verdad8();
@@ -131,6 +143,7 @@ $("#boton13").click(function(){
     $("#rta8").show(); $("#exp8").show();
     $("#inc8").show();
     $("#p8v").show();
+    $("#foto8").show();
   });
   $("#boton17").click(function(){
     verdad9();
@@ -141,6 +154,7 @@ $("#boton13").click(function(){
     atr();
     $("#cor9").show();
     $("#p9v").show();
+    $("#foto8").show();
   });
   $("#boton19").click(function(){
     verdad10();
@@ -151,6 +165,7 @@ $("#boton13").click(function(){
     atr();
     $("#cor10").show();
     $("#p10v").show();
+    $("#foto10").show();
   });
 //botones de mito
   $("#boton2").click(function(){
@@ -161,6 +176,7 @@ $("#boton13").click(function(){
     atr();
     $("#cor1").show();
     $("#p1m").show();
+    $("#foto1").show();
   });
   $("#boton4").click(function(){
     mito2();
@@ -169,6 +185,7 @@ $("#boton13").click(function(){
     $("#rta2").show(); $("#exp2").show();
     $("#inc2").show();
     $("#p2m").show();
+    $("#foto2").show();
   });
   $("#boton6").click(function(){
     mito3();
@@ -177,6 +194,7 @@ $("#boton13").click(function(){
     $("#rta3").show(); $("#exp3").show();
     $("#inc3").show();
     $("#p3m").show();
+    $("#foto3").show();
   });
   $("#boton8").click(function(){
     mito4();
@@ -186,6 +204,7 @@ $("#boton13").click(function(){
     atr();
     $("#cor4").show();
       $("#p4m").show();
+      $("#foto4").show();
   });
   $("#boton10").click(function(){
     mito5();
@@ -195,6 +214,7 @@ $("#boton13").click(function(){
     atr();
     $("#cor5").show();
     $("#p5m").show();
+    $("#foto5").show();
   });
   $("#boton12").click(function(){
     mito6();
@@ -203,6 +223,7 @@ $("#boton13").click(function(){
     $("#rta6").show(); $("#exp6").show();
     $("#inc6").show();
     $("#p6m").show();
+    $("#foto6").show();
    });
   $("#boton14").click(function(){
     mito7();
@@ -211,6 +232,7 @@ $("#boton13").click(function(){
     $("#rta7").show(); $("#exp7").show();  atr();
     $("#cor7").show();
     $("#p7m").show();
+    $("#foto7").show();
    });
   $("#boton16").click(function(){
     mito8();
@@ -219,6 +241,7 @@ $("#boton13").click(function(){
     $("#rta8").show(); $("#exp8").show();  atr();
     $("#cor8").show();
     $("#p8m").show();
+    $("#foto8").show();
    });
   $("#boton18").click(function(){
     mito9();
@@ -227,6 +250,7 @@ $("#boton13").click(function(){
     $("#rta9").show(); $("#exp9").show();
     $("#inc9").show();
     $("#p9m").show();
+    $("#foto9").show();
    });
   $("#boton20").click(function(){
     mito10();
@@ -235,6 +259,7 @@ $("#boton13").click(function(){
     $("#rta10").show(); $("#exp10").show();
     $("#inc10").show();
     $("#p10m").show();
+    $("#foto10").show();
     });
 //cuando voy a carreras saco a los tipitos
   $("#Ir-a-carreras").click(function(){
@@ -246,9 +271,7 @@ $("#Ir-a-carreras2").click(function(){
   $(".ver").hide();
 });
   
- //____________________CARRERAS______________________//
-
-
+ 
  //____________________CARRERAS______________________//
 
 
@@ -781,5 +804,38 @@ function atr(){
   if(hola == true) {
     at = at + 10 ;
   }
+
+  if(at==10){
+  $("#0").hide();  $("#10").show();
+  a.innerHTML= at;
+  }
+  else if(at==20){
+   $("#10").hide(); $("#20").show();
+  }
+  if(at==30){
+  $("#20").hide(); $("#30").show();
+  }
+  if(at==40){
+  $("#30").hide();  $("#40").show();
+  }
+  if(at==50){
+  $("#40").hide();  $("#50").show();
+  }
+  if(at==60){
+  $("#50").hide();  $("#60").show();
+  }
+  if(at==70){
+  $("#60").hide();  $("#70").show();
+  }
+  if(at==80){
+  $("#70").hide();  $("#80").show();
+  }
+  if(at==90){
+  $("#80").hide();  $("#90").show();
+  }
+  if(at==100){
+  $("#90").hide();  $("#100").show();
+  }
+
   a.innerHTML= at + '%';
 }
