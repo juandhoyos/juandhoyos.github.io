@@ -1,7 +1,14 @@
 $(document).ready(function(){
   //saco lo fixed y todo basicamente
   $(".trivia-sup").hide(); $(".wrap").hide(); $(".resultado").hide();$("#T").hide();
-
+ //escondo boton trivia
+  $("#Ir-a-trivia").hide();
+  $("#Ir-a-trivia").click(function(){
+   $(".ver").show();
+  $("#Ir-a-trivia").hide();
+  $("#resultados").show();
+    
+  });
   // no se ve ninguna pregunta
   $(".trivia1").hide();  $(".trivia2").hide();  $(".trivia3").hide();  $(".trivia4").hide();  $(".trivia5").hide(); $(".trivia6").hide();  $(".trivia7").hide(); $(".trivia8").hide();  $(".trivia9").hide(); $(".trivia10").hide();
   $(".rta1").hide();  $(".rta2").hide();  $(".rta3").hide();  $(".rta4").hide();  $(".rta5").hide(); $(".rta6").hide();  $(".rta7").hide(); $(".rta8").hide();  $(".rta9").hide(); $(".rta10").hide();
@@ -291,13 +298,19 @@ $("#boton13").click(function(){
       $(".mito4l").show();
     });
 //cuando voy a carreras saco a los tipitos
-  $("#Ir-a-carreras").click(function(){
+   $("#Ir-a-carreras").click(function(){
 
   $(".ver").hide();
+  $("#Ir-a-trivia").show();
 });
 $("#Ir-a-carreras2").click(function(){
-
+  $("#resultados").hide();
   $(".ver").hide();
+  $("#Ir-a-trivia").show();
+});
+$("[name='ircarreras']").click(function(){
+  $("#Ir-a-trivia").show();
+  $("#resultados").hide();
 });
   
  //____________________CARRERAS______________________//
@@ -950,7 +963,8 @@ function morir(){
    $("#foto1").hide(); $("#foto2").hide(); $("#foto3").hide(); $("#foto4").hide(); $("#foto5").hide(); $("#foto6").hide(); $("#foto7").hide(); $("#foto8").hide(); $("#foto9").hide(); $("#foto10").hide();
    //oculto todos los graficos
    $("#0").show(); $("#10").hide(); $("#20").hide(); $("#30").hide(); $("#40").hide(); $("#50").hide(); $("#60").hide(); $("#70").hide(); $("#80").hide(); $("#90").hide(); $("#100").hide();
-   //oculto los bien/mal
+   a.innerHTML= at + '%';
+  //oculto los bien/mal
    $(".verdad").hide(); $(".verdad3l").hide(); $(".verdad4l").hide(); $(".mito").hide(); $(".mito3l").hide(); $(".mito4l").hide();
 
 
