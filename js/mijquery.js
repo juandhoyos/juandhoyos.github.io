@@ -154,7 +154,7 @@ $("#boton13").click(function(){
     atr();
     $("#cor9").show();
     $("#p9v").show();
-    $("#foto8").show();
+    $("#foto9").show();
   });
   $("#boton19").click(function(){
     verdad10();
