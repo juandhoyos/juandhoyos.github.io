@@ -1237,14 +1237,24 @@ hr {
 }
 
 .submenu_dura{
-  position: absolute;
-  z-index: 14;
-  right: 40px;
-  top:110px;
+	position: absolute;
+    z-index: 14;
+    right: 90px;
+    top: 60px;
 }
 
 .submenu_dura li{
   margin-top: 42px;
   float: right;
   list-style:none;
+  margin-right: 25px;
+}
+
+.btn-dura{
+	background: #f7f7f7;
+	padding: 5px;
+	border-radius:15px;
+	-webkit-box-shadow: 1px 1px 22px 2px rgba(0,0,0,0.45);
+	-moz-box-shadow: 1px 1px 22px 2px rgba(0,0,0,0.45);
+	box-shadow: 1px 1px 22px 2px rgba(0,0,0,0.45);
 }
