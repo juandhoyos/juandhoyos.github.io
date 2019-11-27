@@ -1137,39 +1137,39 @@ h2{
 }
 
 .duracion_icon {
-	position: absolute;
-	z-index: 15;
-	width: 5%;
-	top: 18px;
- 	left: 20px;
+  position: absolute;
+  z-index: 15;
+  width: 5%;
+  top: 18px;
+  left: 20px;
 }
 
 .duracion_icon img {
- 	width: 100%;
+  width: 100%;
 }
 
 .planes_icon {
-	position: absolute;
-	z-index: 15;
-	width: 10%;
-	top: 15px;
- 	left: 15px;
+  position: absolute;
+  z-index: 15;
+  width: 10%;
+  top: 15px;
+  left: 15px;
 }
 
 .planes_icon img {
-	width: 100%;
+  width: 100%;
 }
 
 .teo_icon {
-	position: absolute;
-	z-index: 15;
-	width: 5%;
-	top: 10px;
- 	left: 20px;
+  position: absolute;
+  z-index: 15;
+  width: 5%;
+  top: 10px;
+  left: 20px;
 }
 
 .teo_icon img{
-	width: 100%;
+  width: 100%;
 }
 
 #Ir-a-trivia{
@@ -1244,7 +1244,7 @@ hr {
 }
 
 .submenu_dura{
-	position: absolute;
+  position: absolute;
     z-index: 14;
     right: 90px;
     top: 60px;
@@ -1258,12 +1258,12 @@ hr {
 }
 
 .btn-dura{
-	background: #f7f7f7;
-	padding: 5px;
-	border-radius:15px;
-	-webkit-box-shadow: 1px 1px 22px 2px rgba(0,0,0,0.45);
-	-moz-box-shadow: 1px 1px 22px 2px rgba(0,0,0,0.45);
-	box-shadow: 1px 1px 22px 2px rgba(0,0,0,0.45);
+  background: #f7f7f7;
+  padding: 5px;
+  border-radius:15px;
+  -webkit-box-shadow: 1px 1px 22px 2px rgba(0,0,0,0.45);
+  -moz-box-shadow: 1px 1px 22px 2px rgba(0,0,0,0.45);
+  box-shadow: 1px 1px 22px 2px rgba(0,0,0,0.45);
 }
 <<<<<<< HEAD
 
