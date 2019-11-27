@@ -26,7 +26,7 @@
 
         });
 
-        
+
       var lastTouchEnd = 0;
       document.addEventListener('touchend', function (event) {
       var now = (new Date()).getTime();
@@ -59,7 +59,7 @@
    <section class="row intro_trivia " id="T">
     <div class="col-md-12 fondo1">
     <div class="col-md-12 titulo2">
-          <h2 class="titulo_trivia"> TRIVIA </h2>
+          <h2 class="titulo_trivia"> ¡SUPER TRIVIA! </h2>
     </div>
 
     <div class="row  contenedor">
@@ -82,8 +82,10 @@
       <div class="col-md-12 fondo">
 
       <div class="col-md-12 preg1">
-        <button class= "btn btn-success" name="button" id="boton1"> Verdad </button>
-        <button class= "btn btn-danger" name="button" id="boton2" > Mito </button>
+        <button class= "btn btn-ver" name="button" id="boton1"> Verdad </button>
+        <button class= "btn btn-mit" name="button" id="boton2" > Mito </button>
+        <img src="images/wrong.png" alt="mal" class="verdad">
+        <img src="images/yey.png" alt="bien" class="mito">
       <div class="col-md-8">
 
         <h3 id="preg1"> ¿VERDAD O MITO? </h3> </div>
@@ -92,12 +94,7 @@
       <div class="col-md-6">
 
       <h4> Si estudias medicina tendrás mucho dinero. </h4>   </div>
-<!-- <div class="col-md-3 bn">
-  <h3>¡Correcto!</h3>
-</div>
-<div class="col-md-3 ml">
 
- <h3>¡Incorrecto!</h3></div> -->
        <div class="col-md-3 iconostrivia" id="img1">
         <img width="260" height="260" src="images/money.png" alt="">
       </div>
@@ -118,8 +115,7 @@
        </div>
       </div>
 
-      <!-- <div class="rta1">
-      </div>  -->
+
     </div>
         </div>
 
@@ -131,18 +127,20 @@
       <div class="col-md-12 fondo">
 
       <div class="col-md-12 preg2">
-        <button class= "btn btn-success" name="button" id="boton3"> Verdad </button>
-        <button class= "btn btn-danger" name="button" id="boton4"> Mito </button>
+        <button class= "btn btn-ver" name="button" id="boton3"> Verdad </button>
+        <button class= "btn btn-mit" name="button" id="boton4"> Mito </button>
+        <img src="images/wrong.png" alt="mal" class="mito3l">
+        <img src="images/yey.png" alt="bien" class="verdad3l">
       <div class="col-md-8">  <h3 id="preg2"> ¿VERDAD O MITO? </h3> </div>
 
-
-        <h3 id="rta2">ES VERDAD</h3>
+<div class="col-md-8">
+        <h3 id="rta2">ES VERDAD</h3></div>
       <div class="col-md-6">  <h4> Un enfermero o enfermera puede tomar decisiones sin
       consultar a un/a médico/a. </h4> </div>
 
         <div class="col-md-3 iconostrivia">
         <img id="img2"width="260" height="260" src="images/aguja.png" alt=""></div>
-        <div class="col-md-10 explicaciontrivia" id="exp2">
+        <div class="col-md-10 explicaciontrivia" id="exp2" style="margin-top:12%">
         <div class="row contenedorchicoV">
           <div class="col-md-2 personasop">
             <img width="90" height="90" src="images/estudiante1.png" alt="">
@@ -165,16 +163,18 @@
       <div class="col-md-12 fondo">
 
       <div class="col-md-12 preg3">
-        <button class= "btn btn-success" name="button" id="boton5"> Verdad </button>
-        <button class= "btn btn-danger" name="button" id="boton6"> Mito </button>
-      <div class="col-md-8">  <h3 id="preg3"> ¿VERDAD O MITO? </h3> </div>
-        <h3 id="rta3"> ES VERDAD </h3>
+        <button class= "btn btn-ver" name="button" id="boton5"> Verdad </button>
+        <button class= "btn btn-mit" name="button" id="boton6"> Mito </button>
+        <img src="images/wrong.png" alt="mal" class="mito3l">
+        <img src="images/yey.png" alt="bien" class="verdad3l">
+    <div class="col-md-8">   <h3 id="preg3"> ¿VERDAD O MITO? </h3> </div>
+        <div class="col-md-8">  <h3 id="rta3"> ES VERDAD </h3></div>
       <div class="col-md-6">  <h4> La empatía es muy importante si querés ser obstetra. </h4> </div>
 
         <div class="col-md-3 iconostrivia">
         <img id="img3"width="260" height="260" src="images/brain.png" alt="">
       </div>
-      <div class="col-md-10 explicaciontrivia" id="exp3">
+      <div class="col-md-10 explicaciontrivia" id="exp3" style="margin-top:13%">
       <div class="row contenedorchicoV">
         <div class="col-md-2 personasop">
           <img width="90" height="90" src="images/doctor.png" alt="">
@@ -198,10 +198,12 @@
       <div class="col-md-12 fondo">
 
       <div class="col-md-12 preg4">
-        <button class= "btn btn-success" name="button" id="boton7"> Verdad </button>
-        <button class= "btn btn-danger" name="button" id="boton8"> Mito </button>
-        <div class="col-md-8"><h3 id="preg4"> ¿VERDAD O MITO? </h3> </div>
-        <h3 id="rta4">ES MITO</h3>
+        <button class= "btn btn-ver" name="button" id="boton7"> Verdad </button>
+        <button class= "btn btn-mit" name="button" id="boton8"> Mito </button>
+        <img src="images/wrong.png" alt="mal" class="verdad">
+        <img src="images/yey.png" alt="bien" class="mito">
+        <div class="col-md-8">   <h3 id="preg4"> ¿VERDAD O MITO? </h3> </div>
+      <div class="col-md-8">  <h3 id="rta4">ES MITO</h3></div>
       <div class="col-md-6">  <h4> Enfermería es para quienes no pueden estudiar Medicina. </h4> </div>
 
         <div class="col-md-3 iconostrivia">
@@ -228,10 +230,12 @@
       <div class="col-md-12 fondo">
 
       <div class="col-md-12 preg5">
-        <button class= "btn btn-success" name="button" id="boton9"> Verdad </button>
-        <button class= "btn btn-danger" name="button" id="boton10"> Mito </button>
+        <button class= "btn btn-ver" name="button" id="boton9"> Verdad </button>
+        <button class= "btn btn-mit" name="button" id="boton10"> Mito </button>
+        <img src="images/wrong.png" alt="mal" class="verdad">
+        <img src="images/yey.png" alt="bien" class="mito">
       <div class="col-md-8">  <h3 id="preg5"> ¿VERDAD O MITO? </h3> </div>
-        <h3 id="rta5"> ES MITO</h3>
+        <div class="col-md-8">  <h3 id="rta5"> ES MITO</h3> </div>
     <div class="col-md-6">  <h4> Si sos obstetra te dedicas a atender partos. </h4> </div>
 
         <div class="col-md-3 iconostrivia">
@@ -259,10 +263,12 @@
       <div class="col-md-12 fondo">
 
       <div class="col-md-12 preg6">
-        <button class= "btn btn-success" name="button" id="boton11"> Verdad </button>
-        <button class= "btn btn-danger" name="button" id="boton12"> Mito </button>
+        <button class= "btn btn-ver" name="button" id="boton11"> Verdad </button>
+        <button class= "btn btn-mit" name="button" id="boton12"> Mito </button>
+        <img src="images/wrong.png" alt="mal" class="mito">
+        <img src="images/yey.png" alt="bien" class="verdad">
       <div class="col-md-8">  <h3 id="preg6"> ¿VERDAD O MITO? </h3> </div>
-        <h3 id="rta6"> ES VERDAD </h3>
+        <div class="col-md-8">  <h3 id="rta6"> ES VERDAD </h3> </div>
       <div class="col-md-6">  <h4> La carrera de Medicina puede llegar a durar 10 años. </h4> </div>
 
         <div class="col-md-3 iconostrivia">
@@ -292,10 +298,12 @@
       <div class="col-md-12 fondo">
 
       <div class="col-md-12 preg7">
-        <button class= "btn btn-success" name="button" id="boton13"> Verdad </button>
-        <button class= "btn btn-danger" name="button" id="boton14"> Mito </button>
+        <button class= "btn btn-ver" name="button" id="boton13"> Verdad </button>
+        <button class= "btn btn-mit" name="button" id="boton14"> Mito </button>
+        <img src="images/wrong.png" alt="mal" class="verdad">
+        <img src="images/yey.png" alt="bien" class="mito">
       <div class="col-md-8">  <h3 id="preg7"> ¿VERDAD O MITO? </h3> </div>
-        <h3 id="rta7"> ES UN MITO</h3>
+        <div class="col-md-8">  <h3 id="rta7"> ES UN MITO</h3> </div>
       <div class="col-md-6">  <h4> La Licenciatura en Nutrición es una carrera saturada. </h4> </div>
 
         <div class="col-md-3 iconostrivia">
@@ -324,10 +332,12 @@
       <div class="col-md-12 fondo">
 
       <div class="col-md-12 preg8">
-        <button class= "btn btn-success" name="button" id="boton15"> Verdad </button>
-        <button class= "btn btn-danger" name="button" id="boton16"> Mito </button>
+        <button class= "btn btn-ver" name="button" id="boton15"> Verdad </button>
+        <button class= "btn btn-mit" name="button" id="boton16"> Mito </button>
+        <img src="images/wrong.png" alt="mal" class="verdad3l">
+        <img src="images/yey.png" alt="bien" class="mito3l">
       <div class="col-md-8">  <h3 id="preg8"> ¿VERDAD O MITO? </h3></div>
-        <h3 id="rta8"> ES UN MITO </h3>
+        <div class="col-md-8">  <h3 id="rta8"> ES UN MITO </h3> </div>
       <div class="col-md-6">  <h4> Si estudias Nutrición vives contando calorías y leyendo etiquetas. </h4> </div>
 
         <div class="col-md-3 iconostrivia">
@@ -355,10 +365,12 @@
       <div class="col-md-12 fondo">
 
       <div class="col-md-12 preg9">
-        <button class= "btn btn-success" name="button" id="boton17"> Verdad </button>
-        <button class= "btn btn-danger" name="button" id="boton18"> Mito </button>
+        <button class= "btn btn-ver" name="button" id="boton17"> Verdad </button>
+        <button class= "btn btn-mit" name="button" id="boton18"> Mito </button>
+        <img src="images/wrong.png" alt="mal" class="mito3l">
+        <img src="images/yey.png" alt="bien" class="verdad3l">
       <div class="col-md-8">  <h3 id="preg9"> ¿VERDAD O MITO? </h3> </div>
-<h3 id="rta9"> ES VERDAD </h3>
+        <div class="col-md-8"><h3 id="rta9"> ES VERDAD </h3> </div>
     <div class="col-md-6">    <h4> El Técnico Cardiológico podrá trabajar en hospitales, clínicas y sanatorios. </h4> </div>
 
         <div class="col-md-3 iconostrivia">
@@ -386,15 +398,17 @@
       <div class="col-md-12 fondo">
 
       <div class="col-md-12 preg10">
-        <button class= "btn btn-success" name="button" id="boton19"> Verdad </button>
-        <button class= "btn btn-danger" name="button" id="boton20"> Mito </button>
+        <button class= "btn btn-ver" name="button" id="boton19"> Verdad </button>
+        <button class= "btn btn-mit" name="button" id="boton20"> Mito </button>
+        <img src="images/wrong.png" alt="mal" class="mito4l">
+        <img src="images/yey.png" alt="bien" class="verdad4l">
       <div class="col-md-8">  <h3 id="preg10"> ¿VERDAD O MITO? </h3> </div>
-<h3 id="rta10"> ES VERDAD </h3>
+       <div class="col-md-8"><h3 id="rta10"> ES VERDAD </h3> </div>
     <div class="col-md-6">    <h4> En Tecnicatura en Prácticas Cardiológicas se enseña el funcionamiento del corazón para prevenir patologías mortales. </h4> </div>
 
         <div class="col-md-3 iconostrivia">
         <img id="img10" width="260" height="260" src="images/heart.png" alt="">
-        <button class= "btn btn-primary" name="button" id="resultados"> Ver resultados </button>
+        <button class= "btn btn-primary" name="next" id="resultados"> Ver resultados </button>
       </div></div>
       <div class="col-md-10 explicaciontrivia" id="exp10" style="margin-top: 11%">
       <div class="row contenedorchicoV">
@@ -418,13 +432,13 @@
 
     <section class="row resultado">
       <div class="fondo1"></div>
-      <h2 class="titulo_trivia2">Resultados</h2>
+      <h2 class="titulo_trivia2">¡Felicidades!</h2>
       <div class="container comparo">
         <div class="pr">
-        <div class="col-md-6">
+        <div class="col-md-5">
 
         <h3 style="margin-left: 18%">Respuestas</h3>       </div>
-        <div class="col-md-6">
+        <div class="col-md-7">
           <h3> Coincidiste con</h3>
            </div>
 
@@ -465,29 +479,50 @@
   <h4 id="p8m" class="con8">1</h4> <h4 id="p8v" class="con8">2</h4>
   <h4 id="p9m" class="con9">1</h4> <h4 id="p9v" class="con9">2</h4>
   <h4 id="p10m" class="con10">1</h4> <h4 id="p10v" class="con10">2</h4>
-   <img src="images/team.png" class="foto" style="margin-top: 200px;">
-  <img src="images/team.png" class="foto" style="margin-top: 245px;">
-  <img src="images/team.png" class="foto" style="margin-top: 290px;">
-  <img src="images/team.png" class="foto" style="margin-top: 335px;">
-  <img src="images/team.png" class="foto" style="margin-top: 380px;">
-  <img src="images/team.png" class="foto" style="margin-top: 425px;">
-  <img src="images/team.png" class="foto" style="margin-top: 470px;">
-  <img src="images/team.png" class="foto" style="margin-top: 515px;">
-  <img src="images/team.png" class="foto" style="margin-top: 560px;">
-  <img src="images/team.png" class="foto" style="margin-top: 605px;">
+  <img src="images/team.png" class="foto" style="margin-top: 200px;"id="foto1">
+  <img src="images/team.png" class="foto" style="margin-top: 245px;" id="foto2">
+  <img src="images/team.png" class="foto" style="margin-top: 290px;" id="foto3">
+  <img src="images/team.png" class="foto" style="margin-top: 335px;" id="foto4">
+  <img src="images/team.png" class="foto" style="margin-top: 380px;" id="foto5">
+  <img src="images/team.png" class="foto" style="margin-top: 425px;" id="foto6">
+  <img src="images/team.png" class="foto" style="margin-top: 470px;" id="foto7">
+  <img src="images/team.png" class="foto" style="margin-top: 515px;" id="foto8">
+  <img src="images/team.png" class="foto" style="margin-top: 560px;" id="foto9">
+  <img src="images/team.png" class="foto" style="margin-top: 605px;" id="foto10">
 </div>
 
 
-<h4 id="obtuviste">Obtuviste</h4>
+<h4 id="obtuviste">Aciertos</h4>
   <h3 id="aciertos">aciertos</h3>
 
-<h4 id="ref">aciertos</h4>
 
+<img src="images/0.png" alt="0%" class="grafico" id="0">
+<img src="images/10.png" alt="10%" class="grafico" id="10">
+<img src="images/20.png" alt="20%" class="grafico" id="20">
+<img src="images/30.png" alt="30%" class="grafico" id="30">
+<img src="images/40.png" alt="40%" class="grafico" id="40">
+<img src="images/50.png" alt="50%" class="grafico" id="50">
+<img src="images/60.png" alt="60%" class="grafico" id="60">
+<img src="images/70.png" alt="70%" class="grafico" id="70">
+<img src="images/80.png" alt="80%" class="grafico" id="80">
+<img src="images/90.png" alt="90%" class="grafico" id="90">
+<img src="images/100v.png" alt="100%" class="grafico" id="100">
+
+<!-- agrego algo abajo de los aciertos: ACTUALIZAR EN GITHUB -->
+<div class="remember">
+  <div class="col-md-3 alguien">
+     <img src="images/estudiante3.png" alt="estudiante" style="width: 75px; padding-top: 12px">
+  </div>
+  <div class="col-md-9 recordatorio">
+       <p>Recuerda que todo es en base a estudiantes, cada persona crea su propia experiencia :)</p>
+  </div>
+</div>
       <a href="#pcarreras" class="sec">  <button class="btn btn-primary" id="Ir-a-carreras2"> Ir a Carreras </button></a>
-
+      <button type="button" class="btn btn-primary" name="button" id="Reiniciar"> Reiniciar</button>
     </section>
 
 </nav>
+
      <!-- MENU CARRERAS - -->
 
   <nav class=" menu_carreras "  id="pcarreras">

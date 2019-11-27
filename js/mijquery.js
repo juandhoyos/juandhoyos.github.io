@@ -24,8 +24,10 @@ $(document).ready(function(){
     sumo();
   });
   // paso de pregunta
-  $(".next").click(function(event){
+    $(".next").click(function(event){
     sumo();
+    $(".mito").hide();    $(".mito3l").hide();    $(".mito4l").hide();
+    $(".verdad").hide();  $(".verdad3l").hide();    $(".verdad4l").hide(); 
   });
   // veo resultados
   $("#resultados").click(function(){
@@ -39,7 +41,14 @@ $(document).ready(function(){
  // oculto por defecto las coincidencias en la pantalla de Resultados
  $("#p1m").hide(); $("#p2m").hide(); $("#p3m").hide(); $("#p4m").hide(); $("#p5m").hide(); $("#p6m").hide(); $("#p7m").hide(); $("#p8m").hide(); $("#p9m").hide(); $("#p10m").hide();
  $("#p1v").hide(); $("#p2v").hide(); $("#p3v").hide(); $("#p4v").hide(); $("#p5v").hide(); $("#p6v").hide(); $("#p7v").hide(); $("#p8v").hide(); $("#p9v").hide(); $("#p10v").hide();
-// deslizado a otra seccion (trivia/carreras)
+  //oculto team
+$("#foto1").hide(); $("#foto2").hide(); $("#foto3").hide(); $("#foto4").hide(); $("#foto5").hide(); $("#foto6").hide(); $("#foto7").hide(); $("#foto8").hide(); $("#foto9").hide(); $("#foto10").hide();
+//oculto todos los graficos
+$("#0").show(); $("#10").hide(); $("#20").hide(); $("#30").hide(); $("#40").hide(); $("#50").hide(); $("#60").hide(); $("#70").hide(); $("#80").hide(); $("#90").hide(); $("#100").hide();
+//oculto los bien/mal
+$(".verdad").hide(); $(".verdad3l").hide(); $(".verdad4l").hide(); $(".mito").hide(); $(".mito3l").hide(); $(".mito4l").hide();
+
+  // deslizado a otra seccion (trivia/carreras)
 $(".sec").on('click', function(event) {
 
   if (this.hash !== "") {
@@ -56,187 +65,241 @@ $(".sec").on('click', function(event) {
   }
 });
 
-  // sumo coincidencias   y ademas veo las rtas
+  $("#Reiniciar").click(function(){
+  morir();
+});
+      // sumo coincidencias   y ademas veo las rtas
   $("#boton1").click(function(){
     verdad1();
     $("#boton1").button('toggle');
+    $("#boton1").attr('disabled',true);
     $("#preg1").hide(); $("#img1").hide();
     $("#rta1").show(); $("#exp1").show();
-    $("#boton1").hide();   $("#boton2").hide();
+    // $("#boton1").hide();   $("#boton2").hide();
     $("#inc1").show();
     $("#p1v").show();
+    $("#foto1").show();
+    $("#boton2").attr('disabled',true);
+    $(".verdad").show();
   });
   $("#boton3").click(function(){
     verdad2();
     $("#boton3").button('toggle');
-      $("#boton3").hide();   $("#boton4").hide();
+    $("#boton3").attr('disabled',true);$("#boton4").attr('disabled',true);
     $("#preg2").hide(); $("#img2").hide();
     $("#rta2").show(); $("#exp2").show();
     atr();
     $("#cor2").show();
     $("#p2v").show();
+    $("#foto2").show();
+    $(".verdad3l").show();
   });
   $("#boton5").click(function(){
     verdad3();
     $("#boton5").button('toggle');
-    $("#boton5").hide();   $("#boton6").hide();
+    $("#boton5").attr('disabled',true);$("#boton6").attr('disabled',true);
     $("#preg3").hide(); $("#img3").hide();
     $("#rta3").show(); $("#exp3").show();
     atr();
     $("#cor3").show();
     $("#p3v").show();
+    $("#foto3").show();
+    $(".verdad3l").show();
   });
   $("#boton7").click(function(){
     verdad4();
-    $("#boton7").hide();   $("#boton8").hide();
+    $("#boton7").attr('disabled',true); $("#boton8").attr('disabled',true);
     $("#boton7").button('toggle');
     $("#preg4").hide(); $("#img4").hide();
     $("#rta4").show(); $("#exp4").show();
     $("#inc4").show();
     $("#p4v").show();
+    $("#foto4").show();
+    $(".verdad").show();
   });
   $("#boton9").click(function(){
     verdad5();
     $("#boton9").button('toggle');
-      $("#boton9").hide();   $("#boton10").hide();
+    $("#boton9").attr('disabled',true); $("#boton10").attr('disabled',true);
     $("#preg5").hide(); $("#img5").hide();
     $("#rta5").show(); $("#exp5").show();
     $("#inc5").show();
 $("#p5v").show();
+$("#foto5").show();
+$(".verdad").show();
   });
   $("#boton11").click(function(){
     verdad6();
     $("#boton11").button('toggle');
-    $("#boton11").hide();   $("#boton12").hide();
+    $("#boton11").attr('disabled',true); $("#boton12").attr('disabled',true);
     $("#preg6").hide(); $("#img6").hide();
     $("#rta6").show(); $("#exp6").show();
     atr();
     $("#cor6").show();
     $("#p6v").show();
+    $("#foto6").show();
+    $(".verdad").show();
   });
 $("#boton13").click(function(){
     verdad7();
     $("#boton13").button('toggle');
-    $("#boton13").hide();   $("#boton14").hide();
+    $("#boton13").attr('disabled',true); $("#boton14").attr('disabled',true);
     $("#preg7").hide(); $("#img7").hide();
     $("#rta7").show(); $("#exp7").show();
     $("#inc7").show();
     $("#p7v").show();
+    $("#foto7").show();
+    $(".verdad").show();
   });
     $("#boton15").click(function(){
     verdad8();
     $("#boton15").button('toggle');
-    $("#boton15").hide();   $("#boton16").hide();
+    $("#boton15").attr('disabled',true); $("#boton16").attr('disabled',true);
     $("#preg8").hide(); $("#img8").hide();
     $("#rta8").show(); $("#exp8").show();
     $("#inc8").show();
     $("#p8v").show();
+    $("#foto8").show();
+    $(".verdad3l").show();
   });
   $("#boton17").click(function(){
     verdad9();
     $("#boton17").button('toggle');
-    $("#boton17").hide();   $("#boton18").hide();
+    $("#boton17").attr('disabled',true); $("#boton18").attr('disabled',true);
     $("#preg9").hide(); $("#img9").hide();
     $("#rta9").show(); $("#exp9").show();
     atr();
     $("#cor9").show();
     $("#p9v").show();
+    $("#foto9").show();
+    $(".verdad3l").show();
   });
   $("#boton19").click(function(){
     verdad10();
     $("#boton19").button('toggle');
-    $("#boton19").hide();   $("#boton20").hide();
+    $("#boton19").attr('disabled',true); $("#boton20").attr('disabled',true);
     $("#preg10").hide(); $("#img10").hide();
     $("#rta10").show(); $("#exp10").show();
     atr();
     $("#cor10").show();
     $("#p10v").show();
+    $("#foto10").show();
+    $(".verdad4l").show();
   });
 //botones de mito
   $("#boton2").click(function(){
     mito1();
     $("#preg1").hide(); $("#img1").hide();
-    $("#boton1").hide();   $("#boton2").hide();
+    $("#boton1").attr('disabled',true); $("#boton2").attr('disabled',true);
     $("#rta1").show(); $("#exp1").show();
     atr();
     $("#cor1").show();
     $("#p1m").show();
+    $("#foto1").show();
+    $(".mito").show();
   });
   $("#boton4").click(function(){
     mito2();
-    $("#boton3").hide();   $("#boton4").hide();
+    $("#boton3").attr('disabled',true); $("#boton4").attr('disabled',true);
     $("#preg2").hide(); $("#img2").hide();
     $("#rta2").show(); $("#exp2").show();
     $("#inc2").show();
     $("#p2m").show();
+    $("#foto2").show();
+      $(".mito3l").show();
   });
   $("#boton6").click(function(){
     mito3();
-    $("#boton5").hide();   $("#boton6").hide();
+    $("#boton5").attr('disabled',true); $("#boton6").attr('disabled',true);
     $("#preg3").hide(); $("#img3").hide();
     $("#rta3").show(); $("#exp3").show();
     $("#inc3").show();
     $("#p3m").show();
+    $("#foto3").show();
+      $(".mito3l").show();
   });
   $("#boton8").click(function(){
     mito4();
-    $("#boton7").hide();   $("#boton8").hide();
+    $("#boton7").attr('disabled',true); $("#boton8").attr('disabled',true);
     $("#preg4").hide(); $("#img4").hide();
     $("#rta4").show(); $("#exp4").show();
     atr();
     $("#cor4").show();
       $("#p4m").show();
+      $("#foto4").show();
+        $(".mito").show();
   });
   $("#boton10").click(function(){
     mito5();
-    $("#boton9").hide();   $("#boton10").hide();
+    $("#boton9").attr('disabled',true); $("#boton10").attr('disabled',true);
     $("#preg5").hide(); $("#img5").hide();
     $("#rta5").show(); $("#exp5").show();
     atr();
     $("#cor5").show();
     $("#p5m").show();
+    $("#foto5").show();
+      $(".mito").show();
   });
   $("#boton12").click(function(){
     mito6();
-    $("#boton11").hide();   $("#boton12").hide();
+    $("#boton11").attr('disabled',true); $("#boton12").attr('disabled',true);
     $("#preg6").hide(); $("#img6").hide();
     $("#rta6").show(); $("#exp6").show();
     $("#inc6").show();
     $("#p6m").show();
+    $("#foto6").show();
+      $(".mito").show();
    });
   $("#boton14").click(function(){
     mito7();
-    $("#boton13").hide();   $("#boton14").hide();
+    $("#boton13").attr('disabled',true); $("#boton14").attr('disabled',true);
     $("#preg7").hide(); $("#img7").hide();
     $("#rta7").show(); $("#exp7").show();  atr();
     $("#cor7").show();
     $("#p7m").show();
+    $("#foto7").show();
+      $(".mito").show();
    });
   $("#boton16").click(function(){
     mito8();
     $("#preg8").hide(); $("#img8").hide();
-    $("#boton15").hide();   $("#boton16").hide();
+    $("#boton15").attr('disabled',true); $("#boton16").attr('disabled',true);
     $("#rta8").show(); $("#exp8").show();  atr();
     $("#cor8").show();
     $("#p8m").show();
+    $("#foto8").show();
+      $(".mito3l").show();
    });
   $("#boton18").click(function(){
     mito9();
-    $("#boton17").hide();   $("#boton18").hide();
+    $("#boton17").attr('disabled',true); $("#boton18").attr('disabled',true);
     $("#preg9").hide(); $("#img9").hide();
     $("#rta9").show(); $("#exp9").show();
     $("#inc9").show();
     $("#p9m").show();
+    $("#foto9").show();
+      $(".mito3l").show();
    });
   $("#boton20").click(function(){
     mito10();
-    $("#boton19").hide();   $("#boton20").hide();
+    $("#boton19").attr('disabled',true); $("#boton20").attr('disabled',true);
     $("#preg10").hide(); $("#img10").hide();
     $("#rta10").show(); $("#exp10").show();
     $("#inc10").show();
     $("#p10m").show();
+    $("#foto10").show();
+      $(".mito4l").show();
     });
+//cuando voy a carreras saco a los tipitos
+  $("#Ir-a-carreras").click(function(){
 
+  $(".ver").hide();
+});
+$("#Ir-a-carreras2").click(function(){
+
+  $(".ver").hide();
+});
+  
  //____________________CARRERAS______________________//
 
 
@@ -669,7 +732,7 @@ function verdad1(){
   if(ver1 == true){
     v1 = v1 + 1;
   }
-  c1.innerHTML = v1 + 'personas';
+  c1.innerHTML = v1;
 }
 function verdad2(){
   if(ver2 == true){
@@ -797,5 +860,78 @@ function atr(){
   if(hola == true) {
     at = at + 10 ;
   }
+
+  if(at==10){
+  $("#0").hide();  $("#10").show();
+  a.innerHTML= at;
+  }
+  else if(at==20){
+   $("#10").hide(); $("#20").show();
+  }
+  if(at==30){
+  $("#20").hide(); $("#30").show();
+  }
+  if(at==40){
+  $("#30").hide();  $("#40").show();
+  }
+  if(at==50){
+  $("#40").hide();  $("#50").show();
+  }
+  if(at==60){
+  $("#50").hide();  $("#60").show();
+  }
+  if(at==70){
+  $("#60").hide();  $("#70").show();
+  }
+  if(at==80){
+  $("#70").hide();  $("#80").show();
+  }
+  if(at==90){
+  $("#80").hide();  $("#90").show();
+  }
+  if(at==100){
+  $("#90").hide();  $("#100").show();
+  }
+
   a.innerHTML= at + '%';
+}
+
+// Reinicio todo a la mierda
+
+function morir(){
+//reinicio de trivia
+   // voy al inicio
+   pag = 0;
+   at = 0;
+   $("#w").show();
+   // habilito botones again
+   $("#boton1").attr('disabled',false); $("#boton2").attr('disabled',false); $("#boton3").attr('disabled',false); $("#boton4").attr('disabled',false); $("#boton5").attr('disabled',false); $("#boton6").attr('disabled',false); $("#boton7").attr('disabled',false); $("#boton8").attr('disabled',false); $("#boton9").attr('disabled',false); $("#boton10").attr('disabled',false);
+   $("#boton11").attr('disabled',false); $("#boton12").attr('disabled',false); $("#boton13").attr('disabled',false); $("#boton14").attr('disabled',false); $("#boton15").attr('disabled',false); $("#boton16").attr('disabled',false); $("#boton17").attr('disabled',false); $("#boton18").attr('disabled',false); $("#boton19").attr('disabled',false); $("#boton20").attr('disabled',false);
+   $(".next").show();
+   // aparece lo que oculte en la experiencia
+   $("#preg1").show(); $("#img1").show(); $("#preg2").show(); $("#img2").show(); $("#preg3").show(); $("#img3").show();  $("#preg4").show(); $("#img4").show();  $("#preg5").show(); $("#img5").show();  $("#preg6").show(); $("#img6").show();  $("#preg7").show(); $("#img7").show();  $("#preg8").show(); $("#img8").show();  $("#preg9").show(); $("#img9").show();  $("#preg10").show(); $("#img10").show(); 
+   // aco lo fixed y todo basicamente
+   $(".trivia-sup").hide(); $(".wrap").hide(); $(".resultado").hide();$("#T").hide();
+   // no se ve ninguna pregunta
+   $(".trivia1").hide();  $(".trivia2").hide();  $(".trivia3").hide();  $(".trivia4").hide();  $(".trivia5").hide(); $(".trivia6").hide();  $(".trivia7").hide(); $(".trivia8").hide();  $(".trivia9").hide(); $(".trivia10").hide();
+   $(".rta1").hide();  $(".rta2").hide();  $(".rta3").hide();  $(".rta4").hide();  $(".rta5").hide(); $(".rta6").hide();  $(".rta7").hide(); $(".rta8").hide();  $(".rta9").hide(); $(".rta10").hide();
+  // escondo rta y explicaciones
+   $("#rta1").hide(); $("#exp1").hide();   $("#rta2").hide(); $("#exp2").hide();   $("#rta3").hide(); $("#exp3").hide();   $("#rta4").hide(); $("#exp4").hide();  $("#rta5").hide(); $("#exp5").hide();  $("#rta6").hide(); $("#exp6").hide();  $("#rta7").hide(); $("#exp7").hide();  $("#rta8").hide(); $("#exp8").hide(); $("#rta9").hide(); $("#exp9").hide();   $("#rta10").hide(); $("#exp10").hide();  $("#rta11").hide(); $("#exp11").hide();  $("#rta12").hide(); $("#exp12").hide();   $("#rta13").hide(); $("#exp13").hide();   $("#rta14").hide(); $("#exp14").hide();  $("#rta15").hide(); $("#exp15").hide();  $("#rta16").hide(); $("#exp16").hide();  $("#rta17").hide(); $("#exp17").hide();  $("#rta18").hide(); $("#exp18").hide();  $("#rta19").hide(); $("#exp19").hide();  $("#rta20").hide(); $("#exp20").hide();
+   // oculto por defecto las cruces y ticks en Resultados
+   $("#cor1").hide();  $("#cor2").hide();  $("#cor3").hide();  $("#cor4").hide();  $("#cor5").hide();  $("#cor6").hide();  $("#cor7").hide();  $("#cor8").hide();  $("#cor9").hide();  $("#cor10").hide();
+   $("#inc1").hide();  $("#inc2").hide();  $("#inc3").hide();  $("#inc4").hide();  $("#inc5").hide();  $("#inc6").hide();  $("#inc7").hide();  $("#inc8").hide();  $("#inc9").hide();  $("#inc10").hide();
+   // oculto por defecto las coincidencias en la pantalla de Resultados
+   $("#p1m").hide(); $("#p2m").hide(); $("#p3m").hide(); $("#p4m").hide(); $("#p5m").hide(); $("#p6m").hide(); $("#p7m").hide(); $("#p8m").hide(); $("#p9m").hide(); $("#p10m").hide();
+   $("#p1v").hide(); $("#p2v").hide(); $("#p3v").hide(); $("#p4v").hide(); $("#p5v").hide(); $("#p6v").hide(); $("#p7v").hide(); $("#p8v").hide(); $("#p9v").hide(); $("#p10v").hide();
+    //oculto team
+   $("#foto1").hide(); $("#foto2").hide(); $("#foto3").hide(); $("#foto4").hide(); $("#foto5").hide(); $("#foto6").hide(); $("#foto7").hide(); $("#foto8").hide(); $("#foto9").hide(); $("#foto10").hide();
+   //oculto todos los graficos
+   $("#0").show(); $("#10").hide(); $("#20").hide(); $("#30").hide(); $("#40").hide(); $("#50").hide(); $("#60").hide(); $("#70").hide(); $("#80").hide(); $("#90").hide(); $("#100").hide();
+   //oculto los bien/mal
+   $(".verdad").hide(); $(".verdad3l").hide(); $(".verdad4l").hide(); $(".mito").hide(); $(".mito3l").hide(); $(".mito4l").hide();
+
+
+
+//reinicio de carreras
+
 }
