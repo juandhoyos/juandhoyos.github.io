@@ -83,10 +83,13 @@ body{
   font-size: 22px;
   font-style: italic;
   margin-top: 5.5%;
+  left: 25%;
+  position: absolute;
 }
 
 .presentador{
-  top: 10%;
+ top: 10%;
+ position: absolute;
 }
 
 .opinion{
@@ -473,7 +476,7 @@ h4{
 #Ir-a-carreras2{
   width: 190px;
   height: 60px;
-  top: 67.8%;
+  top: 64.75%;
   position: absolute;
   z-index: 10;
   left: 70%;
@@ -570,7 +573,7 @@ h4{
       padding-top: 25px;
       background-color: #e2e1e1;
       left: 52%;
-      top: 48%;
+      top: 51%;
       border-top-left-radius: 45px;
       border-top-right-radius: 45px;
       border-bottom-right-radius: 45px;
@@ -583,7 +586,7 @@ font-size: 20px;
 
 #Reiniciar{
   left: 55%;
-  top: 67.75%;
+  top: 64.75%;
   background-color: #dd4f5d;
   width: 135px;
   height: 60px;
