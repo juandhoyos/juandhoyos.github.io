@@ -927,7 +927,8 @@ function morir(){
    $("#foto1").hide(); $("#foto2").hide(); $("#foto3").hide(); $("#foto4").hide(); $("#foto5").hide(); $("#foto6").hide(); $("#foto7").hide(); $("#foto8").hide(); $("#foto9").hide(); $("#foto10").hide();
    //oculto todos los graficos
    $("#0").show(); $("#10").hide(); $("#20").hide(); $("#30").hide(); $("#40").hide(); $("#50").hide(); $("#60").hide(); $("#70").hide(); $("#80").hide(); $("#90").hide(); $("#100").hide();
-   //oculto los bien/mal
+   a.innerHTML= at + '%';
+  //oculto los bien/mal
    $(".verdad").hide(); $(".verdad3l").hide(); $(".verdad4l").hide(); $(".mito").hide(); $(".mito3l").hide(); $(".mito4l").hide();
 
 
