@@ -301,10 +301,12 @@ h4{
 }
 
 #resultados{
-  width: 180px;
-  height: 57px;
-  top: 50%;
-  margin-left: 45%;
+ width: 180px;
+ height: 57px;
+ margin-top: 45%;
+ margin-left: 8.9%;
+ position: fixed;
+ z-index: 12;
 }
 .titulo_trivia2{
   font-family: 'Roboto', sans-serif;
@@ -551,7 +553,7 @@ h4{
   color: #28a745;
   position: absolute;
   font-size: 65px;
-  margin-left: 64%;
+  margin-left: 61%;
   margin-top: 20%;
   z-index: 10;
 }
