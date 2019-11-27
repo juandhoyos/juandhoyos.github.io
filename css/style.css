@@ -269,6 +269,7 @@ h4{
   width: 50%;
   margin-top: 7%;
   margin-left: 25%;
+  z-index: 9;
 }
 .ver{
   z-index: 1000;
@@ -431,10 +432,10 @@ h4{
 #Ir-a-carreras2{
   width: 190px;
   height: 60px;
-  margin-top: 40%;
+  top: 67.8%;
   position: absolute;
   z-index: 10;
-  left: 65%;
+  left: 70%;
 }
 
 
@@ -444,12 +445,6 @@ h4{
   width: 100%;
   left: 10%;
 }
-
-#T{
-  text-align: center;
-  z-index: 1;
-}
-
 
 
 .res{
@@ -518,7 +513,34 @@ h4{
   font-size: 30px;
 }
 
+.remember{
+      position: absolute;
+      z-index: 10;
+      width: 429px;
+      height: 150px;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 25px;
+      background-color: #e2e1e1;
+      left: 52%;
+      top: 48%;
+      border-top-left-radius: 45px;
+      border-top-right-radius: 45px;
+      border-bottom-right-radius: 45px;
+      border-bottom-left-radius: 45px;
+}
 
+.remember p{
+font-size: 20px;
+}
+
+#Reiniciar{
+  left: 55%;
+  top: 67.75%;
+  background-color: #dd4f5d;
+  width: 135px;
+  height: 60px;
+}
 
 
 /* la barrita pedorra <3 */
