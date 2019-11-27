@@ -1503,8 +1503,8 @@ h2{
 .planes_icon {
 	position: absolute;
 	z-index: 15;
-	width: 10%;
-	top: 5px;
+	width: 15%;
+	top: 10px;
  	left: 15px;
 }
 
