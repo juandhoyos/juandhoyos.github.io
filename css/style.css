@@ -313,6 +313,12 @@ h4{
   border-bottom-right-radius: 45px;
   border-bottom-left-radius: 45px;
 }
+.foto{
+    position: absolute;
+    z-index: 10;
+    width: 30px;
+    margin-left: 450px;
+    }
   .comparo{
   position: absolute;
   background-color: #e2e1e1;
