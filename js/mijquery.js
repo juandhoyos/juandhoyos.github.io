@@ -875,6 +875,7 @@ function morir(){
 //reinicio de trivia
    // voy al inicio
    pag = 0;
+   at = 0;
    $("#w").show();
    // habilito botones again
    $("#boton1").attr('disabled',false); $("#boton2").attr('disabled',false); $("#boton3").attr('disabled',false); $("#boton4").attr('disabled',false); $("#boton5").attr('disabled',false); $("#boton6").attr('disabled',false); $("#boton7").attr('disabled',false); $("#boton8").attr('disabled',false); $("#boton9").attr('disabled',false); $("#boton10").attr('disabled',false);
