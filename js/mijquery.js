@@ -295,14 +295,19 @@ $("#boton13").click(function(){
       $(".mito4l").show();
     });
 //cuando voy a carreras saco a los tipitos
- $("#Ir-a-carreras").click(function(){
+   $("#Ir-a-carreras").click(function(){
+
   $(".ver").hide();
   $("#Ir-a-trivia").show();
 });
-  
 $("#Ir-a-carreras2").click(function(){
+  $("#resultados").hide();
   $(".ver").hide();
   $("#Ir-a-trivia").show();
+});
+$("[name='ircarreras']").click(function(){
+  $("#Ir-a-trivia").show();
+  $("#resultados").hide();
 });
   
  //____________________CARRERAS______________________//
