@@ -24,8 +24,10 @@ $(document).ready(function(){
     sumo();
   });
   // paso de pregunta
-  $(".next").click(function(event){
+    $(".next").click(function(event){
     sumo();
+    $(".mito").hide();    $(".mito3l").hide();    $(".mito4l").hide();
+    $(".verdad").hide();  $(".verdad3l").hide();    $(".verdad4l").hide(); 
   });
   // veo resultados
   $("#resultados").click(function(){
@@ -39,7 +41,14 @@ $(document).ready(function(){
  // oculto por defecto las coincidencias en la pantalla de Resultados
  $("#p1m").hide(); $("#p2m").hide(); $("#p3m").hide(); $("#p4m").hide(); $("#p5m").hide(); $("#p6m").hide(); $("#p7m").hide(); $("#p8m").hide(); $("#p9m").hide(); $("#p10m").hide();
  $("#p1v").hide(); $("#p2v").hide(); $("#p3v").hide(); $("#p4v").hide(); $("#p5v").hide(); $("#p6v").hide(); $("#p7v").hide(); $("#p8v").hide(); $("#p9v").hide(); $("#p10v").hide();
-// deslizado a otra seccion (trivia/carreras)
+  //oculto team
+$("#foto1").hide(); $("#foto2").hide(); $("#foto3").hide(); $("#foto4").hide(); $("#foto5").hide(); $("#foto6").hide(); $("#foto7").hide(); $("#foto8").hide(); $("#foto9").hide(); $("#foto10").hide();
+//oculto todos los graficos
+$("#0").show(); $("#10").hide(); $("#20").hide(); $("#30").hide(); $("#40").hide(); $("#50").hide(); $("#60").hide(); $("#70").hide(); $("#80").hide(); $("#90").hide(); $("#100").hide();
+//oculto los bien/mal
+$(".verdad").hide(); $(".verdad3l").hide(); $(".verdad4l").hide(); $(".mito").hide(); $(".mito3l").hide(); $(".mito4l").hide();
+
+  // deslizado a otra seccion (trivia/carreras)
 $(".sec").on('click', function(event) {
 
   if (this.hash !== "") {
@@ -56,187 +65,241 @@ $(".sec").on('click', function(event) {
   }
 });
 
-  // sumo coincidencias   y ademas veo las rtas
+  $("#Reiniciar").click(function(){
+  morir();
+});
+      // sumo coincidencias   y ademas veo las rtas
   $("#boton1").click(function(){
     verdad1();
     $("#boton1").button('toggle');
+    $("#boton1").attr('disabled',true);
     $("#preg1").hide(); $("#img1").hide();
     $("#rta1").show(); $("#exp1").show();
-    $("#boton1").hide();   $("#boton2").hide();
+    // $("#boton1").hide();   $("#boton2").hide();
     $("#inc1").show();
     $("#p1v").show();
+    $("#foto1").show();
+    $("#boton2").attr('disabled',true);
+    $(".verdad").show();
   });
   $("#boton3").click(function(){
     verdad2();
     $("#boton3").button('toggle');
-      $("#boton3").hide();   $("#boton4").hide();
+    $("#boton3").attr('disabled',true);$("#boton4").attr('disabled',true);
     $("#preg2").hide(); $("#img2").hide();
     $("#rta2").show(); $("#exp2").show();
     atr();
     $("#cor2").show();
     $("#p2v").show();
+    $("#foto2").show();
+    $(".verdad3l").show();
   });
   $("#boton5").click(function(){
     verdad3();
     $("#boton5").button('toggle');
-    $("#boton5").hide();   $("#boton6").hide();
+    $("#boton5").attr('disabled',true);$("#boton6").attr('disabled',true);
     $("#preg3").hide(); $("#img3").hide();
     $("#rta3").show(); $("#exp3").show();
     atr();
     $("#cor3").show();
     $("#p3v").show();
+    $("#foto3").show();
+    $(".verdad3l").show();
   });
   $("#boton7").click(function(){
     verdad4();
-    $("#boton7").hide();   $("#boton8").hide();
+    $("#boton7").attr('disabled',true); $("#boton8").attr('disabled',true);
     $("#boton7").button('toggle');
     $("#preg4").hide(); $("#img4").hide();
     $("#rta4").show(); $("#exp4").show();
     $("#inc4").show();
     $("#p4v").show();
+    $("#foto4").show();
+    $(".verdad").show();
   });
   $("#boton9").click(function(){
     verdad5();
     $("#boton9").button('toggle');
-      $("#boton9").hide();   $("#boton10").hide();
+    $("#boton9").attr('disabled',true); $("#boton10").attr('disabled',true);
     $("#preg5").hide(); $("#img5").hide();
     $("#rta5").show(); $("#exp5").show();
     $("#inc5").show();
 $("#p5v").show();
+$("#foto5").show();
+$(".verdad").show();
   });
   $("#boton11").click(function(){
     verdad6();
     $("#boton11").button('toggle');
-    $("#boton11").hide();   $("#boton12").hide();
+    $("#boton11").attr('disabled',true); $("#boton12").attr('disabled',true);
     $("#preg6").hide(); $("#img6").hide();
     $("#rta6").show(); $("#exp6").show();
     atr();
     $("#cor6").show();
     $("#p6v").show();
+    $("#foto6").show();
+    $(".verdad").show();
   });
 $("#boton13").click(function(){
     verdad7();
     $("#boton13").button('toggle');
-    $("#boton13").hide();   $("#boton14").hide();
+    $("#boton13").attr('disabled',true); $("#boton14").attr('disabled',true);
     $("#preg7").hide(); $("#img7").hide();
     $("#rta7").show(); $("#exp7").show();
     $("#inc7").show();
     $("#p7v").show();
+    $("#foto7").show();
+    $(".verdad").show();
   });
     $("#boton15").click(function(){
     verdad8();
     $("#boton15").button('toggle');
-    $("#boton15").hide();   $("#boton16").hide();
+    $("#boton15").attr('disabled',true); $("#boton16").attr('disabled',true);
     $("#preg8").hide(); $("#img8").hide();
     $("#rta8").show(); $("#exp8").show();
     $("#inc8").show();
     $("#p8v").show();
+    $("#foto8").show();
+    $(".verdad3l").show();
   });
   $("#boton17").click(function(){
     verdad9();
     $("#boton17").button('toggle');
-    $("#boton17").hide();   $("#boton18").hide();
+    $("#boton17").attr('disabled',true); $("#boton18").attr('disabled',true);
     $("#preg9").hide(); $("#img9").hide();
     $("#rta9").show(); $("#exp9").show();
     atr();
     $("#cor9").show();
     $("#p9v").show();
+    $("#foto9").show();
+    $(".verdad3l").show();
   });
   $("#boton19").click(function(){
     verdad10();
     $("#boton19").button('toggle');
-    $("#boton19").hide();   $("#boton20").hide();
+    $("#boton19").attr('disabled',true); $("#boton20").attr('disabled',true);
     $("#preg10").hide(); $("#img10").hide();
     $("#rta10").show(); $("#exp10").show();
     atr();
     $("#cor10").show();
     $("#p10v").show();
+    $("#foto10").show();
+    $(".verdad4l").show();
   });
 //botones de mito
   $("#boton2").click(function(){
     mito1();
     $("#preg1").hide(); $("#img1").hide();
-    $("#boton1").hide();   $("#boton2").hide();
+    $("#boton1").attr('disabled',true); $("#boton2").attr('disabled',true);
     $("#rta1").show(); $("#exp1").show();
     atr();
     $("#cor1").show();
     $("#p1m").show();
+    $("#foto1").show();
+    $(".mito").show();
   });
   $("#boton4").click(function(){
     mito2();
-    $("#boton3").hide();   $("#boton4").hide();
+    $("#boton3").attr('disabled',true); $("#boton4").attr('disabled',true);
     $("#preg2").hide(); $("#img2").hide();
     $("#rta2").show(); $("#exp2").show();
     $("#inc2").show();
     $("#p2m").show();
+    $("#foto2").show();
+      $(".mito3l").show();
   });
   $("#boton6").click(function(){
     mito3();
-    $("#boton5").hide();   $("#boton6").hide();
+    $("#boton5").attr('disabled',true); $("#boton6").attr('disabled',true);
     $("#preg3").hide(); $("#img3").hide();
     $("#rta3").show(); $("#exp3").show();
     $("#inc3").show();
     $("#p3m").show();
+    $("#foto3").show();
+      $(".mito3l").show();
   });
   $("#boton8").click(function(){
     mito4();
-    $("#boton7").hide();   $("#boton8").hide();
+    $("#boton7").attr('disabled',true); $("#boton8").attr('disabled',true);
     $("#preg4").hide(); $("#img4").hide();
     $("#rta4").show(); $("#exp4").show();
     atr();
     $("#cor4").show();
       $("#p4m").show();
+      $("#foto4").show();
+        $(".mito").show();
   });
   $("#boton10").click(function(){
     mito5();
-    $("#boton9").hide();   $("#boton10").hide();
+    $("#boton9").attr('disabled',true); $("#boton10").attr('disabled',true);
     $("#preg5").hide(); $("#img5").hide();
     $("#rta5").show(); $("#exp5").show();
     atr();
     $("#cor5").show();
     $("#p5m").show();
+    $("#foto5").show();
+      $(".mito").show();
   });
   $("#boton12").click(function(){
     mito6();
-    $("#boton11").hide();   $("#boton12").hide();
+    $("#boton11").attr('disabled',true); $("#boton12").attr('disabled',true);
     $("#preg6").hide(); $("#img6").hide();
     $("#rta6").show(); $("#exp6").show();
     $("#inc6").show();
     $("#p6m").show();
+    $("#foto6").show();
+      $(".mito").show();
    });
   $("#boton14").click(function(){
     mito7();
-    $("#boton13").hide();   $("#boton14").hide();
+    $("#boton13").attr('disabled',true); $("#boton14").attr('disabled',true);
     $("#preg7").hide(); $("#img7").hide();
     $("#rta7").show(); $("#exp7").show();  atr();
     $("#cor7").show();
     $("#p7m").show();
+    $("#foto7").show();
+      $(".mito").show();
    });
   $("#boton16").click(function(){
     mito8();
     $("#preg8").hide(); $("#img8").hide();
-    $("#boton15").hide();   $("#boton16").hide();
+    $("#boton15").attr('disabled',true); $("#boton16").attr('disabled',true);
     $("#rta8").show(); $("#exp8").show();  atr();
     $("#cor8").show();
     $("#p8m").show();
+    $("#foto8").show();
+      $(".mito3l").show();
    });
   $("#boton18").click(function(){
     mito9();
-    $("#boton17").hide();   $("#boton18").hide();
+    $("#boton17").attr('disabled',true); $("#boton18").attr('disabled',true);
     $("#preg9").hide(); $("#img9").hide();
     $("#rta9").show(); $("#exp9").show();
     $("#inc9").show();
     $("#p9m").show();
+    $("#foto9").show();
+      $(".mito3l").show();
    });
   $("#boton20").click(function(){
     mito10();
-    $("#boton19").hide();   $("#boton20").hide();
+    $("#boton19").attr('disabled',true); $("#boton20").attr('disabled',true);
     $("#preg10").hide(); $("#img10").hide();
     $("#rta10").show(); $("#exp10").show();
     $("#inc10").show();
     $("#p10m").show();
+    $("#foto10").show();
+      $(".mito4l").show();
     });
+//cuando voy a carreras saco a los tipitos
+  $("#Ir-a-carreras").click(function(){
 
+  $(".ver").hide();
+});
+$("#Ir-a-carreras2").click(function(){
+
+  $(".ver").hide();
+});
+  
  //____________________CARRERAS______________________//
 
 
@@ -253,14 +316,17 @@ $("#boton13").click(function(){
    // ________plan de estudios__________
 
   $("#btn_plan_n").click(function(event){
+    $(".btn-planestudio-n").hide(); $(".btn-teoricas-n").hide(); $(".btn-duracion-n").hide(); 
     $(".planestudios_nutricion").show(); $("#btn-cerrar1").show(); $("#der-n-p").show(); $("#iz-n-p").show(); $(".duracion_nutricion").hide(); $(".teoricas_nutricion").hide(); 
   });
 
   $("#iz-n-p").click(function(event){
+   $(".btn-planestudio-n").hide(); $(".btn-teoricas-n").hide(); $(".btn-duracion-n").hide(); 
    $(".planestudios_nutricion").hide(); $("#der-n-p").hide(); $("#iz-n-p").hide(); $(".duracion_nutricion").show(); $("#der-n-d").show(); $("#iz-n-d").show();
   }); 
 
   $("#der-n-p").click(function(event){
+    $(".btn-planestudio-n").hide(); $(".btn-teoricas-n").hide(); $(".btn-duracion-n").hide(); 
     $(".planestudios_nutricion").hide(); $("#der-n-p").hide(); $("#iz-n-p").hide();$(".teoricas_nutricion").show(); $("#der-n-t").show(); $("#iz-n-t").show();
   }); 
 
@@ -269,15 +335,18 @@ $("#boton13").click(function(){
   // ________teoricas y practicas__________
 
   $("#btn_teo_n").click(function(event){
-    $(".teoricas_nutricion").show(); $("#btn-cerrar1").show(); $("#der-n-t").show(); $("#iz-n-t").show();  $(".duracion_nutricion").hide(); $(".planestudios_nutricion").hide();
+   $(".btn-planestudio-n").hide(); $(".btn-teoricas-n").hide(); $(".btn-duracion-n").hide();  
+   $(".teoricas_nutricion").show(); $("#btn-cerrar1").show(); $("#der-n-t").show(); $("#iz-n-t").show();  $(".duracion_nutricion").hide(); $(".planestudios_nutricion").hide();
   });
 
   $("#iz-n-t").click(function(event){
+   $(".btn-planestudio-n").hide(); $(".btn-teoricas-n").hide(); $(".btn-duracion-n").hide(); 
    $(".teoricas_nutricion").hide(); $("#der-n-t").hide(); $("#iz-n-t").hide(); $(".planestudios_nutricion").show(); $("#der-n-p").show(); $("#iz-n-p").show();
   }); 
 
   $("#der-n-t").click(function(event){
-    $(".teoricas_nutricion").hide(); $("#der-n-t").hide(); $("#iz-n-t").hide(); $(".duracion_nutricion").show(); $("#der-n-d").show(); $("#iz-n-d").show();
+   $(".btn-planestudio-n").hide(); $(".btn-teoricas-n").hide(); $(".btn-duracion-n").hide(); 
+   $(".teoricas_nutricion").hide(); $("#der-n-t").hide(); $("#iz-n-t").hide(); $(".duracion_nutricion").show(); $("#der-n-d").show(); $("#iz-n-d").show();
   }); 
 
 
@@ -285,14 +354,17 @@ $("#boton13").click(function(){
   // ________duracion__________
 
   $("#btn_duración_n").click(function(event){
-    $(".duracion_nutricion").show(); $("#btn-cerrar1").show(); $("#der-n-d").show(); $("#iz-n-d").show(); $(".planestudios_nutricion").hide(); $(".teoricas_nutricion").hide(); 
+   $(".btn-planestudio-n").hide(); $(".btn-teoricas-n").hide(); $(".btn-duracion-n").hide();  
+   $(".duracion_nutricion").show(); $("#btn-cerrar1").show(); $("#der-n-d").show(); $("#iz-n-d").show(); $(".planestudios_nutricion").hide(); $(".teoricas_nutricion").hide(); 
   });
 
   $("#iz-n-d").click(function(event){
+   $(".btn-planestudio-n").hide(); $(".btn-teoricas-n").hide(); $(".btn-duracion-n").hide(); 
    $(".duracion_nutricion").hide(); $("#der-n-d").hide(); $("#iz-n-d").hide(); $(".teoricas_nutricion").show(); $("#der-n-t").show(); $("#iz-n-t").show();
   }); 
 
   $("#der-n-d").click(function(event){
+    $(".btn-planestudio-n").hide(); $(".btn-teoricas-n").hide(); $(".btn-duracion-n").hide(); 
     $(".duracion_nutricion").hide(); $("#der-n-d").hide(); $("#iz-n-d").hide(); $(".planestudios_nutricion").show(); $("#der-n-p").show(); $("#iz-n-p").show();
   }); 
 
@@ -310,14 +382,17 @@ $("#boton13").click(function(){
    // ________plan de estudios__________
 
   $("#btn_plan_m").click(function(event){
+    $(".btn-planestudio-m").hide(); $(".btn-teoricas-m").hide(); $(".btn-duracion-m").hide(); 
     $(".planestudios_medicina").show(); $("#btn-cerrar2").show(); $("#der-m-p").show(); $("#iz-m-p").show(); $(".duracion_medicina").hide(); $(".teoricas_medicina").hide(); 
   });
 
   $("#iz-m-p").click(function(event){
+   $(".btn-planestudio-m").hide(); $(".btn-teoricas-m").hide(); $(".btn-duracion-m").hide(); 
    $(".planestudios_medicina").hide(); $("#der-m-p").hide(); $("#iz-m-p").hide(); $(".duracion_medicina").show(); $("#der-m-d").show(); $("#iz-m-d").show();
   }); 
 
   $("#der-m-p").click(function(event){
+    $(".btn-planestudio-m").hide(); $(".btn-teoricas-m").hide(); $(".btn-duracion-m").hide(); 
     $(".planestudios_medicina").hide(); $("#der-m-p").hide(); $("#iz-m-p").hide();$(".teoricas_medicina").show(); $("#der-m-t").show(); $("#iz-m-t").show();
   }); 
 
@@ -326,14 +401,17 @@ $("#boton13").click(function(){
   // ________teoricas y practicas__________
 
   $("#btn_teo_m").click(function(event){
+    $(".btn-planestudio-m").hide(); $(".btn-teoricas-m").hide(); $(".btn-duracion-m").hide(); 
     $(".teoricas_medicina").show(); $("#btn-cerrar2").show(); $("#der-m-t").show(); $("#iz-m-t").show();  $(".duracion_medicina").hide(); $(".planestudios_medicina").hide();
   });
 
   $("#iz-m-t").click(function(event){
+   $(".btn-planestudio-m").hide(); $(".btn-teoricas-m").hide(); $(".btn-duracion-m").hide(); 
    $(".teoricas_medicina").hide(); $("#der-m-t").hide(); $("#iz-m-t").hide(); $(".planestudios_medicina").show(); $("#der-m-p").show(); $("#iz-m-p").show();
   }); 
 
   $("#der-m-t").click(function(event){
+    $(".btn-planestudio-m").hide(); $(".btn-teoricas-m").hide(); $(".btn-duracion-m").hide(); 
     $(".teoricas_medicina").hide(); $("#der-m-t").hide(); $("#iz-m-t").hide(); $(".duracion_medicina").show(); $("#der-m-d").show(); $("#iz-m-d").show();
   }); 
 
@@ -342,14 +420,17 @@ $("#boton13").click(function(){
   // ________duracion__________
 
   $("#btn_duración_m").click(function(event){
+    $(".btn-planestudio-m").hide(); $(".btn-teoricas-m").hide(); $(".btn-duracion-m").hide(); 
     $(".duracion_medicina").show(); $("#btn-cerrar2").show(); $("#der-m-d").show(); $("#iz-m-d").show(); $(".planestudios_medicina").hide(); $(".teoricas_medicina").hide(); 
   });
 
   $("#iz-m-d").click(function(event){
+   $(".btn-planestudio-m").hide(); $(".btn-teoricas-m").hide(); $(".btn-duracion-m").hide(); 
    $(".duracion_medicina").hide(); $("#der-m-d").hide(); $("#iz-m-d").hide(); $(".teoricas_medicina").show(); $("#der-m-t").show(); $("#iz-m-t").show();
   }); 
 
   $("#der-m-d").click(function(event){
+    $(".btn-planestudio-m").hide(); $(".btn-teoricas-m").hide(); $(".btn-duracion-m").hide(); 
     $(".duracion_medicina").hide(); $("#der-m-d").hide(); $("#iz-m-d").hide(); $(".planestudios_medicina").show(); $("#der-m-p").show(); $("#iz-m-p").show();
   }); 
 
@@ -367,15 +448,15 @@ $("#boton13").click(function(){
        // ________plan de estudios__________
 
       $("#btn_plan_e").click(function(event){
-        $(".planestudios_enfermeria").show(); $("#btn-cerrar3").show(); $("#der-e-p").show(); $("#iz-e-p").show(); $(".duracion_enfermeria").hide(); $(".teoricas_enfermeria").hide(); 
+        $(".btn-planestudio-e").hide(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".planestudios_enfermeria").show(); $("#btn-cerrar3").show(); $("#der-e-p").show(); $("#iz-e-p").show(); $(".duracion_enfermeria").hide(); $(".teoricas_enfermeria").hide(); 
       });
 
       $("#iz-e-p").click(function(event){
-       $(".planestudios_enfermeria").hide(); $("#der-e-p").hide(); $("#iz-e-p").hide(); $(".duracion_enfermeria").show(); $("#der-e-d").show(); $("#iz-e-d").show();
+       $(".btn-planestudio-e").hide(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".planestudios_enfermeria").hide(); $("#der-e-p").hide(); $("#iz-e-p").hide(); $(".duracion_enfermeria").show(); $("#der-e-d").show(); $("#iz-e-d").show();
       }); 
 
       $("#der-e-p").click(function(event){
-        $(".planestudios_enfermeria").hide(); $("#der-e-p").hide(); $("#iz-e-p").hide();$(".teoricas_enfermeria").show(); $("#der-e-t").show(); $("#iz-e-t").show();
+        $(".btn-planestudio-e").hide(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".planestudios_enfermeria").hide(); $("#der-e-p").hide(); $("#iz-e-p").hide();$(".teoricas_enfermeria").show(); $("#der-e-t").show(); $("#iz-e-t").show();
       }); 
 
 
@@ -383,15 +464,15 @@ $("#boton13").click(function(){
       // ________teoricas y practicas__________
 
       $("#btn_teo_e").click(function(event){
-        $(".teoricas_enfermeria").show(); $("#btn-cerrar3").show(); $("#der-e-t").show(); $("#iz-e-t").show();  $(".duracion_enfermeria").hide(); $(".planestudios_enfermeria").hide();
+        $(".btn-planestudio-e").hide(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".teoricas_enfermeria").show(); $("#btn-cerrar3").show(); $("#der-e-t").show(); $("#iz-e-t").show();  $(".duracion_enfermeria").hide(); $(".planestudios_enfermeria").hide();
       });
 
       $("#iz-e-t").click(function(event){
-       $(".teoricas_enfermeria").hide(); $("#der-e-t").hide(); $("#iz-e-t").hide(); $(".planestudios_enfermeria").show(); $("#der-e-p").show(); $("#iz-e-p").show();
+       $(".btn-planestudio-e").hide(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".teoricas_enfermeria").hide(); $("#der-e-t").hide(); $("#iz-e-t").hide(); $(".planestudios_enfermeria").show(); $("#der-e-p").show(); $("#iz-e-p").show();
       }); 
 
       $("#der-e-t").click(function(event){
-        $(".teoricas_enfermeria").hide(); $("#der-e-t").hide(); $("#iz-e-t").hide(); $(".duracion_enfermeria").show(); $("#der-e-d").show(); $("#iz-e-d").show();
+        $(".btn-planestudio-e").hide(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".teoricas_enfermeria").hide(); $("#der-e-t").hide(); $("#iz-e-t").hide(); $(".duracion_enfermeria").show(); $("#der-e-d").show(); $("#iz-e-d").show();
       }); 
 
 
@@ -399,15 +480,15 @@ $("#boton13").click(function(){
       // ________duracion__________
 
       $("#btn_duración_e").click(function(event){
-        $(".duracion_enfermeria").show(); $("#btn-cerrar3").show(); $("#der-e-d").show(); $("#iz-e-d").show(); $(".planestudios_enfermeria").hide(); $(".teoricas_enfermeria").hide(); 
+        $(".btn-planestudio-e").hide(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".duracion_enfermeria").show(); $("#btn-cerrar3").show(); $("#der-e-d").show(); $("#iz-e-d").show(); $(".planestudios_enfermeria").hide(); $(".teoricas_enfermeria").hide(); 
       });
 
       $("#iz-e-d").click(function(event){
-       $(".duracion_enfermeria").hide(); $("#der-e-d").hide(); $("#iz-e-d").hide(); $(".teoricas_enfermeria").show(); $("#der-e-t").show(); $("#iz-e-t").show();
+       $(".btn-planestudio-e").hide(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".duracion_enfermeria").hide(); $("#der-e-d").hide(); $("#iz-e-d").hide(); $(".teoricas_enfermeria").show(); $("#der-e-t").show(); $("#iz-e-t").show();
       }); 
 
       $("#der-e-d").click(function(event){
-        $(".duracion_enfermeria").hide(); $("#der-e-d").hide(); $("#iz-e-d").hide(); $(".planestudios_enfermeria").show(); $("#der-e-p").show(); $("#iz-e-p").show();
+        $(".btn-planestudio-e").hide(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".duracion_enfermeria").hide(); $("#der-e-d").hide(); $("#iz-e-d").hide(); $(".planestudios_enfermeria").show(); $("#der-e-p").show(); $("#iz-e-p").show();
       }); 
 
 
@@ -424,15 +505,15 @@ $("#boton13").click(function(){
        // ________plan de estudios__________
 
       $("#btn_plan_o").click(function(event){
-        $(".planestudios_obstetricia").show(); $("#btn-cerrar4").show(); $("#der-o-p").show(); $("#iz-o-p").show(); $(".duracion_obstetricia").hide(); $(".teoricas_obstetricia").hide(); 
+       $(".btn-planestudio-o").hide(); $(".btn-teoricas-o").hide(); $(".btn-duracion-o").hide();  $(".planestudios_obstetricia").show(); $("#btn-cerrar4").show(); $("#der-o-p").show(); $("#iz-o-p").show(); $(".duracion_obstetricia").hide(); $(".teoricas_obstetricia").hide(); 
       });
 
       $("#iz-o-p").click(function(event){
-       $(".planestudios_obstetricia").hide(); $("#der-o-p").hide(); $("#iz-o-p").hide(); $(".duracion_obstetricia").show(); $("#der-o-d").show(); $("#iz-o-d").show();
+      $(".btn-planestudio-o").hide(); $(".btn-teoricas-o").hide(); $(".btn-duracion-o").hide();  $(".planestudios_obstetricia").hide(); $("#der-o-p").hide(); $("#iz-o-p").hide(); $(".duracion_obstetricia").show(); $("#der-o-d").show(); $("#iz-o-d").show();
       }); 
 
       $("#der-o-p").click(function(event){
-        $(".planestudios_obstetricia").hide(); $("#der-o-p").hide(); $("#iz-o-p").hide();$(".teoricas_obstetricia").show(); $("#der-o-t").show(); $("#iz-o-t").show();
+       $(".btn-planestudio-o").hide(); $(".btn-teoricas-o").hide(); $(".btn-duracion-o").hide();   $(".planestudios_obstetricia").hide(); $("#der-o-p").hide(); $("#iz-o-p").hide();$(".teoricas_obstetricia").show(); $("#der-o-t").show(); $("#iz-o-t").show();
       }); 
 
 
@@ -440,15 +521,15 @@ $("#boton13").click(function(){
       // ________teoricas y practicas__________
 
       $("#btn_teo_o").click(function(event){
-        $(".teoricas_obstetricia").show(); $("#btn-cerrar4").show(); $("#der-o-t").show(); $("#iz-o-t").show();  $(".duracion_obstetricia").hide(); $(".planestudios_obstetricia").hide();
+        $(".btn-planestudio-o").hide(); $(".btn-teoricas-o").hide(); $(".btn-duracion-o").hide(); $(".teoricas_obstetricia").show(); $("#btn-cerrar4").show(); $("#der-o-t").show(); $("#iz-o-t").show();  $(".duracion_obstetricia").hide(); $(".planestudios_obstetricia").hide();
       });
 
       $("#iz-o-t").click(function(event){
-       $(".teoricas_obstetricia").hide(); $("#der-o-t").hide(); $("#iz-o-t").hide(); $(".planestudios_obstetricia").show(); $("#der-o-p").show(); $("#iz-o-p").show();
+       $(".btn-planestudio-o").hide(); $(".btn-teoricas-o").hide(); $(".btn-duracion-o").hide(); $(".teoricas_obstetricia").hide(); $("#der-o-t").hide(); $("#iz-o-t").hide(); $(".planestudios_obstetricia").show(); $("#der-o-p").show(); $("#iz-o-p").show();
       }); 
 
       $("#der-o-t").click(function(event){
-        $(".teoricas_obstetricia").hide(); $("#der-o-t").hide(); $("#iz-o-t").hide(); $(".duracion_obstetricia").show(); $("#der-o-d").show(); $("#iz-o-d").show();
+        $(".btn-planestudio-o").hide(); $(".btn-teoricas-o").hide(); $(".btn-duracion-o").hide(); $(".teoricas_obstetricia").hide(); $("#der-o-t").hide(); $("#iz-o-t").hide(); $(".duracion_obstetricia").show(); $("#der-o-d").show(); $("#iz-o-d").show();
       }); 
 
 
@@ -456,15 +537,15 @@ $("#boton13").click(function(){
       // ________duracion__________
 
       $("#btn_duración_o").click(function(event){
-        $(".duracion_obstetricia").show(); $("#btn-cerrar4").show(); $("#der-o-d").show(); $("#iz-o-d").show(); $(".planestudios_obstetricia").hide(); $(".teoricas_obstetricia").hide(); 
+        $(".btn-planestudio-o").hide(); $(".btn-teoricas-o").hide(); $(".btn-duracion-o").hide(); $(".duracion_obstetricia").show(); $("#btn-cerrar4").show(); $("#der-o-d").show(); $("#iz-o-d").show(); $(".planestudios_obstetricia").hide(); $(".teoricas_obstetricia").hide(); 
       });
 
       $("#iz-o-d").click(function(event){
-       $(".duracion_obstetricia").hide(); $("#der-o-d").hide(); $("#iz-o-d").hide(); $(".teoricas_obstetricia").show(); $("#der-o-t").show(); $("#iz-o-t").show();
+       $(".btn-planestudio-o").hide(); $(".btn-teoricas-o").hide(); $(".btn-duracion-o").hide(); $(".duracion_obstetricia").hide(); $("#der-o-d").hide(); $("#iz-o-d").hide(); $(".teoricas_obstetricia").show(); $("#der-o-t").show(); $("#iz-o-t").show();
       }); 
 
       $("#der-o-d").click(function(event){
-        $(".duracion_obstetricia").hide(); $("#der-o-d").hide(); $("#iz-o-d").hide(); $(".planestudios_obstetricia").show(); $("#der-o-p").show(); $("#iz-o-p").show();
+        $(".btn-planestudio-o").hide(); $(".btn-teoricas-o").hide(); $(".btn-duracion-o").hide(); $(".duracion_obstetricia").hide(); $("#der-o-d").hide(); $("#iz-o-d").hide(); $(".planestudios_obstetricia").show(); $("#der-o-p").show(); $("#iz-o-p").show();
       }); 
 
 
@@ -480,15 +561,15 @@ $("#boton13").click(function(){
        // ________plan de estudios__________
 
       $("#btn_plan_t").click(function(event){
-        $(".planestudios_tpc").show(); $("#btn-cerrar5").show(); $("#der-t-p").show(); $("#iz-t-p").show(); $(".duracion_tpc").hide(); $(".teoricas_tpc").hide(); 
+       $(".btn-planestudio-t").hide(); $(".btn-teoricas-t").hide(); $(".btn-duracion-t").hide();  $(".planestudios_tpc").show(); $("#btn-cerrar5").show(); $("#der-t-p").show(); $("#iz-t-p").show(); $(".duracion_tpc").hide(); $(".teoricas_tpc").hide(); 
       });
 
       $("#iz-t-p").click(function(event){
-       $(".planestudios_tpc").hide(); $("#der-t-p").hide(); $("#iz-t-p").hide(); $(".duracion_tpc").show(); $("#der-t-d").show(); $("#iz-t-d").show();
+      $(".btn-planestudio-t").hide(); $(".btn-teoricas-t").hide(); $(".btn-duracion-t").hide();  $(".planestudios_tpc").hide(); $("#der-t-p").hide(); $("#iz-t-p").hide(); $(".duracion_tpc").show(); $("#der-t-d").show(); $("#iz-t-d").show();
       }); 
 
       $("#der-t-p").click(function(event){
-        $(".planestudios_tpc").hide(); $("#der-t-p").hide(); $("#iz-t-p").hide();$(".teoricas_tpc").show(); $("#der-t-t").show(); $("#iz-t-t").show();
+       $(".btn-planestudio-t").hide(); $(".btn-teoricas-t").hide(); $(".btn-duracion-t").hide();  $(".planestudios_tpc").hide(); $("#der-t-p").hide(); $("#iz-t-p").hide();$(".teoricas_tpc").show(); $("#der-t-t").show(); $("#iz-t-t").show();
       }); 
 
 
@@ -496,15 +577,15 @@ $("#boton13").click(function(){
       // ________teoricas y practicas__________
 
       $("#btn_teo_t").click(function(event){
-        $(".teoricas_tpc").show(); $("#btn-cerrar5").show(); $("#der-t-t").show(); $("#iz-t-t").show();  $(".duracion_tpc").hide(); $(".planestudios_tpc").hide();
+        $(".btn-planestudio-t").hide(); $(".btn-teoricas-t").hide(); $(".btn-duracion-t").hide(); $(".teoricas_tpc").show(); $("#btn-cerrar5").show(); $("#der-t-t").show(); $("#iz-t-t").show();  $(".duracion_tpc").hide(); $(".planestudios_tpc").hide();
       });
 
       $("#iz-t-t").click(function(event){
-       $(".teoricas_tpc").hide(); $("#der-t-t").hide(); $("#iz-t-t").hide(); $(".planestudios_tpc").show(); $("#der-t-p").show(); $("#iz-t-p").show();
+       $(".btn-planestudio-t").hide(); $(".btn-teoricas-t").hide(); $(".btn-duracion-t").hide(); $(".teoricas_tpc").hide(); $("#der-t-t").hide(); $("#iz-t-t").hide(); $(".planestudios_tpc").show(); $("#der-t-p").show(); $("#iz-t-p").show();
       }); 
 
       $("#der-t-t").click(function(event){
-        $(".teoricas_tpc").hide(); $("#der-t-t").hide(); $("#iz-t-t").hide(); $(".duracion_tpc").show(); $("#der-t-d").show(); $("#iz-t-d").show();
+        $(".btn-planestudio-t").hide(); $(".btn-teoricas-t").hide(); $(".btn-duracion-t").hide(); $(".teoricas_tpc").hide(); $("#der-t-t").hide(); $("#iz-t-t").hide(); $(".duracion_tpc").show(); $("#der-t-d").show(); $("#iz-t-d").show();
       }); 
 
 
@@ -512,15 +593,15 @@ $("#boton13").click(function(){
       // ________duracion__________
 
       $("#btn_duración_t").click(function(event){
-        $(".duracion_tpc").show(); $("#btn-cerrar5").show(); $("#der-t-d").show(); $("#iz-t-d").show(); $(".planestudios_tpc").hide(); $(".teoricas_tpc").hide(); 
+        $(".btn-planestudio-t").hide(); $(".btn-teoricas-t").hide(); $(".btn-duracion-t").hide(); $(".duracion_tpc").show(); $("#btn-cerrar5").show(); $("#der-t-d").show(); $("#iz-t-d").show(); $(".planestudios_tpc").hide(); $(".teoricas_tpc").hide(); 
       });
 
-      $("#iz-o-d").click(function(event){
-       $(".duracion_tpc").hide(); $("#der-t-d").hide(); $("#iz-t-d").hide(); $(".teoricas_tpc").show(); $("#der-t-t").show(); $("#iz-t-t").show();
+      $("#iz-t-d").click(function(event){
+       $(".btn-planestudio-t").hide(); $(".btn-teoricas-t").hide(); $(".btn-duracion-t").hide(); $(".duracion_tpc").hide(); $("#der-t-d").hide(); $("#iz-t-d").hide(); $(".teoricas_tpc").show(); $("#der-t-t").show(); $("#iz-t-t").show();
       }); 
 
-      $("#der-o-d").click(function(event){
-        $(".duracion_tpc").hide(); $("#der-t-d").hide(); $("#iz-t-d").hide(); $(".planestudios_tpc").show(); $("#der-t-p").show(); $("#iz-t-p").show();
+      $("#der-t-d").click(function(event){
+        $(".btn-planestudio-t").hide(); $(".btn-teoricas-t").hide(); $(".btn-duracion-t").hide(); $(".duracion_tpc").hide(); $("#der-t-d").hide(); $("#iz-t-d").hide(); $(".planestudios_tpc").show(); $("#der-t-p").show(); $("#iz-t-p").show();
       }); 
 
 
@@ -531,6 +612,7 @@ $("#boton13").click(function(){
   $("#btn-cerrar1").click(function(event){
 
     $(".duracion_nutricion").hide(); $(".planestudios_nutricion").hide(); $(".teoricas_nutricion").hide(); 
+    $(".btn-planestudio-n").show(); $(".btn-teoricas-n").show(); $(".btn-duracion-n").show();
     $("#btn-cerrar1").hide();
     $("#der-n-d").hide(); $("#der-n-p").hide(); $("#der-n-t").hide();
     $("#iz-n-d").hide(); $("#iz-n-p").hide(); $("#iz-n-t").hide();
@@ -538,7 +620,8 @@ $("#boton13").click(function(){
 
   $("#btn-cerrar2").click(function(event){
 
-    $(".duracion_medicina").hide(); $(".planestudios_medicina").hide(); $(".teoricas_medicina").hide(); 
+    $(".duracion_medicina").hide(); $(".planestudios_medicina").hide(); $(".teoricas_medicina").hide();
+    $(".btn-planestudio-m").show(); $(".btn-teoricas-m").show(); $(".btn-duracion-m").show();
     $("#btn-cerrar2").hide();
     $("#der-m-d").hide(); $("#der-m-p").hide(); $("#der-m-t").hide();
     $("#iz-m-d").hide(); $("#iz-m-p").hide(); $("#iz-m-t").hide();
@@ -547,6 +630,7 @@ $("#boton13").click(function(){
   $("#btn-cerrar3").click(function(event){
     $("#btn-cerrar3").hide();
     $(".duracion_enfermeria").hide(); $(".planestudios_enfermeria").hide(); $(".teoricas_enfermeria").hide(); 
+    $(".btn-planestudio-e").show(); $(".btn-teoricas-e").show(); $(".btn-duracion-e").show();
     $("#der-e-d").hide(); $("#der-e-p").hide(); $("#der-e-t").hide();
     $("#iz-e-d").hide(); $("#iz-e-p").hide(); $("#iz-e-t").hide();
   });
@@ -554,6 +638,7 @@ $("#boton13").click(function(){
   $("#btn-cerrar4").click(function(event){
     $("#btn-cerrar4").hide();
     $(".duracion_obstetricia").hide(); $(".planestudios_obstetricia").hide(); $(".teoricas_obstetricia").hide(); 
+    $(".btn-planestudio-o").show(); $(".btn-teoricas-o").show(); $(".btn-duracion-o").show();
     $("#der-o-d").hide(); $("#der-o-p").hide(); $("#der-o-t").hide();
     $("#iz-o-d").hide(); $("#iz-o-p").hide(); $("#iz-o-t").hide();
   });
@@ -561,11 +646,14 @@ $("#boton13").click(function(){
   $("#btn-cerrar5").click(function(event){
     $("#btn-cerrar5").hide();
     $(".duracion_tpc").hide(); $(".planestudios_tpc").hide(); $(".teoricas_tpc").hide(); 
+    $(".btn-planestudio-t").show(); $(".btn-teoricas-t").show(); $(".btn-duracion-t").show();
     $("#der-t-d").hide(); $("#der-t-p").hide(); $("#der-t-t").hide();
     $("#iz-t-d").hide(); $("#iz-t-p").hide(); $("#iz-t-t").hide();
   });
 
+  $("#li_selected").click(function(event){
 
+  });  
 
 
 
