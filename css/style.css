@@ -78,17 +78,19 @@ body{
 }
 
 .presentacion{
-  font-family: 'Roboto', sans-serif;
-  text-align: left;
+   font-family: 'Roboto', sans-serif;
+  text-align: justify;
   font-size: 22px;
+  width: 66%;
   font-style: italic;
   margin-top: 5.5%;
   left: 25%;
+  top: 8%;
   position: absolute;
 }
 
 .presentador{
- top: 10%;
+ top: 25%;
  position: absolute;
 }
 
