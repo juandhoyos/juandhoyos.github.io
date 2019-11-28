@@ -967,7 +967,7 @@ $("[name='ircarreras']").click(function(){
 
       $("#dos-tpc").click(function(event){
         $("#dos-tpc").css("background","#4EDEEE"); $("#un-tpc").css("background","#F7F7F7"); $("#tres-tpc").css("background","#F7F7F7");
-        $(".segundoanoto").show(); $(".primerano_t").hide(); $(".tercerano_t").hide();
+        $(".segundoano_t").show(); $(".primerano_t").hide(); $(".tercerano_t").hide();
       });
 
       $("#tres-tpc").click(function(event){
