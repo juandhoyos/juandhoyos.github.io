@@ -749,6 +749,13 @@ $("[name='ircarreras']").click(function(){
         $(".btn-planestudio-t").hide(); $(".btn-teoricas-t").hide(); $(".btn-duracion-t").hide(); $(".teoricas_tpc").hide(); $("#der-t-t").hide(); $("#iz-t-t").hide(); $(".duracion_tpc").show(); $("#der-t-d").show(); $("#iz-t-d").show();
       });
 
+     //esmpiezo a borrar todo por defecto
+     $(".seleccionesp").hide();  $(".nutri-hs-obs").hide();    $(".nutri-pr-obs").hide();
+
+
+     $("#prac_o").click(function(){
+       $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".nutri-hs-obs").show();    $(".nutri-pr-obs").show();
+     });
 
 
       // ________duracion__________
@@ -1115,7 +1122,7 @@ function morir(){
 
 //reinicio de carreras
   //saco las ventanas y vuelvo a pcarreras
-$(".selecciones").hide(); $(".instrucciones").show();
+$(".selecciones").hide(); $(".instrucciones").show(); $(".instruccionesp").hide();
 $(".duracion_nutricion").hide(); $(".duracion_medicina").hide(); $(".duracion_enfermeria").hide(); $(".duracion_obstetricia").hide(); $(".duracion_tpc").hide();
 $(".planestudios_nutricion").hide(); $(".planestudios_medicina").hide(); $(".planestudios_enfermeria").hide(); $(".planestudios_obstetricia").hide(); $(".planestudios_tpc").hide();
 $(".teoricas_nutricion").hide(); $(".teoricas_medicina").hide(); $(".teoricas_enfermeria").hide(); $(".teoricas_obstetricia").hide(); $(".teoricas_tpc").hide();
