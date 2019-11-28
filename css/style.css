@@ -1284,7 +1284,7 @@ bottom: 45%;
   -moz-box-shadow: 1px 1px 22px 2px rgba(0,0,0,0.45);
   box-shadow: 1px 1px 22px 2px rgba(0,0,0,0.45);
 }
-/* LUZ: titulos de cantidad de años */
+/* LUZ, a partir de aca agrego */
 .ter-p{
 font-size: 17px;
 position: absolute;
@@ -1298,7 +1298,7 @@ top: 21.5%;
   left: 57%;
   top: 48%;
 }
-/* fin */
+
 .nutrip-ter-p{
   width: 400px;
   position: absolute;
@@ -1512,4 +1512,72 @@ top: 21.5%;
 }
 .tpc-ter-a2 img{
   width: 100%;
+}
+
+/* teorias y practicas */
+
+.plan_box1{
+  background: #F7F7F7;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-left: 90px;
+  width: 390px;
+  padding: 17px;
+  height: 300px;
+}
+.plan_box1 h6{
+  font-size: 24px;
+}
+.plan_box1 p{
+  font-size: 18px;
+}
+.practiquita{
+  text-align: center;
+}
+.plan_box2{
+  background: #F7F7F7;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-left: 90px;
+  width: 390px;
+  height: 150px;
+}
+.submenu_prac{
+  position: absolute;
+    z-index: 14;
+    right: 90px;
+    top: 60px;
+}
+
+.submenu_prac li{
+  margin-top: 42px;
+  float: right;
+  list-style:none;
+  margin-right: 25px;
+}
+
+.instruccionesp{
+  background: #F7F7F7;
+  border-radius: 15px;
+  position: absolute;
+  left: 53%;
+  width: 40%;
+  bottom: 45%;
+}
+.nutri-hs-obs{
+  position: absolute;
+    top: 40%;
+    left: 61%;
+}
+
+.nutri-pr-obs{
+  left: 68%;
+    position: absolute;
+    top: 67%;
+}
+.prac-c{
+  left: 51.5%;
+    font-size: 17px;
+    top: 50.5%;
+    position: absolute;
 }
