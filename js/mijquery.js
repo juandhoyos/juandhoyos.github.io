@@ -337,6 +337,17 @@ $("[name='ircarreras']").click(function(){
      $(".btn-planestudio-e").show(); $(".btn-teoricas-e").show(); $(".btn-duracion-e").show();
      $(".btn-planestudio-o").show(); $(".btn-teoricas-o").show(); $(".btn-duracion-o").show();
      $("#btn-cerrar1").hide(); $("#btn-cerrar2").hide(); $("#btn-cerrar3").hide(); $("#btn-cerrar4").hide(); $("#btn-cerrar5").hide();
+     //escondo prac de enf
+     $(".enf-pr-tpc").hide(); $(".enf-hs-med").hide(); $(".enf-pr-med").hide(); $(".enf-hs-obs").hide(); $(".enf-pr-obs").hide(); $(".enf-hs-nutri").hide(); $(".enf-pr-nutri").hide();
+     //escondo prac med
+     $(".med-hs-obs").hide(); $(".med-pr-obs").hide(); $(".med-hs-tpc").hide(); $(".med-pr-tpc").hide(); $(".med-hs-enf").hide(); $(".med-pr-enf").hide(); $(".med-hs-nutri").hide(); $(".med-pr-nutri").hide();
+     //escondo prac nutri
+     $(".nutri-hs-obs").hide();  $(".nutri-pr-obs").hide(); $(".nutri-hs-tpc").hide(); $(".nutri-pr-tpc").hide(); $(".nutri-hs-enf").hide(); $(".nutri-pr-enf").hide(); $(".nutri-hs-med").hide(); $(".nutri-pr-med").hide();
+     //escondo prac obs
+     $(".obs-hs-tpc").hide();  $(".obs-pr-tpc").hide(); $(".obs-hs-med").hide(); $(".obs-pr-med").hide(); $(".obs-hs-enf").hide(); $(".obs-pr-enf").hide(); $(".obs-hs-nutri").hide(); $(".obs-pr-nutri").hide();
+     //escondo prac tpc
+     $(".tpc-hs-obs").hide();    $(".tpc-pr-obs").hide(); $(".tpc-hs-med").hide(); $(".tpc-pr-med").hide(); $(".tpc-hs-enf").hide(); $(".tpc-pr-enf").hide(); $(".tpc-hs-nutri").hide(); $(".tpc-pr-nutri").hide();
+
    });
    $("#carrera2").click(function(){
      $(".duracion_nutricion").hide(); $(".duracion_medicina").hide(); $(".duracion_enfermeria").hide(); $(".duracion_obstetricia").hide(); $(".duracion_tpc").hide();
@@ -348,6 +359,17 @@ $("[name='ircarreras']").click(function(){
      $(".btn-planestudio-e").show(); $(".btn-teoricas-e").show(); $(".btn-duracion-e").show();
      $(".btn-planestudio-o").show(); $(".btn-teoricas-o").show(); $(".btn-duracion-o").show();
      $("#btn-cerrar1").hide(); $("#btn-cerrar2").hide(); $("#btn-cerrar3").hide(); $("#btn-cerrar4").hide(); $("#btn-cerrar5").hide();
+     //escondo prac de enf
+     $(".enf-pr-tpc").hide(); $(".enf-hs-med").hide(); $(".enf-pr-med").hide(); $(".enf-hs-obs").hide(); $(".enf-pr-obs").hide(); $(".enf-hs-nutri").hide(); $(".enf-pr-nutri").hide();
+     //escondo prac med
+     $(".med-hs-obs").hide(); $(".med-pr-obs").hide(); $(".med-hs-tpc").hide(); $(".med-pr-tpc").hide(); $(".med-hs-enf").hide(); $(".med-pr-enf").hide(); $(".med-hs-nutri").hide(); $(".med-pr-nutri").hide();
+     //escondo prac nutri
+     $(".nutri-hs-obs").hide();  $(".nutri-pr-obs").hide(); $(".nutri-hs-tpc").hide(); $(".nutri-pr-tpc").hide(); $(".nutri-hs-enf").hide(); $(".nutri-pr-enf").hide(); $(".nutri-hs-med").hide(); $(".nutri-pr-med").hide();
+     //escondo prac obs
+     $(".obs-hs-tpc").hide();  $(".obs-pr-tpc").hide(); $(".obs-hs-med").hide(); $(".obs-pr-med").hide(); $(".obs-hs-enf").hide(); $(".obs-pr-enf").hide(); $(".obs-hs-nutri").hide(); $(".obs-pr-nutri").hide();
+     //escondo prac tpc
+     $(".tpc-hs-obs").hide();    $(".tpc-pr-obs").hide(); $(".tpc-hs-med").hide(); $(".tpc-pr-med").hide(); $(".tpc-hs-enf").hide(); $(".tpc-pr-enf").hide(); $(".tpc-hs-nutri").hide(); $(".tpc-pr-nutri").hide();
+
    });
    $("#carrera3").click(function(){
      $(".duracion_nutricion").hide(); $(".duracion_medicina").hide(); $(".duracion_enfermeria").hide(); $(".duracion_obstetricia").hide(); $(".duracion_tpc").hide();
@@ -359,6 +381,17 @@ $("[name='ircarreras']").click(function(){
      $(".btn-planestudio-e").show(); $(".btn-teoricas-e").show(); $(".btn-duracion-e").show();
      $(".btn-planestudio-o").show(); $(".btn-teoricas-o").show(); $(".btn-duracion-o").show();
      $("#btn-cerrar1").hide(); $("#btn-cerrar2").hide(); $("#btn-cerrar3").hide(); $("#btn-cerrar4").hide(); $("#btn-cerrar5").hide();
+     //escondo prac de enf
+     $(".enf-pr-tpc").hide(); $(".enf-hs-med").hide(); $(".enf-pr-med").hide(); $(".enf-hs-obs").hide(); $(".enf-pr-obs").hide(); $(".enf-hs-nutri").hide(); $(".enf-pr-nutri").hide();
+     //escondo prac med
+     $(".med-hs-obs").hide(); $(".med-pr-obs").hide(); $(".med-hs-tpc").hide(); $(".med-pr-tpc").hide(); $(".med-hs-enf").hide(); $(".med-pr-enf").hide(); $(".med-hs-nutri").hide(); $(".med-pr-nutri").hide();
+     //escondo prac nutri
+     $(".nutri-hs-obs").hide();  $(".nutri-pr-obs").hide(); $(".nutri-hs-tpc").hide(); $(".nutri-pr-tpc").hide(); $(".nutri-hs-enf").hide(); $(".nutri-pr-enf").hide(); $(".nutri-hs-med").hide(); $(".nutri-pr-med").hide();
+     //escondo prac obs
+     $(".obs-hs-tpc").hide();  $(".obs-pr-tpc").hide(); $(".obs-hs-med").hide(); $(".obs-pr-med").hide(); $(".obs-hs-enf").hide(); $(".obs-pr-enf").hide(); $(".obs-hs-nutri").hide(); $(".obs-pr-nutri").hide();
+     //escondo prac tpc
+     $(".tpc-hs-obs").hide();    $(".tpc-pr-obs").hide(); $(".tpc-hs-med").hide(); $(".tpc-pr-med").hide(); $(".tpc-hs-enf").hide(); $(".tpc-pr-enf").hide(); $(".tpc-hs-nutri").hide(); $(".tpc-pr-nutri").hide();
+
     });
    $("#carrera4").click(function(){
      $(".duracion_nutricion").hide(); $(".duracion_medicina").hide(); $(".duracion_enfermeria").hide(); $(".duracion_obstetricia").hide(); $(".duracion_tpc").hide();
@@ -370,6 +403,17 @@ $("[name='ircarreras']").click(function(){
      $(".btn-planestudio-e").show(); $(".btn-teoricas-e").show(); $(".btn-duracion-e").show();
      $(".btn-planestudio-o").show(); $(".btn-teoricas-o").show(); $(".btn-duracion-o").show();
      $("#btn-cerrar1").hide(); $("#btn-cerrar2").hide(); $("#btn-cerrar3").hide(); $("#btn-cerrar4").hide(); $("#btn-cerrar5").hide();
+     //escondo prac de enf
+     $(".enf-pr-tpc").hide(); $(".enf-hs-med").hide(); $(".enf-pr-med").hide(); $(".enf-hs-obs").hide(); $(".enf-pr-obs").hide(); $(".enf-hs-nutri").hide(); $(".enf-pr-nutri").hide();
+     //escondo prac med
+     $(".med-hs-obs").hide(); $(".med-pr-obs").hide(); $(".med-hs-tpc").hide(); $(".med-pr-tpc").hide(); $(".med-hs-enf").hide(); $(".med-pr-enf").hide(); $(".med-hs-nutri").hide(); $(".med-pr-nutri").hide();
+     //escondo prac nutri
+     $(".nutri-hs-obs").hide();  $(".nutri-pr-obs").hide(); $(".nutri-hs-tpc").hide(); $(".nutri-pr-tpc").hide(); $(".nutri-hs-enf").hide(); $(".nutri-pr-enf").hide(); $(".nutri-hs-med").hide(); $(".nutri-pr-med").hide();
+     //escondo prac obs
+     $(".obs-hs-tpc").hide();  $(".obs-pr-tpc").hide(); $(".obs-hs-med").hide(); $(".obs-pr-med").hide(); $(".obs-hs-enf").hide(); $(".obs-pr-enf").hide(); $(".obs-hs-nutri").hide(); $(".obs-pr-nutri").hide();
+     //escondo prac tpc
+     $(".tpc-hs-obs").hide();    $(".tpc-pr-obs").hide(); $(".tpc-hs-med").hide(); $(".tpc-pr-med").hide(); $(".tpc-hs-enf").hide(); $(".tpc-pr-enf").hide(); $(".tpc-hs-nutri").hide(); $(".tpc-pr-nutri").hide();
+
       });
    $("#carrera5").click(function(){
      $(".duracion_nutricion").hide(); $(".duracion_medicina").hide(); $(".duracion_enfermeria").hide(); $(".duracion_obstetricia").hide(); $(".duracion_tpc").hide();
@@ -381,6 +425,17 @@ $("[name='ircarreras']").click(function(){
      $(".btn-planestudio-e").show(); $(".btn-teoricas-e").show(); $(".btn-duracion-e").show();
      $(".btn-planestudio-o").show(); $(".btn-teoricas-o").show(); $(".btn-duracion-o").show();
      $("#btn-cerrar1").hide(); $("#btn-cerrar2").hide(); $("#btn-cerrar3").hide(); $("#btn-cerrar4").hide(); $("#btn-cerrar5").hide();
+     //escondo prac de enf
+     $(".enf-pr-tpc").hide(); $(".enf-hs-med").hide(); $(".enf-pr-med").hide(); $(".enf-hs-obs").hide(); $(".enf-pr-obs").hide(); $(".enf-hs-nutri").hide(); $(".enf-pr-nutri").hide();
+     //escondo prac med
+     $(".med-hs-obs").hide(); $(".med-pr-obs").hide(); $(".med-hs-tpc").hide(); $(".med-pr-tpc").hide(); $(".med-hs-enf").hide(); $(".med-pr-enf").hide(); $(".med-hs-nutri").hide(); $(".med-pr-nutri").hide();
+     //escondo prac nutri
+     $(".nutri-hs-obs").hide();  $(".nutri-pr-obs").hide(); $(".nutri-hs-tpc").hide(); $(".nutri-pr-tpc").hide(); $(".nutri-hs-enf").hide(); $(".nutri-pr-enf").hide(); $(".nutri-hs-med").hide(); $(".nutri-pr-med").hide();
+     //escondo prac obs
+     $(".obs-hs-tpc").hide();  $(".obs-pr-tpc").hide(); $(".obs-hs-med").hide(); $(".obs-pr-med").hide(); $(".obs-hs-enf").hide(); $(".obs-pr-enf").hide(); $(".obs-hs-nutri").hide(); $(".obs-pr-nutri").hide();
+     //escondo prac tpc
+     $(".tpc-hs-obs").hide();    $(".tpc-pr-obs").hide(); $(".tpc-hs-med").hide(); $(".tpc-pr-med").hide(); $(".tpc-hs-enf").hide(); $(".tpc-pr-enf").hide(); $(".tpc-hs-nutri").hide(); $(".tpc-pr-nutri").hide();
+
    });
 
 //______NUTRICION_______//
@@ -424,6 +479,22 @@ $("[name='ircarreras']").click(function(){
   $("#der-n-t").click(function(event){
    $(".btn-planestudio-n").hide(); $(".btn-teoricas-n").hide(); $(".btn-duracion-n").hide();
    $(".teoricas_nutricion").hide(); $("#der-n-t").hide(); $("#iz-n-t").hide(); $(".duracion_nutricion").show(); $("#der-n-d").show(); $("#iz-n-d").show();
+  });
+
+  $("#prac_o").click(function(){
+    $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".nutri-hs-obs").show();    $(".nutri-pr-obs").show(); $(".nutri-hs-tpc").hide(); $(".nutri-pr-tpc").hide();  $(".nutri-hs-enf").hide(); $(".nutri-pr-enf").hide(); $(".nutri-hs-med").hide(); $(".nutri-pr-med").hide();
+  });
+
+  $("#prac_t").click(function(){
+    $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".nutri-hs-obs").hide();    $(".nutri-pr-obs").hide(); $(".nutri-hs-tpc").show(); $(".nutri-pr-tpc").show(); $(".nutri-hs-enf").hide(); $(".nutri-pr-enf").hide(); $(".nutri-hs-med").hide(); $(".nutri-pr-med").hide();
+  });
+
+  $("#prac_e").click(function(){
+    $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".nutri-hs-obs").hide();    $(".nutri-pr-obs").hide(); $(".nutri-hs-tpc").hide(); $(".nutri-pr-tpc").hide(); $(".nutri-hs-enf").show(); $(".nutri-pr-enf").show(); $(".nutri-hs-med").hide(); $(".nutri-pr-med").hide();
+  });
+
+  $("#prac_m").click(function(){
+    $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".nutri-hs-obs").hide();    $(".nutri-pr-obs").hide(); $(".nutri-hs-tpc").hide(); $(".nutri-pr-tpc").hide(); $(".nutri-hs-enf").hide(); $(".nutri-pr-enf").hide(); $(".nutri-hs-med").show(); $(".nutri-pr-med").show();
   });
 
 
@@ -512,6 +583,21 @@ $("[name='ircarreras']").click(function(){
     $(".teoricas_medicina").hide(); $("#der-m-t").hide(); $("#iz-m-t").hide(); $(".duracion_medicina").show(); $("#der-m-d").show(); $("#iz-m-d").show();
   });
 
+  $("#pracM_o").click(function(){
+    $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".med-hs-obs").show();    $(".med-pr-obs").show(); $(".med-hs-tpc").hide(); $(".med-pr-tpc").hide();  $(".med-hs-enf").hide(); $(".med-pr-enf").hide(); $(".med-hs-nutri").hide(); $(".med-pr-nutri").hide();
+  });
+
+  $("#pracM_t").click(function(){
+    $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".med-hs-obs").hide();    $(".med-pr-obs").hide(); $(".med-hs-tpc").show(); $(".med-pr-tpc").show(); $(".med-hs-enf").hide(); $(".med-pr-enf").hide(); $(".med-hs-nutri").hide(); $(".med-pr-nutri").hide();
+  });
+
+  $("#pracM_e").click(function(){
+    $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".med-hs-obs").hide();    $(".med-pr-obs").hide(); $(".med-hs-tpc").hide(); $(".med-pr-tpc").hide(); $(".med-hs-enf").show(); $(".med-pr-enf").show(); $(".med-hs-nutri").hide(); $(".med-pr-nutri").hide();
+  });
+
+  $("#pracM_n").click(function(){
+    $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".med-hs-obs").hide();    $(".med-pr-obs").hide(); $(".med-hs-tpc").hide(); $(".med-pr-tpc").hide(); $(".med-hs-enf").hide(); $(".med-pr-enf").hide(); $(".med-hs-nutri").show(); $(".med-pr-nutri").show();
+  });
 
 
   // ________duracion__________
@@ -595,7 +681,21 @@ $("[name='ircarreras']").click(function(){
         $(".btn-planestudio-e").hide(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".teoricas_enfermeria").hide(); $("#der-e-t").hide(); $("#iz-e-t").hide(); $(".duracion_enfermeria").show(); $("#der-e-d").show(); $("#iz-e-d").show();
       });
 
+      $("#pracE_t").click(function(){
+        $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".enf-hs-tpc").show();    $(".enf-pr-tpc").show(); $(".enf-hs-med").hide(); $(".enf-pr-med").hide();  $(".enf-hs-obs").hide(); $(".enf-pr-obs").hide(); $(".enf-hs-nutri").hide(); $(".enf-pr-nutri").hide();
+      });
 
+      $("#pracE_m").click(function(){
+        $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".enf-hs-tpc").hide();    $(".enf-pr-tpc").hide(); $(".enf-hs-med").show(); $(".enf-pr-med").show(); $(".enf-hs-obs").hide(); $(".enf-pr-obs").hide(); $(".enf-hs-nutri").hide(); $(".enf-pr-nutri").hide();
+      });
+
+      $("#pracE_o").click(function(){
+        $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".enf-hs-tpc").hide();    $(".enf-pr-tpc").hide(); $(".enf-hs-med").hide(); $(".enf-pr-med").hide(); $(".enf-hs-obs").show(); $(".enf-pr-obs").show(); $(".enf-hs-nutri").hide(); $(".enf-pr-nutri").hide();
+      });
+
+      $("#pracE_n").click(function(){
+        $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".enf-hs-tpc").hide();    $(".enf-pr-tpc").hide(); $(".enf-hs-med").hide(); $(".enf-pr-med").hide(); $(".enf-hs-obs").hide(); $(".enf-pr-obs").hide(); $(".enf-hs-nutri").show(); $(".enf-pr-nutri").show();
+      });
 
       // ________duracion__________
 
@@ -673,7 +773,21 @@ $("[name='ircarreras']").click(function(){
         $(".btn-planestudio-o").hide(); $(".btn-teoricas-o").hide(); $(".btn-duracion-o").hide(); $(".teoricas_obstetricia").hide(); $("#der-o-t").hide(); $("#iz-o-t").hide(); $(".duracion_obstetricia").show(); $("#der-o-d").show(); $("#iz-o-d").show();
       });
 
+      $("#pracO_t").click(function(){
+        $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".obs-hs-tpc").show();    $(".obs-pr-tpc").show(); $(".obs-hs-med").hide(); $(".obs-pr-med").hide();  $(".obs-hs-enf").hide(); $(".obs-pr-enf").hide(); $(".obs-hs-nutri").hide(); $(".obs-pr-nutri").hide();
+      });
 
+      $("#pracO_m").click(function(){
+        $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".obs-hs-tpc").hide();    $(".obs-pr-tpc").hide(); $(".obs-hs-med").show(); $(".obs-pr-med").show(); $(".obs-hs-enf").hide(); $(".obs-pr-enf").hide(); $(".obs-hs-nutri").hide(); $(".obs-pr-nutri").hide();
+      });
+
+      $("#pracO_e").click(function(){
+        $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".obs-hs-tpc").hide();    $(".obs-pr-tpc").hide(); $(".obs-hs-med").hide(); $(".obs-pr-med").hide(); $(".obs-hs-enf").show(); $(".obs-pr-enf").show(); $(".obs-hs-nutri").hide(); $(".obs-pr-nutri").hide();
+      });
+
+      $("#pracO_n").click(function(){
+        $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".obs-hs-tpc").hide();    $(".obs-pr-tpc").hide(); $(".obs-hs-med").hide(); $(".obs-pr-med").hide(); $(".obs-hs-enf").hide(); $(".obs-pr-enf").hide(); $(".obs-hs-nutri").show(); $(".obs-pr-nutri").show();
+      });
 
       // ________duracion__________
 
@@ -752,10 +866,23 @@ $("[name='ircarreras']").click(function(){
      //esmpiezo a borrar todo por defecto
      $(".seleccionesp").hide();  $(".nutri-hs-obs").hide();    $(".nutri-pr-obs").hide();
 
-
-     $("#prac_o").click(function(){
-       $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".nutri-hs-obs").show();    $(".nutri-pr-obs").show();
+     $("#pracT_o").click(function(){
+       $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".tpc-hs-obs").show();    $(".tpc-pr-obs").show(); $(".tpc-hs-med").hide(); $(".tpc-pr-med").hide();  $(".tpc-hs-enf").hide(); $(".tpc-pr-enf").hide(); $(".tpc-hs-nutri").hide(); $(".tpc-pr-nutri").hide();
      });
+
+     $("#pracT_m").click(function(){
+       $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".tpc-hs-obs").hide();    $(".tpc-pr-obs").hide(); $(".tpc-hs-med").show(); $(".tpc-pr-med").show(); $(".tpc-hs-enf").hide(); $(".tpc-pr-enf").hide(); $(".tpc-hs-nutri").hide(); $(".tpc-pr-nutri").hide();
+     });
+
+     $("#pracT_e").click(function(){
+       $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".tpc-hs-obs").hide();    $(".tpc-pr-obs").hide(); $(".tpc-hs-med").hide(); $(".tpc-pr-med").hide(); $(".tpc-hs-enf").show(); $(".tpc-pr-enf").show(); $(".tpc-hs-nutri").hide(); $(".tpc-pr-nutri").hide();
+     });
+
+     $("#pracT_n").click(function(){
+       $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".tpc-hs-obs").hide();    $(".tpc-pr-obs").hide(); $(".tpc-hs-med").hide(); $(".tpc-pr-med").hide(); $(".tpc-hs-enf").hide(); $(".tpc-pr-enf").hide(); $(".tpc-hs-nutri").show(); $(".tpc-pr-nutri").show();
+     });
+
+
 
 
       // ________duracion__________
@@ -1122,7 +1249,7 @@ function morir(){
 
 //reinicio de carreras
   //saco las ventanas y vuelvo a pcarreras
-$(".selecciones").hide(); $(".instrucciones").show(); $(".instruccionesp").hide();
+$(".selecciones").hide(); $(".instrucciones").show(); $(".instruccionesp").hide(); $(".seleccionesp").hide();
 $(".duracion_nutricion").hide(); $(".duracion_medicina").hide(); $(".duracion_enfermeria").hide(); $(".duracion_obstetricia").hide(); $(".duracion_tpc").hide();
 $(".planestudios_nutricion").hide(); $(".planestudios_medicina").hide(); $(".planestudios_enfermeria").hide(); $(".planestudios_obstetricia").hide(); $(".planestudios_tpc").hide();
 $(".teoricas_nutricion").hide(); $(".teoricas_medicina").hide(); $(".teoricas_enfermeria").hide(); $(".teoricas_obstetricia").hide(); $(".teoricas_tpc").hide();
@@ -1132,4 +1259,5 @@ $(".btn-planestudio-t").show(); $(".btn-teoricas-t").show(); $(".btn-duracion-t"
 $(".btn-planestudio-e").show(); $(".btn-teoricas-e").show(); $(".btn-duracion-e").show();
 $(".btn-planestudio-o").show(); $(".btn-teoricas-o").show(); $(".btn-duracion-o").show();
 $("#btn-cerrar1").hide(); $("#btn-cerrar2").hide(); $("#btn-cerrar3").hide(); $("#btn-cerrar4").hide(); $("#btn-cerrar5").hide();
+
 }
