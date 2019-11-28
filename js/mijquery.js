@@ -347,6 +347,11 @@ $("[name='ircarreras']").click(function(){
      $(".obs-hs-tpc").hide();  $(".obs-pr-tpc").hide(); $(".obs-hs-med").hide(); $(".obs-pr-med").hide(); $(".obs-hs-enf").hide(); $(".obs-pr-enf").hide(); $(".obs-hs-nutri").hide(); $(".obs-pr-nutri").hide();
      //escondo prac tpc
      $(".tpc-hs-obs").hide();    $(".tpc-pr-obs").hide(); $(".tpc-hs-med").hide(); $(".tpc-pr-med").hide(); $(".tpc-hs-enf").hide(); $(".tpc-pr-enf").hide(); $(".tpc-hs-nutri").hide(); $(".tpc-pr-nutri").hide();
+     $(".segundoano_e").hide(); $(".primerano_e").hide(); $(".tercerano_e").hide(); 
+     $(".segundoano_m").hide(); $(".primerano_m").hide(); $(".tercerano_m").hide(); 
+     $(".segundoano_t").hide(); $(".primerano_t").hide(); $(".tercerano_t").hide(); 
+     $(".segundoano_o").hide(); $(".primerano_o").hide(); $(".tercerano_o").hide(); 
+     $(".segundoano_n").hide(); $(".primerano_n").show(); $(".tercerano_n").hide(); 
 
    });
    $("#carrera2").click(function(){
@@ -369,6 +374,11 @@ $("[name='ircarreras']").click(function(){
      $(".obs-hs-tpc").hide();  $(".obs-pr-tpc").hide(); $(".obs-hs-med").hide(); $(".obs-pr-med").hide(); $(".obs-hs-enf").hide(); $(".obs-pr-enf").hide(); $(".obs-hs-nutri").hide(); $(".obs-pr-nutri").hide();
      //escondo prac tpc
      $(".tpc-hs-obs").hide();    $(".tpc-pr-obs").hide(); $(".tpc-hs-med").hide(); $(".tpc-pr-med").hide(); $(".tpc-hs-enf").hide(); $(".tpc-pr-enf").hide(); $(".tpc-hs-nutri").hide(); $(".tpc-pr-nutri").hide();
+     $(".segundoano_e").hide(); $(".primerano_e").hide(); $(".tercerano_e").hide(); 
+     $(".segundoano_m").hide(); $(".primerano_m").show(); $(".tercerano_m").hide(); 
+     $(".segundoano_t").hide(); $(".primerano_t").hide(); $(".tercerano_t").hide(); 
+     $(".segundoano_o").hide(); $(".primerano_o").hide(); $(".tercerano_o").hide(); 
+     $(".segundoano_n").hide(); $(".primerano_n").hide(); $(".tercerano_n").hide(); 
 
    });
    $("#carrera3").click(function(){
@@ -391,6 +401,11 @@ $("[name='ircarreras']").click(function(){
      $(".obs-hs-tpc").hide();  $(".obs-pr-tpc").hide(); $(".obs-hs-med").hide(); $(".obs-pr-med").hide(); $(".obs-hs-enf").hide(); $(".obs-pr-enf").hide(); $(".obs-hs-nutri").hide(); $(".obs-pr-nutri").hide();
      //escondo prac tpc
      $(".tpc-hs-obs").hide();    $(".tpc-pr-obs").hide(); $(".tpc-hs-med").hide(); $(".tpc-pr-med").hide(); $(".tpc-hs-enf").hide(); $(".tpc-pr-enf").hide(); $(".tpc-hs-nutri").hide(); $(".tpc-pr-nutri").hide();
+     $(".segundoano_e").hide(); $(".primerano_e").show(); $(".tercerano_e").hide(); 
+     $(".segundoano_m").hide(); $(".primerano_m").hide(); $(".tercerano_m").hide(); 
+     $(".segundoano_t").hide(); $(".primerano_t").hide(); $(".tercerano_t").hide(); 
+     $(".segundoano_o").hide(); $(".primerano_o").hide(); $(".tercerano_o").hide(); 
+     $(".segundoano_n").hide(); $(".primerano_n").hide(); $(".tercerano_n").hide(); 
 
     });
    $("#carrera4").click(function(){
@@ -413,8 +428,13 @@ $("[name='ircarreras']").click(function(){
      $(".obs-hs-tpc").hide();  $(".obs-pr-tpc").hide(); $(".obs-hs-med").hide(); $(".obs-pr-med").hide(); $(".obs-hs-enf").hide(); $(".obs-pr-enf").hide(); $(".obs-hs-nutri").hide(); $(".obs-pr-nutri").hide();
      //escondo prac tpc
      $(".tpc-hs-obs").hide();    $(".tpc-pr-obs").hide(); $(".tpc-hs-med").hide(); $(".tpc-pr-med").hide(); $(".tpc-hs-enf").hide(); $(".tpc-pr-enf").hide(); $(".tpc-hs-nutri").hide(); $(".tpc-pr-nutri").hide();
-
+     $(".segundoano_e").hide(); $(".primerano_e").hide(); $(".tercerano_e").hide(); 
+     $(".segundoano_m").hide(); $(".primerano_m").hide(); $(".tercerano_m").hide(); 
+     $(".segundoano_t").hide(); $(".primerano_t").hide(); $(".tercerano_t").hide(); 
+     $(".segundoano_o").hide(); $(".primerano_o").show(); $(".tercerano_o").hide(); 
+     $(".segundoano_n").hide(); $(".primerano_n").hide(); $(".tercerano_n").hide(); 
       });
+
    $("#carrera5").click(function(){
      $(".duracion_nutricion").hide(); $(".duracion_medicina").hide(); $(".duracion_enfermeria").hide(); $(".duracion_obstetricia").hide(); $(".duracion_tpc").hide();
      $(".planestudios_nutricion").hide(); $(".planestudios_medicina").hide(); $(".planestudios_enfermeria").hide(); $(".planestudios_obstetricia").hide(); $(".planestudios_tpc").hide();
@@ -436,6 +456,11 @@ $("[name='ircarreras']").click(function(){
      //escondo prac tpc
      $(".tpc-hs-obs").hide();    $(".tpc-pr-obs").hide(); $(".tpc-hs-med").hide(); $(".tpc-pr-med").hide(); $(".tpc-hs-enf").hide(); $(".tpc-pr-enf").hide(); $(".tpc-hs-nutri").hide(); $(".tpc-pr-nutri").hide();
 
+     $(".segundoano_e").hide(); $(".primerano_e").hide(); $(".tercerano_e").hide(); 
+     $(".segundoano_m").hide(); $(".primerano_m").hide(); $(".tercerano_m").hide(); 
+     $(".segundoano_t").hide(); $(".primerano_t").show(); $(".tercerano_t").hide(); 
+     $(".segundoano_o").hide(); $(".primerano_o").hide(); $(".tercerano_o").hide(); 
+     $(".segundoano_n").hide(); $(".primerano_n").hide(); $(".tercerano_n").hide(); 
    });
 
 //______NUTRICION_______//
@@ -445,7 +470,9 @@ $("[name='ircarreras']").click(function(){
  $("#der-n-d").hide(); $("#der-n-p").hide(); $("#der-n-t").hide();
  $("#iz-n-d").hide(); $("#iz-n-p").hide(); $("#iz-n-t").hide();
 
-   // ________plan de estudios__________
+
+
+     // ________plan de estudios__________
 
   $("#btn_plan_n").click(function(event){
     $(".btn-planestudio-n").hide(); $(".btn-teoricas-n").hide(); $(".btn-duracion-n").hide();
@@ -460,6 +487,21 @@ $("[name='ircarreras']").click(function(){
   $("#der-n-p").click(function(event){
     $(".btn-planestudio-n").hide(); $(".btn-teoricas-n").hide(); $(".btn-duracion-n").hide();
     $(".planestudios_nutricion").hide(); $("#der-n-p").hide(); $("#iz-n-p").hide();$(".teoricas_nutricion").show(); $("#der-n-t").show(); $("#iz-n-t").show();
+  });
+
+  $("#un-nutri").click(function(event){
+    $("#un-nutri").css("background","#4EDEEE"); $("#dos-nutri").css("background","#F7F7F7"); $("#tres-nutri").css("background","#F7F7F7");
+    $(".primerano_n").show(); $(".segundoano_n").hide(); $(".tercerano_n").hide();
+  });
+
+  $("#dos-nutri").click(function(event){
+    $("#dos-nutri").css("background","#4EDEEE"); $("#un-nutri").css("background","#F7F7F7"); $("#tres-nutri").css("background","#F7F7F7");
+    $(".segundoano_n").show(); $(".primerano_n").hide(); $(".tercerano_n").hide();
+  });
+
+  $("#tres-nutri").click(function(event){
+    $("#tres-nutri").css("background","#4EDEEE"); $("#dos-nutri").css("background","#F7F7F7"); $("#un-nutri").css("background","#F7F7F7");
+    $(".segundoano_n").hide(); $(".primerano_n").hide(); $(".tercerano_n").show();
   });
 
 
@@ -500,6 +542,11 @@ $("[name='ircarreras']").click(function(){
 
 
   // ________duracion__________
+
+    $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").hide();
+    $(".enfer-ter-a").hide(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide();
+    $(".tpc-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").hide();
+    $(".tpc-ter-a").hide();
 
   $("#btn_duración_n").click(function(event){
    $(".btn-planestudio-n").hide(); $(".btn-teoricas-n").hide(); $(".btn-duracion-n").hide();
@@ -547,7 +594,7 @@ $("[name='ircarreras']").click(function(){
  $("#der-m-d").hide(); $("#der-m-p").hide(); $("#der-m-t").hide();
  $("#iz-m-d").hide(); $("#iz-m-p").hide(); $("#iz-m-t").hide();
 
-   // ________plan de estudios__________
+ // ________plan de estudios__________
 
   $("#btn_plan_m").click(function(event){
     $(".btn-planestudio-m").hide(); $(".btn-teoricas-m").hide(); $(".btn-duracion-m").hide();
@@ -562,6 +609,21 @@ $("[name='ircarreras']").click(function(){
   $("#der-m-p").click(function(event){
     $(".btn-planestudio-m").hide(); $(".btn-teoricas-m").hide(); $(".btn-duracion-m").hide();
     $(".planestudios_medicina").hide(); $("#der-m-p").hide(); $("#iz-m-p").hide();$(".teoricas_medicina").show(); $("#der-m-t").show(); $("#iz-m-t").show();
+  });
+
+  $("#un-med").click(function(event){
+    $("#un-med").css("background","#4EDEEE"); $("#dos-med").css("background","#F7F7F7"); $("#tres-med").css("background","#F7F7F7");
+    $(".primerano_m").show(); $(".segundoano_m").hide(); $(".tercerano_m").hide();
+  });
+
+  $("#dos-med").click(function(event){
+    $("#dos-med").css("background","#4EDEEE"); $("#un-med").css("background","#F7F7F7"); $("#tres-med").css("background","#F7F7F7");
+    $(".segundoano_m").show(); $(".primerano_m").hide(); $(".tercerano_m").hide();
+  });
+
+  $("#tres-med").click(function(event){
+    $("#tres-med").css("background","#4EDEEE"); $("#dos-med").css("background","#F7F7F7"); $("#un-med").css("background","#F7F7F7");
+    $(".segundoano_m").hide(); $(".primerano_m").hide(); $(".tercerano_m").show();
   });
 
 
@@ -649,20 +711,57 @@ $("[name='ircarreras']").click(function(){
      $("#der-e-d").hide(); $("#der-e-p").hide(); $("#der-e-t").hide();
      $("#iz-e-d").hide(); $("#iz-e-p").hide(); $("#iz-e-t").hide();
 
+      //botones de termómetros
+
+      $("#dura_m").click(function(event){
+        $(".medi-ter-p").show(); $(".medi-ter-a").show(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide(); $(".tpc-ter-p").hide(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").hide();
+      });
+
+      $("#dura_e").click(function(event){
+        $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").show(); $(".enfer-ter-a").show(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide(); $(".tpc-ter-p").hide(); $(".tpc-ter-a").hide();
+      });
+
+      $("#dura_o").click(function(event){
+        $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".obs-ter-p").show(); $(".obs-ter-a").show(); $(".tpc-ter-p").hide(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").hide();
+      });
+
+      $("#dura_t").click(function(event){
+        $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide(); $(".tpc-ter-p").show(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").show();
+      });
+
 
        // ________plan de estudios__________
 
+
+
+
       $("#btn_plan_e").click(function(event){
-        $(".btn-planestudio-e").hide(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".planestudios_enfermeria").show(); $("#btn-cerrar3").show(); $("#der-e-p").show(); $("#iz-e-p").show(); $(".duracion_enfermeria").hide(); $(".teoricas_enfermeria").hide();
+        $(".btn-planestudio-e").show(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".teoricas_enfermeria").hide(); $("#btn-cerrar3").show(); $("#der-e-t").show(); $("#iz-e-t").show();  $(".duracion_enfermeria").hide(); $(".planestudios_enfermeria").hide();
       });
 
-      $("#iz-e-p").click(function(event){
-       $(".btn-planestudio-e").hide(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".planestudios_enfermeria").hide(); $("#der-e-p").hide(); $("#iz-e-p").hide(); $(".duracion_enfermeria").show(); $("#der-e-d").show(); $("#iz-e-d").show();
+      $("#iz-e-t").click(function(event){
+       $(".btn-planestudio-e").hide(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".teoricas_enfermeria").hide(); $("#der-e-t").hide(); $("#iz-e-t").hide(); $(".planestudios_enfermeria").show(); $("#der-e-p").show(); $("#iz-e-p").show();
       });
 
-      $("#der-e-p").click(function(event){
-        $(".btn-planestudio-e").hide(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".planestudios_enfermeria").hide(); $("#der-e-p").hide(); $("#iz-e-p").hide();$(".teoricas_enfermeria").show(); $("#der-e-t").show(); $("#iz-e-t").show();
+      $("#der-e-t").click(function(event){
+        $(".btn-planestudio-e").hide(); $(".btn-teoricas-e").hide(); $(".btn-duracion-e").hide(); $(".teoricas_enfermeria").hide(); $("#der-e-t").hide(); $("#iz-e-t").hide(); $(".duracion_enfermeria").show(); $("#der-e-d").show(); $("#iz-e-d").show();
       });
+
+      $("#un-enf").click(function(event){
+        $("#un-enf").css("background","#4EDEEE"); $("#dos-enf").css("background","#F7F7F7"); $("#tres-enf").css("background","#F7F7F7");
+        $(".primerano_e").show(); $(".segundoano_e").hide(); $(".tercerano_e").hide();
+      });
+
+      $("#dos-enf").click(function(event){
+        $("#dos-enf").css("background","#4EDEEE"); $("#un-enf").css("background","#F7F7F7"); $("#tres-enf").css("background","#F7F7F7");
+        $(".segundoano_e").show(); $(".primerano_e").hide(); $(".tercerano_e").hide();
+      });
+
+      $("#tres-enf").click(function(event){
+        $("#tres-enf").css("background","#4EDEEE"); $("#dos-enf").css("background","#F7F7F7"); $("#un-enf").css("background","#F7F7F7");
+        $(".segundoano_e").hide(); $(".primerano_e").hide(); $(".tercerano_e").show();
+      });
+
 
 
 
@@ -755,7 +854,21 @@ $("[name='ircarreras']").click(function(){
        $(".btn-planestudio-o").hide(); $(".btn-teoricas-o").hide(); $(".btn-duracion-o").hide();   $(".planestudios_obstetricia").hide(); $("#der-o-p").hide(); $("#iz-o-p").hide();$(".teoricas_obstetricia").show(); $("#der-o-t").show(); $("#iz-o-t").show();
       });
 
+      $("#un-obs").click(function(event){
+        $("#un-obs").css("background","#4EDEEE"); $("#dos-obs").css("background","#F7F7F7"); $("#tres-obs").css("background","#F7F7F7");
+        $(".primerano_o").show(); $(".segundoano_o").hide(); $(".tercerano_o").hide();
+      });
 
+      $("#dos-obs").click(function(event){
+        $("#dos-obs").css("background","#4EDEEE"); $("#un-obs").css("background","#F7F7F7"); $("#tres-obs").css("background","#F7F7F7");
+        $(".segundoano_o").show(); $(".primerano_o").hide(); $(".tercerano_o").hide();
+      });
+
+      $("#tres-obs").click(function(event){
+        $("#tres-obs").css("background","#4EDEEE"); $("#dos-obs").css("background","#F7F7F7"); $("#un-obs").css("background","#F7F7F7");
+        $(".segundoano_o").hide(); $(".primerano_o").hide(); $(".tercerano_o").show();
+ 
+     });
 
 
 
@@ -845,6 +958,21 @@ $("[name='ircarreras']").click(function(){
 
       $("#der-t-p").click(function(event){
        $(".btn-planestudio-t").hide(); $(".btn-teoricas-t").hide(); $(".btn-duracion-t").hide();  $(".planestudios_tpc").hide(); $("#der-t-p").hide(); $("#iz-t-p").hide();$(".teoricas_tpc").show(); $("#der-t-t").show(); $("#iz-t-t").show();
+      });
+
+      $("#un-tpc").click(function(event){
+        $("#un-tpc").css("background","#4EDEEE"); $("#dos-tpc").css("background","#F7F7F7"); $("#tres-tpc").css("background","#F7F7F7");
+        $(".primerano_t").show(); $(".segundoano_t").hide(); $(".tercerano_t").hide();
+      });
+
+      $("#dos-tpc").click(function(event){
+        $("#dos-tpc").css("background","#4EDEEE"); $("#un-tpc").css("background","#F7F7F7"); $("#tres-tpc").css("background","#F7F7F7");
+        $(".segundoanoto").show(); $(".primerano_t").hide(); $(".tercerano_t").hide();
+      });
+
+      $("#tres-tpc").click(function(event){
+        $("#tres-tpc").css("background","#4EDEEE"); $("#dos-tpc").css("background","#F7F7F7"); $("#un-tpc").css("background","#F7F7F7");
+        $(".segundoano_t").hide(); $(".primerano_t").hide(); $(".tercerano_t").show();
       });
 
 
