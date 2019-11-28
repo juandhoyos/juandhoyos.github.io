@@ -1523,7 +1523,7 @@ top: 21.5%;
   margin-left: 90px;
   width: 390px;
   padding: 17px;
-  height: 300px;
+
 }
 .plan_box1 h6{
   font-size: 24px;
@@ -1564,20 +1564,111 @@ top: 21.5%;
   width: 40%;
   bottom: 45%;
 }
-.nutri-hs-obs{
-  position: absolute;
-    top: 40%;
-    left: 61%;
-}
 
-.nutri-pr-obs{
-  left: 68%;
-    position: absolute;
-    top: 67%;
-}
 .prac-c{
   left: 51.5%;
     font-size: 17px;
     top: 50.5%;
     position: absolute;
+}
+
+.nutri-hs-obs, .nutri-hs-tpc, .nutri-hs-enf, .nutri-hs-med{
+  position: absolute;
+    top: 40%;
+    left: 61%;
+}
+
+.nutri-pr-obs, .nutri-pr-tpc, .nutri-pr-enf, .nutri-pr-med{
+  left: 26%;
+  position: absolute;
+  top: 67%;
+  margin-left: 35%;
+  margin-bottom: 8%;
+}
+.nutri-pr-obs img, .nutri-pr-tpc img, .nutri-pr-enf img, .nutri-pr-med img{
+margin-left: 35%;
+margin-bottom: 3%;
+}
+.nutri-pr-obs h6, .nutri-pr-tpc h6, .nutri-pr-enf h6, .nutri-pr-med h6{ font-size: 14px;}
+
+.med-hs-obs, .med-hs-tpc, .med-hs-enf, .med-hs-nutri{
+  position: absolute;
+    top: 40%;
+    left: 61%;
+}
+
+.med-pr-obs, .med-pr-tpc, .med-pr-enf, .med-pr-nutri{
+  left: 26%;
+  position: absolute;
+  top: 67%;
+  margin-left: 35%;
+  margin-bottom: 8%;
+}
+.med-pr-obs img, .med-pr-tpc img, .med-pr-enf img, .med-pr-nutri img{
+margin-left: 35%;
+margin-bottom: 3%;
+}
+.med-pr-obs h6, .med-pr-tpc h6, .med-pr-enf h6, .med-pr-nutri h6{ font-size: 14px;}
+
+.tpc-hs-obs, .tpc-hs-med, .tpc-hs-enf, .tpc-hs-nutri{
+  position: absolute;
+    top: 40%;
+    left: 61%;
+}
+
+.tpc-pr-obs, .tpc-pr-med, .tpc-pr-enf, .tpc-pr-nutri{
+  left: 26%;
+  position: absolute;
+  top: 67%;
+  margin-left: 35%;
+  margin-bottom: 8%;
+}
+.tpc-pr-obs img, .tpc-pr-med img, .tpc-pr-enf img, .tpc-pr-nutri img{
+margin-left: 35%;
+margin-bottom: 3%;
+}
+.tpc-pr-obs h6, .tpc-pr-med h6, .tpc-pr-enf h6, .tpc-pr-nutri h6{ font-size: 14px;}
+
+.obs-hs-tpc, .obs-hs-med, .obs-hs-enf, .obs-hs-nutri{
+  position: absolute;
+    top: 40%;
+    left: 61%;
+}
+
+.obs-pr-tpc, .obs-pr-med, .obs-pr-enf, .obs-pr-nutri{
+  left: 26%;
+  position: absolute;
+  top: 67%;
+  margin-left: 35%;
+  margin-bottom: 8%;
+}
+.obs-pr-tpc img, .obs-pr-med img, .obs-pr-enf img, .obs-pr-nutri img{
+margin-left: 35%;
+margin-bottom: 3%;
+}
+.obs-pr-tpc h6, .obs-pr-med h6, .obs-pr-enf h6, .obs-pr-nutri h6{ font-size: 14px;}
+
+.obs-hs-tpc, .obs-hs-med, .obs-hs-enf, .obs-hs-nutri{
+  position: absolute;
+    top: 40%;
+    left: 61%;
+}
+
+.enf-pr-tpc, .enf-pr-med, .enf-pr-obs, .enf-pr-nutri{
+  left: 26%;
+  position: absolute;
+  top: 67%;
+  margin-left: 35%;
+  margin-bottom: 8%;
+}
+.enf-pr-tpc img, .enf-pr-med img, .enf-pr-obs img, .enf-pr-nutri img{
+margin-left: 35%;
+margin-bottom: 3%;
+}
+.enf-pr-tpc h6, .enf-pr-med h6, .enf-pr-obs h6, .enf-pr-nutri h6{ font-size: 14px;}
+
+.enf-hs-tpc, .enf-hs-med, .enf-hs-obs, .enf-hs-nutri{
+  position: absolute;
+    top: 40%;
+    left: 61%;
 }
