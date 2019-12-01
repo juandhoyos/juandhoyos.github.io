@@ -348,12 +348,12 @@ $("[name='ircarreras']").click(function(){
 
        $("#un-tpc").css("background", "#4EDEEE"); $("#dos-tpc").css("background", "#F7F7F7"); $("#tres-tpc").css("background", "#F7F7F7");
        $(".primerano_t").show(); $(".segundoano_t").hide(); $(".tercerano_t").hide();
-       $("#un-nutri").css("background", "#4EDEEE"); $("#dos-nutri").css("background", "#F7F7F7"); $("#tres-nutri").css("background", "#F7F7F7");
-       $(".primerano_n").show(); $(".segundoano_n").hide(); $(".tercerano_n").hide();
-       $("#un-obs").css("background", "#4EDEEE"); $("#dos-obs").css("background", "#F7F7F7"); $("#tres-obs").css("background", "#F7F7F7");
-       $(".primerano_o").show(); $(".segundoano_o").hide(); $(".tercerano_o").hide();
-       $("#un-med").css("background", "#4EDEEE"); $("#dos-med").css("background", "#F7F7F7"); $("#tres-med").css("background", "#F7F7F7");
-       $(".primerano_m").show(); $(".segundoano_m").hide(); $(".tercerano_m").hide();
+       $("#un-nutri").css("background", "#4EDEEE"); $("#dos-nutri").css("background", "#F7F7F7"); $("#tres-nutri").css("background", "#F7F7F7"); $("#cuatro-nutri").css("background", "#F7F7F7"); $("#cinco-nutri").css("background", "#F7F7F7");
+       $(".primerano_n").show(); $(".segundoano_n").hide(); $(".tercerano_n").hide(); $(".cuartoano_n").hide(); $(".quintoano_n").hide();
+       $("#un-obs").css("background", "#4EDEEE"); $("#dos-obs").css("background", "#F7F7F7"); $("#tres-obs").css("background", "#F7F7F7"); $("#cuatro-obs").css("background", "#F7F7F7");
+       $(".primerano_o").show(); $(".segundoano_o").hide(); $(".tercerano_o").hide();  $(".cuartoano_o").hide();
+       $("#un-med").css("background", "#4EDEEE"); $("#dos-med").css("background", "#F7F7F7"); $("#tres-med").css("background", "#F7F7F7"); $("#cuatro-med").css("background", "#F7F7F7"); $("#cinco-med").css("background", "#F7F7F7"); $("#seis-med").css("background", "#F7F7F7"); 
+       $(".primerano_m").show(); $(".segundoano_m").hide(); $(".tercerano_m").hide(); $(".cuartoano_m").hide(); $(".quintoano_m").hide(); $(".sextoano_m").hide();
        $("#un-enf").css("background", "#4EDEEE"); $("#dos-enf").css("background", "#F7F7F7"); $("#tres-enf").css("background", "#F7F7F7");
        $(".primerano_e").show(); $(".segundoano_e").hide(); $(".tercerano_e").hide();
 
@@ -523,19 +523,30 @@ $("[name='ircarreras']").click(function(){
   });
 
   $("#un-nutri").click(function(event){
-    $("#un-nutri").css("background","#4EDEEE"); $("#dos-nutri").css("background","#F7F7F7"); $("#tres-nutri").css("background","#F7F7F7");
-    $(".primerano_n").show(); $(".segundoano_n").hide(); $(".tercerano_n").hide();
+      $("#un-nutri").css("background", "#4EDEEE"); $("#dos-nutri").css("background", "#F7F7F7"); $("#tres-nutri").css("background", "#F7F7F7"); $("#cinco-nutri").css("background", "#F7F7F7"); $("#cuatro-nutri").css("background", "#F7F7F7");
+    $(".primerano_n").show(); $(".segundoano_n").hide(); $(".tercerano_n").hide(); $(".cuartoano_n").hide(); $(".quintoano_n").hide();
   });
 
   $("#dos-nutri").click(function(event){
-    $("#dos-nutri").css("background","#4EDEEE"); $("#un-nutri").css("background","#F7F7F7"); $("#tres-nutri").css("background","#F7F7F7");
-    $(".segundoano_n").show(); $(".primerano_n").hide(); $(".tercerano_n").hide();
+      $("#dos-nutri").css("background", "#4EDEEE"); $("#un-nutri").css("background", "#F7F7F7"); $("#tres-nutri").css("background", "#F7F7F7"); $("#cinco-nutri").css("background", "#F7F7F7"); $("#cuatro-nutri").css("background", "#F7F7F7");
+    $(".segundoano_n").show(); $(".primerano_n").hide(); $(".tercerano_n").hide(); $(".cuartoano_n").hide(); $(".quintoano_n").hide();
   });
 
   $("#tres-nutri").click(function(event){
-    $("#tres-nutri").css("background","#4EDEEE"); $("#dos-nutri").css("background","#F7F7F7"); $("#un-nutri").css("background","#F7F7F7");
-    $(".segundoano_n").hide(); $(".primerano_n").hide(); $(".tercerano_n").show();
+      $("#tres-nutri").css("background", "#4EDEEE"); $("#dos-nutri").css("background", "#F7F7F7"); $("#un-nutri").css("background", "#F7F7F7"); $("#cinco-nutri").css("background", "#F7F7F7"); $("#cuatro-nutri").css("background", "#F7F7F7");
+    $(".segundoano_n").hide(); $(".primerano_n").hide(); $(".tercerano_n").show(); $(".cuartoano_n").hide(); $(".quintoano_n").hide();
   });
+
+  $("#cuatro-nutri").click(function (event) {
+      $("#cuatro-nutri").css("background", "#4EDEEE"); $("#dos-nutri").css("background", "#F7F7F7"); $("#un-nutri").css("background", "#F7F7F7"); $("#cinco-nutri").css("background", "#F7F7F7"); $("#tres-nutri").css("background", "#F7F7F7");
+     $(".segundoano_n").hide(); $(".primerano_n").hide(); $(".tercerano_n").hide(); $(".cuartoano_n").show(); $(".quintoano_n").hide();
+  });
+
+  $("#cinco-nutri").click(function (event) {
+      $("#cinco-nutri").css("background", "#4EDEEE"); $("#dos-nutri").css("background", "#F7F7F7"); $("#un-nutri").css("background", "#F7F7F7"); $("#cuatro-nutri").css("background", "#F7F7F7"); $("#tres-nutri").css("background", "#F7F7F7");
+     $(".segundoano_n").hide(); $(".primerano_n").hide(); $(".tercerano_n").hide(); $(".cuartoano_n").hide(); $(".quintoano_n").show();
+  });
+
 
 
 
@@ -632,7 +643,7 @@ $("[name='ircarreras']").click(function(){
   $("#btn_plan_m").click(function(event){
     $(".btn-planestudio-m").hide(); $(".btn-teoricas-m").hide(); $(".btn-duracion-m").hide();
     $(".planestudios_medicina").show(); $("#btn-cerrar2").show(); $("#der-m-p").show(); $("#iz-m-p").show(); $(".duracion_medicina").hide(); $(".teoricas_medicina").hide();
-    $(".primerano_m").show(); $(".segundoano_m").hide(); $(".tercerano_m").hide();
+    $(".primerano_m").show(); $(".segundoano_m").hide(); $(".tercerano_m").hide(); $(".cuartoano_m").hide(); $(".quintoano_m").hide(); $(".sextoano_m").hide();
          $("#un-med").css("background", "#4EDEEE"); $("#dos-med").css("background", "#F7F7F7"); $("#tres-med").css("background", "#F7F7F7");
          });
 
@@ -647,18 +658,33 @@ $("[name='ircarreras']").click(function(){
   });
 
   $("#un-med").click(function(event){
-    $("#un-med").css("background","#4EDEEE"); $("#dos-med").css("background","#F7F7F7"); $("#tres-med").css("background","#F7F7F7");
+    $("#un-med").css("background", "#4EDEEE"); $("#dos-med").css("background", "#F7F7F7"); $("#tres-med").css("background", "#F7F7F7"); $("#cuatro-med").css("background", "#F7F7F7"); $("#cinco-med").css("background", "#F7F7F7"); $("#seis-med").css("background", "#F7F7F7");
     $(".primerano_m").show(); $(".segundoano_m").hide(); $(".tercerano_m").hide();
   });
 
   $("#dos-med").click(function(event){
-    $("#dos-med").css("background","#4EDEEE"); $("#un-med").css("background","#F7F7F7"); $("#tres-med").css("background","#F7F7F7");
+    $("#dos-med").css("background", "#4EDEEE"); $("#un-med").css("background", "#F7F7F7"); $("#tres-med").css("background", "#F7F7F7"); $("#cuatro-med").css("background", "#F7F7F7"); $("#cinco-med").css("background", "#F7F7F7"); $("#seis-med").css("background", "#F7F7F7");
     $(".segundoano_m").show(); $(".primerano_m").hide(); $(".tercerano_m").hide();
   });
 
   $("#tres-med").click(function(event){
-    $("#tres-med").css("background","#4EDEEE"); $("#dos-med").css("background","#F7F7F7"); $("#un-med").css("background","#F7F7F7");
+    $("#tres-med").css("background", "#4EDEEE"); $("#dos-med").css("background", "#F7F7F7"); $("#un-med").css("background", "#F7F7F7"); $("#cuatro-med").css("background", "#F7F7F7"); $("#cinco-med").css("background", "#F7F7F7"); $("#seis-med").css("background", "#F7F7F7");
     $(".segundoano_m").hide(); $(".primerano_m").hide(); $(".tercerano_m").show();
+  });
+
+  $("#cuatro-med").click(function(event){
+     $("#cuatro-med").css("background", "#4EDEEE"); $("#dos-med").css("background", "#F7F7F7"); $("#un-med").css("background", "#F7F7F7"); $("#tres-med").css("background", "#F7F7F7"); $("#cinco-med").css("background", "#F7F7F7"); $("#seis-med").css("background", "#F7F7F7");
+    $(".segundoano_m").hide(); $(".primerano_m").hide(); $(".cuartoano_m").show(); $(".quintoano_m").hide(); $(".tercerano_m").hide();  $(".sextoano").hide();
+  });
+
+  $("#cinco-med").click(function(event){
+    $("#cinco-med").css("background", "#4EDEEE"); $("#dos-med").css("background", "#F7F7F7"); $("#un-med").css("background", "#F7F7F7"); $("#tres-med").css("background", "#F7F7F7"); $("#seis-med").css("background", "#F7F7F7"); $("#cuatro-med").css("background","#F7F7F7");
+    $(".segundoano_m").hide(); $(".primerano_m").hide(); $(".quintoano_m").show(); $(".tercerano_m").hide(); $(".cuartoano_m").hide(); $(".sextoano_m").hide();
+  });
+
+  $("#seis-med").click(function(event){
+    $("#seis-med").css("background","#4EDEEE"); $("#dos-med").css("background","#F7F7F7"); $("#un-med").css("background","#F7F7F7"); $("#tres-med").css("background","#F7F7F7"); $("#cuatro-med").css("background","#F7F7F7"); $("#cinco-med").css("background","#F7F7F7");
+    $(".segundoano_m").hide(); $(".primerano_m").hide(); $(".sextoano_m").show();  $(".tercerano_m").hide(); $(".cuartoano_m").hide(); $(".quintoano_m").hide();
   });
 
 
@@ -894,20 +920,26 @@ $("[name='ircarreras']").click(function(){
       });
 
       $("#un-obs").click(function(event){
-        $("#un-obs").css("background","#4EDEEE"); $("#dos-obs").css("background","#F7F7F7"); $("#tres-obs").css("background","#F7F7F7");
-        $(".primerano_o").show(); $(".segundoano_o").hide(); $(".tercerano_o").hide();
+        $("#un-obs").css("background","#4EDEEE"); $("#dos-obs").css("background","#F7F7F7"); $("#tres-obs").css("background","#F7F7F7"); $("#cuatro-obs").css("background", "#F7F7F7");
+        $(".primerano_o").show(); $(".segundoano_o").hide(); $(".tercerano_o").hide(); $(".cuartoano_o").hide();
       });
 
       $("#dos-obs").click(function(event){
-        $("#dos-obs").css("background","#4EDEEE"); $("#un-obs").css("background","#F7F7F7"); $("#tres-obs").css("background","#F7F7F7");
-        $(".segundoano_o").show(); $(".primerano_o").hide(); $(".tercerano_o").hide();
+        $("#dos-obs").css("background","#4EDEEE"); $("#un-obs").css("background","#F7F7F7"); $("#tres-obs").css("background","#F7F7F7"); $("#cuatro-obs").css("background", "#F7F7F7");
+        $(".segundoano_o").show(); $(".primerano_o").hide(); $(".tercerano_o").hide(); $(".cuartoano_o").hide();
       });
 
       $("#tres-obs").click(function(event){
-        $("#tres-obs").css("background","#4EDEEE"); $("#dos-obs").css("background","#F7F7F7"); $("#un-obs").css("background","#F7F7F7");
-        $(".segundoano_o").hide(); $(".primerano_o").hide(); $(".tercerano_o").show();
+        $("#tres-obs").css("background","#4EDEEE"); $("#dos-obs").css("background","#F7F7F7"); $("#un-obs").css("background","#F7F7F7"); $("#cuatro-obs").css("background", "#F7F7F7");
+        $(".segundoano_o").hide(); $(".primerano_o").hide(); $(".tercerano_o").show(); $(".cuartoano_o").hide();
 
-     });
+      });
+
+      $("#cuatro-obs").click(function (event) {
+        $("#cuatro-obs").css("background", "#4EDEEE"); $("#dos-obs").css("background", "#F7F7F7"); $("#un-obs").css("background", "#F7F7F7"); $("#tres-obs").css("background", "#F7F7F7");
+        $(".segundoano_o").hide(); $(".primerano_o").hide(); $(".tercerano_o").hide(); $(".cuartoano_o").show();
+
+      });
 
 
 
@@ -1418,28 +1450,29 @@ function morir(){
 
 //reinicio de carreras
   //saco las ventanas y vuelvo a pcarreras
-$(".selecciones").hide(); $(".instrucciones").show(); $(".instruccionesp").show(); $(".seleccionesp").hide();
-$(".duracion_nutricion").hide(); $(".duracion_medicina").hide(); $(".duracion_enfermeria").hide(); $(".duracion_obstetricia").hide(); $(".duracion_tpc").hide();
-$(".planestudios_nutricion").hide(); $(".planestudios_medicina").hide(); $(".planestudios_enfermeria").hide(); $(".planestudios_obstetricia").hide(); $(".planestudios_tpc").hide();
-$(".teoricas_nutricion").hide(); $(".teoricas_medicina").hide(); $(".teoricas_enfermeria").hide(); $(".teoricas_obstetricia").hide(); $(".teoricas_tpc").hide();
-$(".btn-planestudio-n").show(); $(".btn-teoricas-n").show(); $(".btn-duracion-n").show();
-$(".btn-planestudio-m").show(); $(".btn-teoricas-m").show(); $(".btn-duracion-m").show();
-$(".btn-planestudio-t").show(); $(".btn-teoricas-t").show(); $(".btn-duracion-t").show();
-$(".btn-planestudio-e").show(); $(".btn-teoricas-e").show(); $(".btn-duracion-e").show();
-$(".btn-planestudio-o").show(); $(".btn-teoricas-o").show(); $(".btn-duracion-o").show();
-$("#btn-cerrar1").hide(); $("#btn-cerrar2").hide(); $("#btn-cerrar3").hide(); $("#btn-cerrar4").hide(); $("#btn-cerrar5").hide();
+  $(".selecciones").hide(); $(".instrucciones").show(); $(".instruccionesp").show(); $(".seleccionesp").hide();
+  $(".duracion_nutricion").hide(); $(".duracion_medicina").hide(); $(".duracion_enfermeria").hide(); $(".duracion_obstetricia").hide(); $(".duracion_tpc").hide();
+  $(".planestudios_nutricion").hide(); $(".planestudios_medicina").hide(); $(".planestudios_enfermeria").hide(); $(".planestudios_obstetricia").hide(); $(".planestudios_tpc").hide();
+  $(".teoricas_nutricion").hide(); $(".teoricas_medicina").hide(); $(".teoricas_enfermeria").hide(); $(".teoricas_obstetricia").hide(); $(".teoricas_tpc").hide();
+  $(".btn-planestudio-n").show(); $(".btn-teoricas-n").show(); $(".btn-duracion-n").show();
+  $(".btn-planestudio-m").show(); $(".btn-teoricas-m").show(); $(".btn-duracion-m").show();
+  $(".btn-planestudio-t").show(); $(".btn-teoricas-t").show(); $(".btn-duracion-t").show();
+  $(".btn-planestudio-e").show(); $(".btn-teoricas-e").show(); $(".btn-duracion-e").show();
+  $(".btn-planestudio-o").show(); $(".btn-teoricas-o").show(); $(".btn-duracion-o").show();
+  $("#btn-cerrar1").hide(); $("#btn-cerrar2").hide(); $("#btn-cerrar3").hide(); $("#btn-cerrar4").hide(); $("#btn-cerrar5").hide();
 
-//selecciono 1año del plan
+    //selecciono 1año del plan
 
-    $("#un-tpc").css("background", "#4EDEEE"); $("#dos-tpc").css("background", "#F7F7F7"); $("#tres-tpc").css("background", "#F7F7F7");
-    $(".primerano_t").show(); $(".segundoano_t").hide(); $(".tercerano_t").hide();
-    $("#un-nutri").css("background", "#4EDEEE"); $("#dos-nutri").css("background", "#F7F7F7"); $("#tres-nutri").css("background", "#F7F7F7");
-    $(".primerano_n").show(); $(".segundoano_n").hide(); $(".tercerano_n").hide();
-    $("#un-obs").css("background", "#4EDEEE"); $("#dos-obs").css("background", "#F7F7F7"); $("#tres-obs").css("background", "#F7F7F7");
-    $(".primerano_o").show(); $(".segundoano_o").hide(); $(".tercerano_o").hide();
-    $("#un-med").css("background", "#4EDEEE"); $("#dos-med").css("background", "#F7F7F7"); $("#tres-med").css("background", "#F7F7F7");
-    $(".primerano_m").show(); $(".segundoano_m").hide(); $(".tercerano_m").hide();
-    $("#un-enf").css("background", "#4EDEEE"); $("#dos-enf").css("background", "#F7F7F7"); $("#tres-enf").css("background", "#F7F7F7");
-    $(".primerano_e").show(); $(".segundoano_e").hide(); $(".tercerano_e").hide();
+  $("#un-tpc").css("background", "#4EDEEE"); $("#dos-tpc").css("background", "#F7F7F7"); $("#tres-tpc").css("background", "#F7F7F7");
+  $(".primerano_t").show(); $(".segundoano_t").hide(); $(".tercerano_t").hide();
+  $("#un-nutri").css("background", "#4EDEEE"); $("#dos-nutri").css("background", "#F7F7F7"); $("#tres-nutri").css("background", "#F7F7F7"); $("#cuatro-nutri").css("background", "#F7F7F7"); $("#cinco-nutri").css("background", "#F7F7F7");
+  $(".primerano_n").show(); $(".segundoano_n").hide(); $(".tercerano_n").hide(); $(".cuartoano_n").hide(); $(".quintoano_n").hide();
+  $("#un-obs").css("background", "#4EDEEE"); $("#dos-obs").css("background", "#F7F7F7"); $("#tres-obs").css("background", "#F7F7F7"); $("#cuatro-obs").css("background", "#F7F7F7");
+  $(".primerano_o").show(); $(".segundoano_o").hide(); $(".tercerano_o").hide(); $(".cuartoano_o").hide();
+  $("#un-med").css("background", "#4EDEEE"); $("#dos-med").css("background", "#F7F7F7"); $("#tres-med").css("background", "#F7F7F7"); $("#cuatro-med").css("background", "#F7F7F7"); $("#cinco-med").css("background", "#F7F7F7"); $("#seis-med").css("background", "#F7F7F7");
+  $(".primerano_m").show(); $(".segundoano_m").hide(); $(".tercerano_m").hide(); $(".cuartoano_m").hide(); $(".quintoano_m").hide(); $(".sextoano_m").hide();
+  $("#un-enf").css("background", "#4EDEEE"); $("#dos-enf").css("background", "#F7F7F7"); $("#tres-enf").css("background", "#F7F7F7");
+  $(".primerano_e").show(); $(".segundoano_e").hide(); $(".tercerano_e").hide();
+
 
 }
