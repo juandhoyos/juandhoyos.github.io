@@ -509,8 +509,9 @@ $("[name='ircarreras']").click(function(){
   $("#btn_plan_n").click(function(event){
     $(".btn-planestudio-n").hide(); $(".btn-teoricas-n").hide(); $(".btn-duracion-n").hide();
     $(".planestudios_nutricion").show(); $("#btn-cerrar1").show(); $("#der-n-p").show(); $("#iz-n-p").show(); $(".duracion_nutricion").hide(); $(".teoricas_nutricion").hide();
-    $(".primerano_n").show(); $(".segundoano_n").hide(); $(".tercerano_n").hide();
-       $("#un-nutri").css("background", "#4EDEEE"); $("#dos-nutri").css("background", "#F7F7F7"); $("#tres-nutri").css("background", "#F7F7F7");});
+    $(".primerano_n").show(); $(".segundoano_n").hide(); $(".tercerano_n").hide(); $(".cuaertoano_n").hide(); $(".quintoano_n").hide();
+    $("#un-nutri").css("background", "#4EDEEE"); $("#dos-nutri").css("background", "#F7F7F7"); $("#tres-nutri").css("background", "#F7F7F7"); $("#cuatro-nutri").css("background", "#F7F7F7"); $("#cinco-nutri").css("background", "#F7F7F7");
+  }); 
 
   $("#iz-n-p").click(function(event){
    $(".btn-planestudio-n").hide(); $(".btn-teoricas-n").hide(); $(".btn-duracion-n").hide();
@@ -644,7 +645,7 @@ $("[name='ircarreras']").click(function(){
     $(".btn-planestudio-m").hide(); $(".btn-teoricas-m").hide(); $(".btn-duracion-m").hide();
     $(".planestudios_medicina").show(); $("#btn-cerrar2").show(); $("#der-m-p").show(); $("#iz-m-p").show(); $(".duracion_medicina").hide(); $(".teoricas_medicina").hide();
     $(".primerano_m").show(); $(".segundoano_m").hide(); $(".tercerano_m").hide(); $(".cuartoano_m").hide(); $(".quintoano_m").hide(); $(".sextoano_m").hide();
-         $("#un-med").css("background", "#4EDEEE"); $("#dos-med").css("background", "#F7F7F7"); $("#tres-med").css("background", "#F7F7F7");
+    $("#un-med").css("background", "#4EDEEE"); $("#dos-med").css("background", "#F7F7F7"); $("#tres-med").css("background", "#F7F7F7"); $("#cuatro-med").css("background", "#F7F7F7"); $("#cinco-med").css("background", "#F7F7F7"); $("#seis-med").css("background", "#F7F7F7");
          });
 
   $("#iz-m-p").click(function(event){
@@ -907,8 +908,8 @@ $("[name='ircarreras']").click(function(){
 
       $("#btn_plan_o").click(function(event){
        $(".btn-planestudio-o").hide(); $(".btn-teoricas-o").hide(); $(".btn-duracion-o").hide();  $(".planestudios_obstetricia").show(); $("#btn-cerrar4").show(); $("#der-o-p").show(); $("#iz-o-p").show(); $(".duracion_obstetricia").hide(); $(".teoricas_obstetricia").hide();
-       $(".primerano_o").show(); $(".segundoano_o").hide(); $(".tercerano_o").hide();
-      $("#un-obs").css("background", "#4EDEEE"); $("#dos-obs").css("background", "#F7F7F7"); $("#tres-obs").css("background", "#F7F7F7");
+       $(".primerano_o").show(); $(".segundoano_o").hide(); $(".tercerano_o").hide(); $(".cuartoano_o").hide();
+       $("#un-obs").css("background", "#4EDEEE"); $("#dos-obs").css("background", "#F7F7F7"); $("#tres-obs").css("background", "#F7F7F7"); $("#cuatro-obs").css("background", "#F7F7F7"); 
     });
 
       $("#iz-o-p").click(function(event){
