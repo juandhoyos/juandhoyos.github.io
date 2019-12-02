@@ -1720,23 +1720,62 @@ margin-bottom: 3%;
 
 
 .materias-titulo{
-  position: absolute;
-  z-index: 15;
-  right: 230px;
-  top: 84px;
+  margin-left: 0;
+  margin-top: -54px;
   font-size: 25px;
   font-weight: bold;
   color: black;
 }
 
+
+
 .materias-cuatri li, .materias-anuales li{
   list-style: none;
   float: left;
-    margin-right: 10px;
+  margin-right: 10px;
 }
+
+.materias-cuatri{
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+
+.consejo{
+  background: #F7F7F7;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 30px;
+    padding-top: 15px;
+    width: 390px;
+    height: 150px;
+}
+
+.btn-materias{
+  background: #f7f7f7;
+  padding: 5px;
+  border-radius:15px;
+}
+
+.btn-materias img{
+  width: 60px;
+  height: 60px;
+}
+
+.btn-materias p{
+  padding-right: 10px;
+}
+
+.sub-iconos{
+  width: 60px;
+  word-wrap: break-word;
+  font-size: 13px;
+  text-align: center;
+}
+
 .primerano_n, .primerano_m, .primerano_o, .primerano_e, .primerano_t{
     height: 500px;
-    width: 500px;
+    width: 550px;
     position: absolute;
     z-index: 16;
     top: 150px;
@@ -1745,7 +1784,7 @@ margin-bottom: 3%;
 
 .segundoano_n, .segundoano_m, .segundoano_o, .segundoano_e, .segundoano_t{
     height: 500px;
-    width: 500px;
+    width: 550px;
     position: absolute;
     z-index: 16;
     top: 150px;
@@ -1754,7 +1793,7 @@ margin-bottom: 3%;
 
 .tercerano_n, .tercerano_m, .tercerano_o, .tercerano_e, .tercerano_t{
     height: 500px;
-    width: 500px;
+    width: 550px;
     position: absolute;
     z-index: 16;
     top: 150px;
@@ -1786,32 +1825,4 @@ margin-bottom: 3%;
     z-index: 16;
     top: 150px;
     right: 10px;
-}
-
-.consejo{
-  background: #F7F7F7;
-    border-radius: 15px;
-    margin-top: 15px;
-    margin-left: 30px;
-    padding-top: 15px;
-    width: 390px;
-    height: 150px;
-}
-
-.btn-materias{
-  background: #f7f7f7;
-  padding: 5px;
-  border-radius:15px;
-  -webkit-box-shadow: 1px 1px 22px 2px rgba(0,0,0,0.45);
-  -moz-box-shadow: 1px 1px 22px 2px rgba(0,0,0,0.45);
-  box-shadow: 1px 1px 22px 2px rgba(0,0,0,0.45);
-}
-
-.btn-materias img{
-  width: 50px;
-  height: 50px;
-}
-
-.btn-materias p{
-  padding-right: 10px;
 }
