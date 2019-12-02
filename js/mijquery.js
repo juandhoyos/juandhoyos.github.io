@@ -357,6 +357,21 @@ $("[name='ircarreras']").click(function(){
        $("#un-enf").css("background", "#4EDEEE"); $("#dos-enf").css("background", "#F7F7F7"); $("#tres-enf").css("background", "#F7F7F7");
        $(".primerano_e").show(); $(".segundoano_e").hide(); $(".tercerano_e").hide();
 
+   //saco el seleccionado de los botones de las practicas
+    $("#prac_o").css("background", "#F7F7F7"); $("#prac_t").css("background", "#F7F7F7"); $("#prac_e").css("background", "#F7F7F7"); $("#prac_m").css("background", "#F7F7F7"); 
+    $("#pracT_o").css("background", "#F7F7F7"); $("#pracT_n").css("background", "#F7F7F7"); $("#pracT_e").css("background", "#F7F7F7"); $("#pracT_m").css("background", "#F7F7F7"); 
+    $("#pracE_o").css("background", "#F7F7F7"); $("#pracE_t").css("background", "#F7F7F7"); $("#pracE_n").css("background", "#F7F7F7"); $("#pracE_m").css("background", "#F7F7F7"); 
+    $("#pracO_n").css("background", "#F7F7F7"); $("#pracO_t").css("background", "#F7F7F7"); $("#praOc_e").css("background", "#F7F7F7"); $("#pracO_m").css("background", "#F7F7F7"); 
+    $("#pracM_o").css("background", "#F7F7F7"); $("#pracM_t").css("background", "#F7F7F7"); $("#pracM_e").css("background", "#F7F7F7"); $("#pracM_n").css("background", "#F7F7F7"); 
+
+    //saco el selecccionado de la duracion
+    $("#dura_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+    $("#duraM_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7");
+    $("#duraE_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+    $("#duraO_n").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+    $("#duraT_o").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+
+
 
    //saco la duracion al ir a otra carrera
    $("#carrera1").click(function(){
@@ -384,6 +399,18 @@ $("[name='ircarreras']").click(function(){
      $(".segundoano_t").hide(); $(".primerano_t").hide(); $(".tercerano_t").hide();
      $(".segundoano_o").hide(); $(".primerano_o").hide(); $(".tercerano_o").hide();
      $(".segundoano_n").hide(); $(".primerano_n").show(); $(".tercerano_n").hide();
+       //saco el seleccionado de los botones de las practicas
+       $("#prac_o").css("background", "#F7F7F7"); $("#prac_t").css("background", "#F7F7F7"); $("#prac_e").css("background", "#F7F7F7"); $("#prac_m").css("background", "#F7F7F7");
+       $("#pracT_o").css("background", "#F7F7F7"); $("#pracT_n").css("background", "#F7F7F7"); $("#pracT_e").css("background", "#F7F7F7"); $("#pracT_m").css("background", "#F7F7F7");
+       $("#pracE_o").css("background", "#F7F7F7"); $("#pracE_t").css("background", "#F7F7F7"); $("#pracE_n").css("background", "#F7F7F7"); $("#pracE_m").css("background", "#F7F7F7");
+       $("#pracO_n").css("background", "#F7F7F7"); $("#pracO_t").css("background", "#F7F7F7"); $("#praOc_e").css("background", "#F7F7F7"); $("#pracO_m").css("background", "#F7F7F7");
+       $("#pracM_o").css("background", "#F7F7F7"); $("#pracM_t").css("background", "#F7F7F7"); $("#pracM_e").css("background", "#F7F7F7"); $("#pracM_n").css("background", "#F7F7F7"); 
+       //saco el selecccionado de la duracion
+       $("#dura_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+       $("#duraM_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7");
+       $("#duraE_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+       $("#duraO_n").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+       $("#duraT_o").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
 
    });
    $("#carrera2").click(function(){
@@ -411,6 +438,18 @@ $("[name='ircarreras']").click(function(){
      $(".segundoano_t").hide(); $(".primerano_t").hide(); $(".tercerano_t").hide();
      $(".segundoano_o").hide(); $(".primerano_o").hide(); $(".tercerano_o").hide();
      $(".segundoano_n").hide(); $(".primerano_n").hide(); $(".tercerano_n").hide();
+       //saco el seleccionado de los botones de las practicas
+       $("#prac_o").css("background", "#F7F7F7"); $("#prac_t").css("background", "#F7F7F7"); $("#prac_e").css("background", "#F7F7F7"); $("#prac_m").css("background", "#F7F7F7");
+       $("#pracT_o").css("background", "#F7F7F7"); $("#pracT_n").css("background", "#F7F7F7"); $("#pracT_e").css("background", "#F7F7F7"); $("#pracT_m").css("background", "#F7F7F7");
+       $("#pracE_o").css("background", "#F7F7F7"); $("#pracE_t").css("background", "#F7F7F7"); $("#pracE_n").css("background", "#F7F7F7"); $("#pracE_m").css("background", "#F7F7F7");
+       $("#pracO_n").css("background", "#F7F7F7"); $("#pracO_t").css("background", "#F7F7F7"); $("#praOc_e").css("background", "#F7F7F7"); $("#pracO_m").css("background", "#F7F7F7");
+       $("#pracM_o").css("background", "#F7F7F7"); $("#pracM_t").css("background", "#F7F7F7"); $("#pracM_e").css("background", "#F7F7F7"); $("#pracM_n").css("background", "#F7F7F7"); 
+       //saco el selecccionado de la duracion
+       $("#dura_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+       $("#duraM_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7");
+       $("#duraE_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+       $("#duraO_n").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+       $("#duraT_o").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
 
    });
    $("#carrera3").click(function(){
@@ -424,7 +463,7 @@ $("[name='ircarreras']").click(function(){
      $(".btn-planestudio-o").show(); $(".btn-teoricas-o").show(); $(".btn-duracion-o").show();
      $("#btn-cerrar1").hide(); $("#btn-cerrar2").hide(); $("#btn-cerrar3").hide(); $("#btn-cerrar4").hide(); $("#btn-cerrar5").hide();
      //escondo prac de enf
-     $(".enf-pr-tpc").hide(); $(".enf-hs-med").hide(); $(".enf-pr-med").hide(); $(".enf-hs-obs").hide(); $(".enf-pr-obs").hide(); $(".enf-hs-nutri").hide(); $(".enf-pr-nutri").hide();
+     $(".enf-pr-tpc").hide(); $(".enf-hs-med").hide(); $(".enf-pr-med").hide(); $(".enf-hs-obs").hide(); $(".enf-pr-obs").hide(); $(".enf-hs-nutri").hide(); $(".enf-pr-nutri").hide(); $(".enf-hs-tpc").hide();
      //escondo prac med
      $(".med-hs-obs").hide(); $(".med-pr-obs").hide(); $(".med-hs-tpc").hide(); $(".med-pr-tpc").hide(); $(".med-hs-enf").hide(); $(".med-pr-enf").hide(); $(".med-hs-nutri").hide(); $(".med-pr-nutri").hide();
      //escondo prac nutri
@@ -438,6 +477,18 @@ $("[name='ircarreras']").click(function(){
      $(".segundoano_t").hide(); $(".primerano_t").hide(); $(".tercerano_t").hide();
      $(".segundoano_o").hide(); $(".primerano_o").hide(); $(".tercerano_o").hide();
      $(".segundoano_n").hide(); $(".primerano_n").hide(); $(".tercerano_n").hide();
+       //saco el seleccionado de los botones de las practicas
+       $("#prac_o").css("background", "#F7F7F7"); $("#prac_t").css("background", "#F7F7F7"); $("#prac_e").css("background", "#F7F7F7"); $("#prac_m").css("background", "#F7F7F7");
+       $("#pracT_o").css("background", "#F7F7F7"); $("#pracT_n").css("background", "#F7F7F7"); $("#pracT_e").css("background", "#F7F7F7"); $("#pracT_m").css("background", "#F7F7F7");
+       $("#pracE_o").css("background", "#F7F7F7"); $("#pracE_t").css("background", "#F7F7F7"); $("#pracE_n").css("background", "#F7F7F7"); $("#pracE_m").css("background", "#F7F7F7");
+       $("#pracO_n").css("background", "#F7F7F7"); $("#pracO_t").css("background", "#F7F7F7"); $("#praOc_e").css("background", "#F7F7F7"); $("#pracO_m").css("background", "#F7F7F7");
+       $("#pracM_o").css("background", "#F7F7F7"); $("#pracM_t").css("background", "#F7F7F7"); $("#pracM_e").css("background", "#F7F7F7"); $("#pracM_n").css("background", "#F7F7F7"); 
+       //saco el selecccionado de la duracion
+       $("#dura_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+       $("#duraM_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7");
+       $("#duraE_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+       $("#duraO_n").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+       $("#duraT_o").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
 
     });
    $("#carrera4").click(function(){
@@ -465,7 +516,20 @@ $("[name='ircarreras']").click(function(){
      $(".segundoano_t").hide(); $(".primerano_t").hide(); $(".tercerano_t").hide();
      $(".segundoano_o").hide(); $(".primerano_o").show(); $(".tercerano_o").hide();
      $(".segundoano_n").hide(); $(".primerano_n").hide(); $(".tercerano_n").hide();
-      });
+       //saco el seleccionado de los botones de las practicas
+       $("#prac_o").css("background", "#F7F7F7"); $("#prac_t").css("background", "#F7F7F7"); $("#prac_e").css("background", "#F7F7F7"); $("#prac_m").css("background", "#F7F7F7");
+       $("#pracT_o").css("background", "#F7F7F7"); $("#pracT_n").css("background", "#F7F7F7"); $("#pracT_e").css("background", "#F7F7F7"); $("#pracT_m").css("background", "#F7F7F7");
+       $("#pracE_o").css("background", "#F7F7F7"); $("#pracE_t").css("background", "#F7F7F7"); $("#pracE_n").css("background", "#F7F7F7"); $("#pracE_m").css("background", "#F7F7F7");
+       $("#pracO_n").css("background", "#F7F7F7"); $("#pracO_t").css("background", "#F7F7F7"); $("#praOc_e").css("background", "#F7F7F7"); $("#pracO_m").css("background", "#F7F7F7");
+       $("#pracM_o").css("background", "#F7F7F7"); $("#pracM_t").css("background", "#F7F7F7"); $("#pracM_e").css("background", "#F7F7F7"); $("#pracM_n").css("background", "#F7F7F7"); 
+       //saco el selecccionado de la duracion
+       $("#dura_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+       $("#duraM_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7");
+       $("#duraE_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+       $("#duraO_n").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+       $("#duraT_o").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+
+   });
 
    $("#carrera5").click(function(){
      $(".duracion_nutricion").hide(); $(".duracion_medicina").hide(); $(".duracion_enfermeria").hide(); $(".duracion_obstetricia").hide(); $(".duracion_tpc").hide();
@@ -493,6 +557,19 @@ $("[name='ircarreras']").click(function(){
      $(".segundoano_t").hide(); $(".primerano_t").show(); $(".tercerano_t").hide();
      $(".segundoano_o").hide(); $(".primerano_o").hide(); $(".tercerano_o").hide();
      $(".segundoano_n").hide(); $(".primerano_n").hide(); $(".tercerano_n").hide();
+       //saco el seleccionado de los botones de las practicas
+       $("#prac_o").css("background", "#F7F7F7"); $("#prac_t").css("background", "#F7F7F7"); $("#prac_e").css("background", "#F7F7F7"); $("#prac_m").css("background", "#F7F7F7");
+       $("#pracT_o").css("background", "#F7F7F7"); $("#pracT_n").css("background", "#F7F7F7"); $("#pracT_e").css("background", "#F7F7F7"); $("#pracT_m").css("background", "#F7F7F7");
+       $("#pracE_o").css("background", "#F7F7F7"); $("#pracE_t").css("background", "#F7F7F7"); $("#pracE_n").css("background", "#F7F7F7"); $("#pracE_m").css("background", "#F7F7F7");
+       $("#pracO_n").css("background", "#F7F7F7"); $("#pracO_t").css("background", "#F7F7F7"); $("#praOc_e").css("background", "#F7F7F7"); $("#pracO_m").css("background", "#F7F7F7");
+       $("#pracM_o").css("background", "#F7F7F7"); $("#pracM_t").css("background", "#F7F7F7"); $("#pracM_e").css("background", "#F7F7F7"); $("#pracM_n").css("background", "#F7F7F7"); 
+       //saco el selecccionado de la duracion
+       $("#dura_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+       $("#duraM_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7");
+       $("#duraE_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+       $("#duraO_n").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+       $("#duraT_o").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+
    });
 
 //______NUTRICION_______//
@@ -570,18 +647,22 @@ $("[name='ircarreras']").click(function(){
 
   $("#prac_o").click(function(){
     $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".nutri-hs-obs").show();    $(".nutri-pr-obs").show(); $(".nutri-hs-tpc").hide(); $(".nutri-pr-tpc").hide();  $(".nutri-hs-enf").hide(); $(".nutri-pr-enf").hide(); $(".nutri-hs-med").hide(); $(".nutri-pr-med").hide();
+    $("#prac_o").css("background", "#4EDEEE"); $("#prac_t").css("background", "#F7F7F7"); $("#prac_e").css("background", "#F7F7F7"); $("#prac_m").css("background", "#F7F7F7"); 
   });
 
   $("#prac_t").click(function(){
     $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".nutri-hs-obs").hide();    $(".nutri-pr-obs").hide(); $(".nutri-hs-tpc").show(); $(".nutri-pr-tpc").show(); $(".nutri-hs-enf").hide(); $(".nutri-pr-enf").hide(); $(".nutri-hs-med").hide(); $(".nutri-pr-med").hide();
+    $("#prac_t").css("background", "#4EDEEE"); $("#prac_o").css("background", "#F7F7F7"); $("#prac_e").css("background", "#F7F7F7"); $("#prac_m").css("background", "#F7F7F7"); 
   });
 
   $("#prac_e").click(function(){
     $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".nutri-hs-obs").hide();    $(".nutri-pr-obs").hide(); $(".nutri-hs-tpc").hide(); $(".nutri-pr-tpc").hide(); $(".nutri-hs-enf").show(); $(".nutri-pr-enf").show(); $(".nutri-hs-med").hide(); $(".nutri-pr-med").hide();
+    $("#prac_e").css("background", "#4EDEEE"); $("#prac_t").css("background", "#F7F7F7"); $("#prac_t").css("background", "#F7F7F7"); $("#prac_m").css("background", "#F7F7F7"); 
   });
 
   $("#prac_m").click(function(){
     $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".nutri-hs-obs").hide();    $(".nutri-pr-obs").hide(); $(".nutri-hs-tpc").hide(); $(".nutri-pr-tpc").hide(); $(".nutri-hs-enf").hide(); $(".nutri-pr-enf").hide(); $(".nutri-hs-med").show(); $(".nutri-pr-med").show();
+    $("#prac_m").css("background", "#4EDEEE"); $("#prac_t").css("background", "#F7F7F7"); $("#prac_e").css("background", "#F7F7F7"); $("#prac_o").css("background", "#F7F7F7"); 
   });
 
 
@@ -611,21 +692,26 @@ $("[name='ircarreras']").click(function(){
   $("#dura_t").click(function(event){
     $(".instrucciones").hide(); $(".selecciones").show();
       $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide(); $(".tpc-ter-p").show(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").show();
-        });
+      $("#dura_t").css("background", "#4EDEEE"); $("#dura_o").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+
+  });
 
         $("#dura_m").click(function(event){
           $(".medi-ter-p").show(); $(".medi-ter-a").show(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide(); $(".tpc-ter-p").hide(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").hide();
       $(".instrucciones").hide(); $(".selecciones").show();
-      });
+            $("#dura_m").css("background", "#4EDEEE"); $("#dura_o").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7");
+        });
 
         $("#dura_e").click(function(event){
           $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").show(); $(".enfer-ter-a").show(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide(); $(".tpc-ter-p").hide(); $(".tpc-ter-a").hide();
           $(".instrucciones").hide(); $(".selecciones").show();
+            $("#dura_e").css("background", "#4EDEEE"); $("#dura_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
         });
 
         $("#dura_o").click(function(event){
           $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".obs-ter-p").show(); $(".obs-ter-a").show(); $(".tpc-ter-p").hide(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").hide();
           $(".instrucciones").hide(); $(".selecciones").show();
+          $("#dura_o").css("background", "#4EDEEE"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
         });
 
 
@@ -709,18 +795,22 @@ $("[name='ircarreras']").click(function(){
 
   $("#pracM_o").click(function(){
     $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".med-hs-obs").show();    $(".med-pr-obs").show(); $(".med-hs-tpc").hide(); $(".med-pr-tpc").hide();  $(".med-hs-enf").hide(); $(".med-pr-enf").hide(); $(".med-hs-nutri").hide(); $(".med-pr-nutri").hide();
+      $("#pracM_o").css("background", "#4EDEEE"); $("#pracM_t").css("background", "#F7F7F7"); $("#pracM_e").css("background", "#F7F7F7"); $("#pracM_m").css("background", "#F7F7F7"); 
   });
 
   $("#pracM_t").click(function(){
     $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".med-hs-obs").hide();    $(".med-pr-obs").hide(); $(".med-hs-tpc").show(); $(".med-pr-tpc").show(); $(".med-hs-enf").hide(); $(".med-pr-enf").hide(); $(".med-hs-nutri").hide(); $(".med-pr-nutri").hide();
+      $("#pracM_t").css("background", "#4EDEEE"); $("#pracM_n").css("background", "#F7F7F7"); $("#pracM_e").css("background", "#F7F7F7"); $("#pracM_o").css("background", "#F7F7F7"); 
   });
 
   $("#pracM_e").click(function(){
     $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".med-hs-obs").hide();    $(".med-pr-obs").hide(); $(".med-hs-tpc").hide(); $(".med-pr-tpc").hide(); $(".med-hs-enf").show(); $(".med-pr-enf").show(); $(".med-hs-nutri").hide(); $(".med-pr-nutri").hide();
+      $("#pracM_e").css("background", "#4EDEEE"); $("#pracM_t").css("background", "#F7F7F7"); $("#pracM_o").css("background", "#F7F7F7"); $("#pracM_n").css("background", "#F7F7F7"); 
   });
 
   $("#pracM_n").click(function(){
     $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".med-hs-obs").hide();    $(".med-pr-obs").hide(); $(".med-hs-tpc").hide(); $(".med-pr-tpc").hide(); $(".med-hs-enf").hide(); $(".med-pr-enf").hide(); $(".med-hs-nutri").show(); $(".med-pr-nutri").show();
+    $("#pracM_n").css("background", "#4EDEEE"); $("#pracM_t").css("background", "#F7F7F7"); $("#pracM_e").css("background", "#F7F7F7"); $("#pracM_o").css("background", "#F7F7F7"); 
   });
 
 
@@ -746,21 +836,26 @@ $("[name='ircarreras']").click(function(){
   $("#duraM_n").click(function(event){
     $(".instrucciones").hide(); $(".selecciones").show();
     $(".nutrip-ter-p2").show(); $(".nutrip-ter-a2").show(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide(); $(".tpc-ter-p").hide(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").hide();
+      $("#duraM_n").css("background", "#4EDEEE"); $("#duraM_t").css("background", "#F7F7F7"); $("#duraM_e").css("background", "#F7F7F7"); $("#duraM_o").css("background", "#F7F7F7");
+
   });
 
   $("#duraM_e").click(function(event){
     $(".instrucciones").hide(); $(".selecciones").show();
     $(".nutrip-ter-p2").hide(); $(".nutrip-ter-a2").hide(); $(".enfer-ter-p").show(); $(".enfer-ter-a").show(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide(); $(".tpc-ter-p").hide(); $(".tpc-ter-a").hide();
+      $("#duraM_e").css("background", "#4EDEEE"); $("#duraM_t").css("background", "#F7F7F7"); $("#duraM_o").css("background", "#F7F7F7"); $("#duraM_n").css("background", "#F7F7F7");
   });
 
   $("#duraM_o").click(function(event){
     $(".instrucciones").hide(); $(".selecciones").show();
     $(".nutrip-ter-p2").hide(); $(".nutrip-ter-a2").hide(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".obs-ter-p").show(); $(".obs-ter-a").show(); $(".tpc-ter-p").hide(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").hide();
+      $("#duraM_o").css("background", "#4EDEEE"); $("#duraM_t").css("background", "#F7F7F7"); $("#duraM_e").css("background", "#F7F7F7"); $("#duraM_n").css("background", "#F7F7F7");
   });
 
   $("#duraM_t").click(function(event){
     $(".instrucciones").hide(); $(".selecciones").show();
     $(".nutrip-ter-p2").hide(); $(".nutrip-ter-a2").hide(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide(); $(".tpc-ter-p").show(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").show();
+      $("#duraM_t").css("background", "#4EDEEE"); $("#duraM_e").css("background", "#F7F7F7"); $("#duraM_o").css("background", "#F7F7F7"); $("#duraM_n").css("background", "#F7F7F7");
   });
 
   // ________FIN MEDICINA__________
@@ -846,18 +941,22 @@ $("[name='ircarreras']").click(function(){
 
       $("#pracE_t").click(function(){
         $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".enf-hs-tpc").show();    $(".enf-pr-tpc").show(); $(".enf-hs-med").hide(); $(".enf-pr-med").hide();  $(".enf-hs-obs").hide(); $(".enf-pr-obs").hide(); $(".enf-hs-nutri").hide(); $(".enf-pr-nutri").hide();
+        $("#pracE_t").css("background", "#4EDEEE"); $("#pracE_n").css("background", "#F7F7F7"); $("#pracE_m").css("background", "#F7F7F7"); $("#pracE_o").css("background", "#F7F7F7"); 
       });
 
       $("#pracE_m").click(function(){
         $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".enf-hs-tpc").hide();    $(".enf-pr-tpc").hide(); $(".enf-hs-med").show(); $(".enf-pr-med").show(); $(".enf-hs-obs").hide(); $(".enf-pr-obs").hide(); $(".enf-hs-nutri").hide(); $(".enf-pr-nutri").hide();
+        $("#pracE_m").css("background", "#4EDEEE"); $("#pracE_t").css("background", "#F7F7F7"); $("#pracE_n").css("background", "#F7F7F7"); $("#pracE_o").css("background", "#F7F7F7"); 
       });
 
       $("#pracE_o").click(function(){
         $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".enf-hs-tpc").hide();    $(".enf-pr-tpc").hide(); $(".enf-hs-med").hide(); $(".enf-pr-med").hide(); $(".enf-hs-obs").show(); $(".enf-pr-obs").show(); $(".enf-hs-nutri").hide(); $(".enf-pr-nutri").hide();
+        $("#pracE_o").css("background", "#4EDEEE"); $("#pracE_t").css("background", "#F7F7F7"); $("#pracE_n").css("background", "#F7F7F7"); $("#pracE_m").css("background", "#F7F7F7"); 
       });
 
       $("#pracE_n").click(function(){
         $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".enf-hs-tpc").hide();    $(".enf-pr-tpc").hide(); $(".enf-hs-med").hide(); $(".enf-pr-med").hide(); $(".enf-hs-obs").hide(); $(".enf-pr-obs").hide(); $(".enf-hs-nutri").show(); $(".enf-pr-nutri").show();
+        $("#pracE_n").css("background", "#4EDEEE"); $("#pracE_t").css("background", "#F7F7F7"); $("#pracE_m").css("background", "#F7F7F7"); $("#pracE_o").css("background", "#F7F7F7"); 
       });
 
       // ________duracion__________
@@ -877,21 +976,25 @@ $("[name='ircarreras']").click(function(){
       $("#duraE_n").click(function(event){
         $(".nutrip-ter-p2").show(); $(".nutrip-ter-a2").show(); $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide(); $(".tpc-ter-p").hide(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").hide();
         $(".instrucciones").hide(); $(".selecciones").show();
+        $("#duraE_n").css("background", "#4EDEEE"); $("#duraE_t").css("background", "#F7F7F7"); $("#duraE_o").css("background", "#F7F7F7"); $("#duraE_m").css("background", "#F7F7F7");
       });
 
       $("#duraE_m").click(function(event){
         $(".nutrip-ter-p2").hide(); $(".nutrip-ter-a2").hide(); $(".medi-ter-p").show(); $(".medi-ter-a").show(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide(); $(".tpc-ter-p").hide(); $(".tpc-ter-a").hide();
         $(".instrucciones").hide(); $(".selecciones").show();
+       $("#duraE_m").css("background", "#4EDEEE"); $("#duraE_t").css("background", "#F7F7F7"); $("#duraE_o").css("background", "#F7F7F7"); $("#duraE_n").css("background", "#F7F7F7");
       });
 
       $("#duraE_o").click(function(event){
         $(".nutrip-ter-p2").hide(); $(".nutrip-ter-a2").hide(); $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".obs-ter-p").show(); $(".obs-ter-a").show(); $(".tpc-ter-p").hide(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").hide();
         $(".instrucciones").hide(); $(".selecciones").show();
+        $("#duraE_o").css("background", "#4EDEEE"); $("#duraE_t").css("background", "#F7F7F7"); $("#duraE_n").css("background", "#F7F7F7"); $("#duraE_m").css("background", "#F7F7F7");
       });
 
       $("#duraE_t").click(function(event){
         $(".nutrip-ter-p2").hide(); $(".nutrip-ter-a2").hide(); $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide(); $(".tpc-ter-p").show(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").show();
         $(".instrucciones").hide(); $(".selecciones").show();
+        $("#duraE_t").css("background", "#4EDEEE"); $("#duraE_n").css("background", "#F7F7F7"); $("#duraE_o").css("background", "#F7F7F7"); $("#duraE_m").css("background", "#F7F7F7");
       });
 
       // ________FIN ENFERMERIA__________
@@ -960,18 +1063,23 @@ $("[name='ircarreras']").click(function(){
 
       $("#pracO_t").click(function(){
         $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".obs-hs-tpc").show();    $(".obs-pr-tpc").show(); $(".obs-hs-med").hide(); $(".obs-pr-med").hide();  $(".obs-hs-enf").hide(); $(".obs-pr-enf").hide(); $(".obs-hs-nutri").hide(); $(".obs-pr-nutri").hide();
+        $("#pracO_t").css("background", "#4EDEEE"); $("#pracO_m").css("background", "#F7F7F7"); $("#pracO_n").css("background", "#F7F7F7"); $("#pracO_e").css("background", "#F7F7F7"); 
+
       });
 
       $("#pracO_m").click(function(){
         $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".obs-hs-tpc").hide();    $(".obs-pr-tpc").hide(); $(".obs-hs-med").show(); $(".obs-pr-med").show(); $(".obs-hs-enf").hide(); $(".obs-pr-enf").hide(); $(".obs-hs-nutri").hide(); $(".obs-pr-nutri").hide();
+          $("#pracO_m").css("background", "#4EDEEE"); $("#pracO_t").css("background", "#F7F7F7"); $("#pracO_n").css("background", "#F7F7F7"); $("#pracO_e").css("background", "#F7F7F7"); 
       });
 
       $("#pracO_e").click(function(){
         $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".obs-hs-tpc").hide();    $(".obs-pr-tpc").hide(); $(".obs-hs-med").hide(); $(".obs-pr-med").hide(); $(".obs-hs-enf").show(); $(".obs-pr-enf").show(); $(".obs-hs-nutri").hide(); $(".obs-pr-nutri").hide();
+          $("#pracO_e").css("background", "#4EDEEE"); $("#pracO_t").css("background", "#F7F7F7"); $("#pracO_n").css("background", "#F7F7F7"); $("#pracO_m").css("background", "#F7F7F7"); 
       });
 
       $("#pracO_n").click(function(){
         $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".obs-hs-tpc").hide();    $(".obs-pr-tpc").hide(); $(".obs-hs-med").hide(); $(".obs-pr-med").hide(); $(".obs-hs-enf").hide(); $(".obs-pr-enf").hide(); $(".obs-hs-nutri").show(); $(".obs-pr-nutri").show();
+        $("#pracO_n").css("background", "#4EDEEE"); $("#pracO_t").css("background", "#F7F7F7"); $("#pracO_e").css("background", "#F7F7F7"); $("#pracO_o").css("background", "#F7F7F7"); 
       });
 
       // ________duracion__________
@@ -991,21 +1099,25 @@ $("[name='ircarreras']").click(function(){
       $("#duraO_n").click(function(event){
         $(".nutrip-ter-p2").show(); $(".nutrip-ter-a2").show(); $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".tpc-ter-p").hide(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").hide();
         $(".instrucciones").hide(); $(".selecciones").show();
+        $("#duraO_n").css("background", "#4EDEEE"); $("#duraO_t").css("background", "#F7F7F7"); $("#duraO_e").css("background", "#F7F7F7"); $("#duraO_m").css("background", "#F7F7F7");
       });
 
       $("#duraO_m").click(function(event){
         $(".nutrip-ter-p2").hide(); $(".nutrip-ter-a2").hide(); $(".medi-ter-p").show(); $(".medi-ter-a").show(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".tpc-ter-p").hide(); $(".tpc-ter-a").hide();
         $(".instrucciones").hide(); $(".selecciones").show();
+        $("#duraO_m").css("background", "#4EDEEE"); $("#duraO_t").css("background", "#F7F7F7"); $("#duraO_e").css("background", "#F7F7F7"); $("#duraO_n").css("background", "#F7F7F7");
       });
 
       $("#duraO_e").click(function(event){
         $(".nutrip-ter-p2").hide(); $(".nutrip-ter-a2").hide(); $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").show(); $(".enfer-ter-a").show(); $(".tpc-ter-p").hide();  $(".tpc-ter-a").hide();
         $(".instrucciones").hide(); $(".selecciones").show();
+        $("#duraO_e").css("background", "#4EDEEE"); $("#duraO_t").css("background", "#F7F7F7"); $("#duraO_n").css("background", "#F7F7F7"); $("#duraO_m").css("background", "#F7F7F7");
       });
 
       $("#duraO_t").click(function(event){
         $(".nutrip-ter-p2").hide(); $(".nutrip-ter-a2").hide(); $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".tpc-ter-p").show(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").show();
         $(".instrucciones").hide(); $(".selecciones").show();
+        $("#duraO_t").css("background", "#4EDEEE"); $("#duraO_n").css("background", "#F7F7F7"); $("#duraO_e").css("background", "#F7F7F7"); $("#duraO_m").css("background", "#F7F7F7");
       });
 
 
@@ -1070,18 +1182,22 @@ $("[name='ircarreras']").click(function(){
 
      $("#pracT_o").click(function(){
        $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".tpc-hs-obs").show();    $(".tpc-pr-obs").show(); $(".tpc-hs-med").hide(); $(".tpc-pr-med").hide();  $(".tpc-hs-enf").hide(); $(".tpc-pr-enf").hide(); $(".tpc-hs-nutri").hide(); $(".tpc-pr-nutri").hide();
+       $("#pracT_o").css("background", "#4EDEEE"); $("#pracT_m").css("background", "#F7F7F7"); $("#pracT_e").css("background", "#F7F7F7"); $("#pracT_n").css("background", "#F7F7F7"); 
      });
 
      $("#pracT_m").click(function(){
        $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".tpc-hs-obs").hide();    $(".tpc-pr-obs").hide(); $(".tpc-hs-med").show(); $(".tpc-pr-med").show(); $(".tpc-hs-enf").hide(); $(".tpc-pr-enf").hide(); $(".tpc-hs-nutri").hide(); $(".tpc-pr-nutri").hide();
+         $("#pracT_m").css("background", "#4EDEEE"); $("#pracT_e").css("background", "#F7F7F7"); $("#pracT_o").css("background", "#F7F7F7"); $("#pracT_n").css("background", "#F7F7F7"); 
      });
 
      $("#pracT_e").click(function(){
        $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".tpc-hs-obs").hide();    $(".tpc-pr-obs").hide(); $(".tpc-hs-med").hide(); $(".tpc-pr-med").hide(); $(".tpc-hs-enf").show(); $(".tpc-pr-enf").show(); $(".tpc-hs-nutri").hide(); $(".tpc-pr-nutri").hide();
+        $("#pracT_e").css("background", "#4EDEEE"); $("#pracT_m").css("background", "#F7F7F7"); $("#pracT_o").css("background", "#F7F7F7"); $("#pracT_n").css("background", "#F7F7F7"); 
      });
 
      $("#pracT_n").click(function(){
        $(".instruccionesp").hide(); $(".seleccionesp").show(); $(".tpc-hs-obs").hide();    $(".tpc-pr-obs").hide(); $(".tpc-hs-med").hide(); $(".tpc-pr-med").hide(); $(".tpc-hs-enf").hide(); $(".tpc-pr-enf").hide(); $(".tpc-hs-nutri").show(); $(".tpc-pr-nutri").show();
+       $("#pracT_n").css("background", "#4EDEEE"); $("#pracT_m").css("background", "#F7F7F7"); $("#pracT_e").css("background", "#F7F7F7"); $("#pracT_o").css("background", "#F7F7F7"); 
      });
 
 
@@ -1104,21 +1220,25 @@ $("[name='ircarreras']").click(function(){
       $("#duraT_n").click(function(event){
         $(".nutrip-ter-p2").show(); $(".nutrip-ter-a2").show(); $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".obs-ter-p").hide(); $(".enfer-ter-p").hide(); $(".tpc-ter-a").hide();
         $(".instrucciones").hide(); $(".selecciones").show();
+        $("#duraT_n").css("background", "#4EDEEE"); $("#duraT_o").css("background", "#F7F7F7"); $("#duraT_e").css("background", "#F7F7F7"); $("#duraT_m").css("background", "#F7F7F7");
       });
 
       $("#duraT_m").click(function(event){
         $(".nutrip-ter-p2").hide(); $(".nutrip-ter-a2").hide(); $(".medi-ter-p").show(); $(".medi-ter-a").show(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".obs-ter-p").hide(); $(".obs-ter-a").hide();
         $(".instrucciones").hide(); $(".selecciones").show();
+        $("#duraT_m").css("background", "#4EDEEE"); $("#duraT_o").css("background", "#F7F7F7"); $("#duraT_e").css("background", "#F7F7F7"); $("#duraT_n").css("background", "#F7F7F7");
       });
 
       $("#duraT_e").click(function(event){
         $(".nutrip-ter-p2").hide(); $(".nutrip-ter-a2").hide(); $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").show(); $(".enfer-ter-a").show(); $(".obs-ter-p").hide();  $(".obs-ter-a").hide();
         $(".instrucciones").hide(); $(".selecciones").show();
+        $("#duraT_e").css("background", "#4EDEEE"); $("#duraT_o").css("background", "#F7F7F7"); $("#duraT_n").css("background", "#F7F7F7"); $("#duraT_m").css("background", "#F7F7F7");
       });
 
       $("#duraT_o").click(function(event){
         $(".nutrip-ter-p2").hide(); $(".nutrip-ter-a2").hide(); $(".medi-ter-p").hide(); $(".medi-ter-a").hide(); $(".enfer-ter-p").hide(); $(".enfer-ter-a").hide(); $(".obs-ter-p").show(); $(".enfer-ter-p").hide(); $(".obs-ter-a").show();
         $(".instrucciones").hide(); $(".selecciones").show();
+        $("#duraT_o").css("background", "#4EDEEE"); $("#duraT_n").css("background", "#F7F7F7"); $("#duraT_e").css("background", "#F7F7F7"); $("#duraT_m").css("background", "#F7F7F7");
       });
 
       // ________FIN TPC__________
@@ -1475,5 +1595,17 @@ function morir(){
   $("#un-enf").css("background", "#4EDEEE"); $("#dos-enf").css("background", "#F7F7F7"); $("#tres-enf").css("background", "#F7F7F7");
   $(".primerano_e").show(); $(".segundoano_e").hide(); $(".tercerano_e").hide();
 
+    //saco el seleccionado de los botones de las practicas
+    $("#prac_o").css("background", "#F7F7F7"); $("#prac_t").css("background", "#F7F7F7"); $("#prac_e").css("background", "#F7F7F7"); $("#prac_m").css("background", "#F7F7F7");
+    $("#pracT_o").css("background", "#F7F7F7"); $("#pracT_n").css("background", "#F7F7F7"); $("#pracT_e").css("background", "#F7F7F7"); $("#pracT_m").css("background", "#F7F7F7");
+    $("#pracE_o").css("background", "#F7F7F7"); $("#pracE_t").css("background", "#F7F7F7"); $("#pracE_n").css("background", "#F7F7F7"); $("#pracE_m").css("background", "#F7F7F7");
+    $("#pracO_n").css("background", "#F7F7F7"); $("#pracO_t").css("background", "#F7F7F7"); $("#praOc_e").css("background", "#F7F7F7"); $("#pracO_m").css("background", "#F7F7F7");
+    $("#pracM_o").css("background", "#F7F7F7"); $("#pracM_t").css("background", "#F7F7F7"); $("#pracM_e").css("background", "#F7F7F7"); $("#pracM_n").css("background", "#F7F7F7"); 
+    //saco el selecccionado de la duracion
+    $("#dura_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+    $("#duraM_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7");
+    $("#duraE_o").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+    $("#duraO_n").css("background", "#F7F7F7"); $("#dura_t").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
+    $("#duraT_o").css("background", "#F7F7F7"); $("#dura_n").css("background", "#F7F7F7"); $("#dura_e").css("background", "#F7F7F7"); $("#dura_m").css("background", "#F7F7F7");
 
 }
