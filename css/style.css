@@ -1729,7 +1729,7 @@ margin-bottom: 3%;
   color: black;
 }
 
-.materias li{
+.materias-cuatri li, .materias-anuales li{
   list-style: none;
   float: left;
     margin-right: 10px;
@@ -1760,6 +1760,34 @@ margin-bottom: 3%;
     top: 150px;
     right: 10px;
 }
+
+.cuartoano_n, .cuartoano_m, .cuartoano_o{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    z-index: 16;
+    top: 150px;
+    right: 10px;
+}
+
+.quintoano_n, .quintoano_m {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    z-index: 16;
+    top: 150px;
+    right: 10px;
+}
+
+.sextoano_m {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    z-index: 16;
+    top: 150px;
+    right: 10px;
+}
+
 .consejo{
   background: #F7F7F7;
     border-radius: 15px;
