@@ -1729,10 +1729,14 @@ margin-bottom: 3%;
 
 
 
-.materias-cuatri li, .materias-anuales li{
+.materias-cuatri , .materias-anuales{
   list-style: none;
   float: left;
   margin-right: 10px;
+  grid-row: 3;
+  grid-gap: 15px;
+  margin-bottom: 5px;
+  margin-left: 15px;
 }
 
 .materias-cuatri{
@@ -1755,11 +1759,13 @@ margin-bottom: 3%;
   background: #f7f7f7;
   padding: 5px;
   border-radius:30px;
+  width: 70px;
+  margin-right: 20px;
 }
 
 .btn-materias img{
-  width: 60px;
-  height: 60px;
+  width: 83px;
+  height: 83px;
 }
 
 .btn-materias p{
@@ -1767,10 +1773,11 @@ margin-bottom: 3%;
 }
 
 .sub-iconos{
-  width: 60px;
+  width: 83px;
   word-wrap: break-word;
   font-size: 13px;
   text-align: center;
+  
 }
 
 .primerano_n, .primerano_m, .primerano_o, .primerano_e, .primerano_t{
